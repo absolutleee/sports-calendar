@@ -246,3 +246,23 @@ type-specific fields:
 - Tottenham–Chelsea / Tottenham–Arsenal match in any competition (not PL only).
 - Liverpool friendlies are included.
 - Title separator is a single space; switching to ` – ` is a one-line change in `ics.py`.
+
+## Addendum 2026-08-25: curation (`exclude` / `extra`)
+
+Subscribed calendars are read-only in Apple Calendar, so per-event deletion and
+ad hoc additions are expressed in `config.yaml` and applied at build time.
+Editing the file on github.com / the GitHub mobile app triggers a rebuild.
+
+- `timezone` (default `America/Denver`): zone used to interpret `between` dates
+  and to compute an event's calendar day for matching.
+- `exclude`: list of filters applied **after** rules and title annotation.
+  Fields, all optional, all must match: `id` (event uid, printed as the last
+  line of every event's notes), `title` (equals the full title or the part
+  before ` · `), `between: [from, to]` (inclusive dates, local day), `sports`
+  (list; matches games only), `rules` (list of rule names). An entry with no
+  fields, or with an unknown field, is a config error.
+- `extra`: list of manual events `{title, start, end?, hours?, notes?}`. A
+  date `start` makes an all-day event (`end` inclusive, default same day). A
+  datetime `start` makes a timed event lasting `hours` (default 2); a naive
+  datetime is read in `timezone`. UID `extra-<slug(title)>-<start date>`.
+- Every event's notes end with `id: <uid>` so ids can be copied from a phone.
