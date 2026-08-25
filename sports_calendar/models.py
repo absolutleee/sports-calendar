@@ -59,3 +59,14 @@ class AllDayEvent:
     end: date                    # exclusive, per RFC 5545
     description: str = ""
     matched_rules: list[str] = field(default_factory=list)
+
+
+@dataclass
+class ManualEvent:
+    """Ad hoc event from the `extra:` config section. Dates → all-day, datetimes → timed."""
+    uid: str
+    title: str
+    start: date | datetime
+    end: date | datetime         # exclusive date, or absolute end datetime
+    description: str = ""
+    matched_rules: list[str] = field(default_factory=list)

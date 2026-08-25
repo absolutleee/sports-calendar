@@ -5,7 +5,7 @@ from datetime import datetime, time, timedelta, timezone
 
 from icalendar import Calendar, Event
 
-from sports_calendar.models import AllDayEvent, Game
+from sports_calendar.models import AllDayEvent, Game, ManualEvent
 
 DURATIONS = {
     "soccer": timedelta(hours=2),
@@ -44,6 +44,7 @@ def description_for(game: Game) -> str:
         lines.append(f"TV: {game.broadcast}")
     if game.matched_rules:
         lines.append("Matched: " + ", ".join(game.matched_rules))
+    lines.append(f"id: {game.uid}")
     return "\n".join(lines)
 
 
@@ -67,23 +68,34 @@ def _game_event(game: Game, display_names: dict[str, dict[str, str]]) -> Event:
     return ev
 
 
-def _allday_event(e: AllDayEvent) -> Event:
+def _simple_event(e: AllDayEvent | ManualEvent) -> Event:
     ev = Event()
     ev.add("uid", f"{e.uid}@{UID_DOMAIN}")
     ev.add("summary", e.title)
-    desc = e.description
+    lines = [e.description] if e.description else []
     if e.matched_rules:
-        desc = (desc + "\n" if desc else "") + "Matched: " + ", ".join(e.matched_rules)
-    if desc:
-        ev.add("description", desc)
+        lines.append("Matched: " + ", ".join(e.matched_rules))
+    lines.append(f"id: {e.uid}")
+    ev.add("description", "\n".join(lines))
     ev.add("dtstart", e.start)
     ev.add("dtend", e.end)
-    ev.add("dtstamp", datetime.combine(e.start, time(0, 0), tzinfo=timezone.utc))
+    if isinstance(e.start, datetime):
+        ev.add("dtstamp", e.start.astimezone(timezone.utc))
+    else:
+        ev.add("dtstamp", datetime.combine(e.start, time(0, 0), tzinfo=timezone.utc))
     ev.add("transp", "TRANSPARENT")
     return ev
 
 
-def build_calendar(games: list[Game], alldays: list[AllDayEvent], display_names: dict[str, dict[str, str]]) -> bytes:
+def _event_sort_key(e: AllDayEvent | ManualEvent):
+    start = e.start
+    if isinstance(start, datetime):
+        start = start.astimezone(timezone.utc).date()
+    return (start, e.uid)
+
+
+def build_calendar(games: list[Game], alldays: list[AllDayEvent | ManualEvent],
+                   display_names: dict[str, dict[str, str]]) -> bytes:
     cal = Calendar()
     cal.add("prodid", "-//sports-calendar//EN")
     cal.add("version", "2.0")
@@ -94,6 +106,6 @@ def build_calendar(games: list[Game], alldays: list[AllDayEvent], display_names:
 
     for g in sorted(games, key=lambda g: (g.sort_key(), g.uid)):
         cal.add_component(_game_event(g, display_names))
-    for e in sorted(alldays, key=lambda e: (e.start, e.uid)):
-        cal.add_component(_allday_event(e))
+    for e in sorted(alldays, key=_event_sort_key):
+        cal.add_component(_simple_event(e))
     return cal.to_ical()

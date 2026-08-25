@@ -3,7 +3,7 @@ from datetime import date, datetime, timedelta, timezone
 from icalendar import Calendar
 
 from sports_calendar import ics
-from sports_calendar.models import AllDayEvent, Game, Team
+from sports_calendar.models import AllDayEvent, Game, ManualEvent, Team
 
 LIV = Team("364", "Liverpool", "Liverpool")
 FOR = Team("393", "Nottingham Forest", "Nottm Forest")
@@ -61,6 +61,7 @@ def test_build_calendar_timed_event():
     assert str(ev["LOCATION"]) == "Anfield"
     desc = str(ev["DESCRIPTION"])
     assert "Premier League" in desc and "TV: NBC" in desc and "Matched: Liverpool" in desc
+    assert desc.splitlines()[-1] == "id: espn-1"
     assert "VALARM" not in data.decode()
 
 
@@ -85,6 +86,22 @@ def test_all_day_event():
     assert str(ev["SUMMARY"]) == "The Masters"
     assert ev["DTSTART"].dt == date(2026, 4, 9) and ev["DTEND"].dt == date(2026, 4, 13)
     assert str(ev["UID"]) == "espn-golf-1@sports-calendar"
+
+
+def test_all_day_event_has_id_line():
+    e = AllDayEvent(uid="espn-golf-1", title="The Masters", start=date(2026, 4, 9), end=date(2026, 4, 13))
+    ev = Calendar.from_ical(ics.build_calendar([], [e], {})).walk("VEVENT")[0]
+    assert str(ev["DESCRIPTION"]) == "id: espn-golf-1"
+
+
+def test_manual_timed_event():
+    start = datetime(2026, 12, 19, 21, 0, tzinfo=timezone.utc)
+    e = ManualEvent(uid="extra-fury-usyk-2026-12-19", title="Fury Usyk", start=start, end=start + timedelta(hours=3),
+                    description="Riyadh")
+    ev = Calendar.from_ical(ics.build_calendar([], [e], {})).walk("VEVENT")[0]
+    assert str(ev["SUMMARY"]) == "Fury Usyk"
+    assert ev["DTSTART"].dt == start and ev["DTEND"].dt == start + timedelta(hours=3)
+    assert str(ev["DESCRIPTION"]) == "Riyadh\nid: extra-fury-usyk-2026-12-19"
 
 
 def test_output_is_deterministic_and_sorted():
