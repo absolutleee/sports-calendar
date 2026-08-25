@@ -1,0 +1,201 @@
+# Sports calendar rules. Edit this file to change what lands on the calendar.
+#
+# Sources:   espn_soccer (ESPN, all competitions for a club; team = ESPN club id)
+#            espn        (ESPN US sports: needs sport + league; team = ESPN team id)
+#            mlb         (official MLB Stats API; team = MLB team id)
+#            nhl         (official NHL API; team = 3-letter abbrev)
+# Windows:   ["MM-DD", "MM-DD"] resolved in the season-end year
+#            (July 1 onward counts as next year's season).
+
+output: docs/sports.ics
+
+# Short names used in event titles, per sport. Left side = the source's short name.
+display_names:
+  soccer:
+    Man United: United
+    Man City: City
+    Inter Milan: Inter
+    Spurs: Tottenham
+  hockey:
+    Avalanche: Avs
+
+rules:
+  # ---------------------------------------------------------------- Soccer
+  - name: Liverpool
+    type: team_all
+    source: espn_soccer
+    team: 364
+
+  - name: Barcelona v Real Madrid / Atlético
+    type: head_to_head
+    source: espn_soccer
+    team: 83
+    opponents: [86, 1068]
+    competitions: [esp.1]
+
+  - name: Barcelona Champions League
+    type: team_all
+    source: espn_soccer
+    team: 83
+    competitions: [uefa.champions]
+
+  - name: Champions League knockouts
+    type: round
+    source: espn_soccer
+    league: uefa.champions
+    window: ["04-01", "06-15"]
+    rounds: [quarterfinals, semifinals, final]
+
+  - name: Europa League final
+    type: round
+    source: espn_soccer
+    league: uefa.europa
+    window: ["05-01", "06-15"]
+    rounds: [final]
+
+  - name: Championship play-offs
+    type: round
+    source: espn_soccer
+    league: eng.2
+    window: ["05-01", "06-10"]
+    rounds: [promotion-semifinals, promotion-final]
+
+  - name: Juventus v Inter
+    type: head_to_head
+    source: espn_soccer
+    team: 111
+    opponents: [110]
+
+  - name: Inter v Milan
+    type: head_to_head
+    source: espn_soccer
+    team: 110
+    opponents: [103]
+
+  - name: Bayern v Dortmund
+    type: head_to_head
+    source: espn_soccer
+    team: 132
+    opponents: [124]
+
+  - name: Tottenham v Chelsea / Arsenal
+    type: head_to_head
+    source: espn_soccer
+    team: 367
+    opponents: [363, 359]
+
+  - name: Premier League big four
+    type: group_h2h
+    source: espn_soccer
+    teams: [359, 363, 382, 360]     # Arsenal, Chelsea, Man City, Man United
+    competitions: [eng.1]
+
+  - name: Denver Pioneers home
+    type: home_games
+    source: espn
+    sport: hockey
+    league: mens-college-hockey
+    team: 2172
+
+  - name: Denver Pioneers postseason
+    type: postseason
+    source: espn
+    sport: hockey
+    league: mens-college-hockey
+    team: 2172
+
+  - name: World Cup
+    type: tournament_all
+    source: espn_soccer
+    league: fifa.world
+    window: ["06-01", "07-31"]
+
+  # -------------------------------------------------------------- Baseball
+  - name: Mets Opening Day
+    type: opener
+    source: mlb
+    team: 121
+
+  - name: Mets v Yankees / Dodgers / Phillies
+    type: head_to_head
+    source: mlb
+    team: 121
+    opponents: [147, 119, 143]
+
+  - name: Mets at Coors Field
+    type: head_to_head
+    source: mlb
+    team: 121
+    opponents: [115]
+    only_away: true
+
+  - name: Mets postseason
+    type: postseason
+    source: mlb
+    team: 121
+
+  # ---------------------------------------------------------------- Hockey
+  - name: Avs opener
+    type: opener
+    source: nhl
+    team: COL
+
+  - name: Avs v Stars
+    type: head_to_head
+    source: nhl
+    team: COL
+    opponents: [DAL]
+
+  - name: Avs playoffs
+    type: postseason
+    source: nhl
+    team: COL
+
+  - name: Rangers opener
+    type: opener
+    source: nhl
+    team: NYR
+
+  - name: Rangers playoffs
+    type: postseason
+    source: nhl
+    team: NYR
+
+  - name: Stanley Cup Final
+    type: finals
+    source: nhl
+
+  # ------------------------------------------------------------ Basketball
+  - name: Nuggets v Thunder
+    type: head_to_head
+    source: espn
+    sport: basketball
+    league: nba
+    team: 7
+    opponents: [25]
+
+  - name: Nuggets playoffs
+    type: postseason
+    source: espn
+    sport: basketball
+    league: nba
+    team: 7
+
+  - name: NBA Finals
+    type: finals
+    source: espn
+    sport: basketball
+    league: nba
+    window: ["05-25", "06-30"]
+    notes_prefix: NBA Finals
+
+  # ------------------------------------------------------------------ Golf
+  - name: The Masters
+    type: golf_event
+    tour: pga
+    label: Masters Tournament
+    title: The Masters
+
+  # ---------------------------------------------------------------- Tennis
+  - name: Grand Slams
+    type: grand_slams
