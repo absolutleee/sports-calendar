@@ -8,6 +8,29 @@
 #            (July 1 onward counts as next year's season).
 
 output: docs/sports.ics
+timezone: America/Denver        # used to read the dates in `exclude:` and `extra:`
+
+# Remove generated events you can't watch. Every field is optional; all given
+# fields must match. Dates are inclusive. Edit this on github.com or in the
+# GitHub app; the calendar rebuilds within a couple of minutes.
+#   - title: Mets Dodgers                       # as shown on the calendar (suffix after " · " ignored)
+#     between: [2026-09-04, 2026-09-06]
+#   - between: [2026-09-01, 2026-09-14]         # a trip: drop whole sports
+#     sports: [baseball, basketball]
+#   - id: mlb-823649                            # copy from the last line of an event's notes
+#   - rules: [Premier League big four]          # everything a rule produced
+exclude: []
+
+# Your own events. A date start = all-day (end inclusive, optional).
+# A datetime start = timed event (`hours` default 2).
+#   - title: Ryder Cup
+#     start: 2027-09-24
+#     end: 2027-09-26
+#   - title: Fury Usyk
+#     start: 2026-12-19T21:00Z
+#     hours: 3
+#     notes: DAZN
+extra: []
 
 # Short names used in event titles, per sport. Left side = the source's short name.
 display_names:

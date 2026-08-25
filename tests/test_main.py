@@ -77,3 +77,31 @@ def test_run_fails_cleanly_on_fetch_error(monkeypatch, tmp_path):
     out = tmp_path / "sports.ics"
     assert main.run(Path("config.yaml"), out, today=date(2026, 5, 15)) == 1
     assert not out.exists()
+
+
+def test_exclude_and_extra_from_config(fake_fetch, tmp_path):
+    fake_fetch(E2E_MAPPING)
+    cfg = tmp_path / "config.yaml"
+    cfg.write_text(Path("config.yaml").read_text().replace("exclude: []", """exclude:
+  - title: Pirates Mets
+    between: [2026-03-26, 2026-03-26]
+  - between: [2026-09-01, 2026-09-14]
+    sports: [baseball]
+""").replace("extra: []", """extra:
+  - title: Ryder Cup
+    start: 2027-09-24
+    end: 2027-09-26
+  - title: Fury Usyk
+    start: 2026-12-19T21:00Z
+    hours: 3
+"""))
+    out = tmp_path / "sports.ics"
+    assert main.run(cfg, out, today=date(2026, 5, 15)) == 0
+    cal = Calendar.from_ical(out.read_bytes())
+    events = {str(e["SUMMARY"]): e for e in cal.walk("VEVENT")}
+    assert "Pirates Mets · Opening Day" not in events
+    assert not any(e["DTSTART"].dt.__class__.__name__ == "datetime" and date(2026, 9, 1) <= e["DTSTART"].dt.date() <= date(2026, 9, 14)
+                   and "Mets" in s for s, e in events.items())
+    assert events["Ryder Cup"]["DTSTART"].dt == date(2027, 9, 24) and events["Ryder Cup"]["DTEND"].dt == date(2027, 9, 27)
+    assert str(events["Fury Usyk"]["DTEND"].dt - events["Fury Usyk"]["DTSTART"].dt) == "3:00:00"
+    assert str(events["Fury Usyk"]["DESCRIPTION"]).endswith("id: extra-fury-usyk-2026-12-19")

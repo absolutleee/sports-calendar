@@ -53,6 +53,37 @@ ESPN competition slugs used in `competitions:` / `league:`: `eng.1` Premier
 League, `eng.2` Championship, `esp.1` La Liga, `ita.1` Serie A, `ger.1`
 Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `club.friendly`.
 
+## Removing games / adding your own events
+
+Subscribed calendars are read-only in Apple Calendar, so curation lives in
+`config.yaml`. Open the file on github.com (pencil icon) or in the GitHub
+mobile app, edit, commit — the workflow rebuilds in about a minute and Apple
+Calendar picks it up on its next refresh (or View → Refresh Calendars on Mac /
+pull down the calendar list on iPhone).
+
+```yaml
+exclude:
+  - title: Mets Dodgers                 # title as shown; suffix after " · " ignored
+    between: [2026-09-04, 2026-09-06]   # inclusive, in `timezone`
+  - between: [2026-09-01, 2026-09-14]   # travelling: drop whole sports
+    sports: [baseball, basketball]
+  - id: mlb-823649                      # last line of any event's notes
+  - rules: [Premier League big four]    # everything a rule produced
+
+extra:
+  - title: Ryder Cup                    # date start → all-day (end inclusive)
+    start: 2027-09-24
+    end: 2027-09-26
+  - title: Fury Usyk                    # datetime start → timed (`hours` default 2)
+    start: 2026-12-19T21:00Z
+    hours: 3
+    notes: DAZN
+```
+
+Within one `exclude` entry every field must match; entries are OR'd. A typo in
+a field name fails the build (check the Actions tab) rather than silently
+matching nothing.
+
 ## Run locally
 
     python3 -m venv .venv && .venv/bin/pip install -r requirements.txt

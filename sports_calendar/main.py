@@ -6,11 +6,13 @@ import logging
 import sys
 from datetime import date
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import yaml
 
 from sports_calendar import http
 from sports_calendar.catalog import Catalog
+from sports_calendar.curation import apply_excludes, build_extras
 from sports_calendar.ics import build_calendar
 from sports_calendar.rules import apply_rules
 
@@ -29,7 +31,13 @@ def run(config_path: Path, out_path: Path, today: date) -> int:
     except http.FetchError as exc:
         log.error("aborting, a source failed: %s", exc)
         return 1
-    data = build_calendar(games, alldays, config.get("display_names") or {})
+    display_names = config.get("display_names") or {}
+    tz = ZoneInfo(config.get("timezone") or "America/Denver")
+    before = len(games) + len(alldays)
+    games, alldays = apply_excludes(games, alldays, config.get("exclude") or [], display_names, tz)
+    extras = build_extras(config.get("extra") or [], tz)
+    log.info("excluded %d event(s); added %d extra(s)", before - len(games) - len(alldays), len(extras))
+    data = build_calendar(games, alldays + extras, display_names)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_bytes(data)
     log.info("wrote %s: %d games, %d all-day events", out_path, len(games), len(alldays))
