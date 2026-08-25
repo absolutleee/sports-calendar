@@ -87,6 +87,23 @@ def apply_excludes(games: list[Game], events: list, excludes: list[dict], displa
     return kept_games, kept_events
 
 
+def last_day(item, tz: ZoneInfo) -> date:
+    """Final calendar day an item occupies (multi-day all-day events end on end-1)."""
+    if isinstance(item, Game):
+        return local_day(item, tz)
+    end = item.end
+    if isinstance(end, datetime):
+        return end.astimezone(tz).date()
+    return end - timedelta(days=1)
+
+
+def drop_past(games: list[Game], events: list, cutoff: date, tz: ZoneInfo):
+    """Keep only items whose last day is on/after cutoff."""
+    kept_games = [g for g in games if last_day(g, tz) >= cutoff]
+    kept_events = [e for e in events if last_day(e, tz) >= cutoff]
+    return kept_games, kept_events
+
+
 def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "event"
 

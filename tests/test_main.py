@@ -23,6 +23,7 @@ E2E_MAPPING = [
     ("club-schedule-season/COL/", "nhl_col_2025_26.json"),
     ("club-schedule-season/NYR/", "nhl_nyr_2026_27.json"),
     ("playoff-bracket/2026", "nhl_bracket_2026.json"),
+    ("playoff-bracket/", {"series": []}),  # any other season: playoffs not set
     ("playoff-series/20252026/o/", "nhl_series_scf_2026.json"),
     ("golf/pga/scoreboard", "espn_pga_scoreboard.json"),
     (("tennis/atp/scoreboard", "dates=202601"), "espn_tennis_ao_2026.json"),
@@ -33,10 +34,20 @@ E2E_MAPPING = [
 ]
 
 
+def write_cfg(tmp_path, **replacements):
+    """config.yaml with `keep_past_days` disabled (tests simulate past dates) plus replacements."""
+    text = Path("config.yaml").read_text().replace("keep_past_days: 5", "keep_past_days: 3650")
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    cfg = tmp_path / "config.yaml"
+    cfg.write_text(text)
+    return cfg
+
+
 def test_end_to_end(fake_fetch, tmp_path):
     fake_fetch(E2E_MAPPING)
     out = tmp_path / "sports.ics"
-    code = main.run(Path("config.yaml"), out, today=date(2026, 5, 15))
+    code = main.run(write_cfg(tmp_path), out, today=date(2026, 5, 15))
     assert code == 0
     cal = Calendar.from_ical(out.read_bytes())
     events = {str(e["SUMMARY"]): e for e in cal.walk("VEVENT")}
@@ -67,6 +78,19 @@ def test_end_to_end(fake_fetch, tmp_path):
     assert "VALARM" not in out.read_text()
 
 
+def test_keep_past_days_hides_history(fake_fetch, tmp_path):
+    fake_fetch(E2E_MAPPING)
+    cfg = tmp_path / "config.yaml"
+    cfg.write_text(Path("config.yaml").read_text().replace("keep_past_days: 5", "keep_past_days: 3"))
+    out = tmp_path / "sports.ics"
+    assert main.run(cfg, out, today=date(2026, 8, 25)) == 0
+    cal = Calendar.from_ical(out.read_bytes())
+    starts = [e["DTSTART"].dt for e in cal.walk("VEVENT")]
+    days = [d.date() if hasattr(d, "hour") else d for d in starts]
+    assert min(days) >= date(2026, 8, 22)
+    assert not any(str(e["SUMMARY"]) == "The Masters" for e in cal.walk("VEVENT"))
+
+
 def test_run_fails_cleanly_on_fetch_error(monkeypatch, tmp_path):
     from sports_calendar import http
 
@@ -81,20 +105,19 @@ def test_run_fails_cleanly_on_fetch_error(monkeypatch, tmp_path):
 
 def test_exclude_and_extra_from_config(fake_fetch, tmp_path):
     fake_fetch(E2E_MAPPING)
-    cfg = tmp_path / "config.yaml"
-    cfg.write_text(Path("config.yaml").read_text().replace("exclude: []", """exclude:
+    cfg = write_cfg(tmp_path, **{"exclude: []": """exclude:
   - title: Pirates Mets
     between: [2026-03-26, 2026-03-26]
   - between: [2026-09-01, 2026-09-14]
     sports: [baseball]
-""").replace("extra: []", """extra:
+""", "extra: []": """extra:
   - title: Ryder Cup
     start: 2027-09-24
     end: 2027-09-26
   - title: Fury Usyk
     start: 2026-12-19T21:00Z
     hours: 3
-"""))
+"""})
     out = tmp_path / "sports.ics"
     assert main.run(cfg, out, today=date(2026, 5, 15)) == 0
     cal = Calendar.from_ical(out.read_bytes())

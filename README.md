@@ -55,6 +55,10 @@ Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `club.friendly`.
 
 ## Removing games / adding your own events
 
+`keep_past_days: 5` in `config.yaml` hides anything that ended more than five
+days ago, so finished games roll off automatically. Set it higher to keep more
+history.
+
 Subscribed calendars are read-only in Apple Calendar, so curation lives in
 `config.yaml`. Open the file on github.com (pencil icon) or in the GitHub
 mobile app, edit, commit — the workflow rebuilds in about a minute and Apple

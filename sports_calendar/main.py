@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -12,7 +12,7 @@ import yaml
 
 from sports_calendar import http
 from sports_calendar.catalog import Catalog
-from sports_calendar.curation import apply_excludes, build_extras
+from sports_calendar.curation import apply_excludes, build_extras, drop_past
 from sports_calendar.ics import build_calendar
 from sports_calendar.rules import apply_rules
 
@@ -33,10 +33,14 @@ def run(config_path: Path, out_path: Path, today: date) -> int:
         return 1
     display_names = config.get("display_names") or {}
     tz = ZoneInfo(config.get("timezone") or "America/Denver")
-    before = len(games) + len(alldays)
+    total = len(games) + len(alldays)
+    cutoff = today - timedelta(days=int(config.get("keep_past_days", 7)))
+    games, alldays = drop_past(games, alldays, cutoff, tz)
+    dropped_past = total - len(games) - len(alldays)
     games, alldays = apply_excludes(games, alldays, config.get("exclude") or [], display_names, tz)
     extras = build_extras(config.get("extra") or [], tz)
-    log.info("excluded %d event(s); added %d extra(s)", before - len(games) - len(alldays), len(extras))
+    excluded = total - dropped_past - len(games) - len(alldays)
+    log.info("dropped %d past (before %s); excluded %d; added %d extra(s)", dropped_past, cutoff, excluded, len(extras))
     data = build_calendar(games, alldays + extras, display_names)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_bytes(data)

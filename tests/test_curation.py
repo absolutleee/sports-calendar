@@ -94,3 +94,13 @@ def test_extras_require_title_and_start():
         curation.build_extras([{"title": "No start"}], DEN)
     with pytest.raises(ValueError):
         curation.build_extras([{"title": "x", "start": "2026-01-01", "colour": "red"}], DEN)
+
+
+def test_drop_past_keeps_today_and_multiday_events_still_running():
+    games = [mk("old", LIV, NEW, date(2026, 8, 19)), mk("edge", LIV, NEW, date(2026, 8, 20)), mk("new", LIV, NEW, date(2026, 9, 1))]
+    events = [AllDayEvent(uid="masters", title="The Masters", start=date(2026, 8, 17), end=date(2026, 8, 21)),  # ends Aug 20
+              AllDayEvent(uid="done", title="Old", start=date(2026, 8, 18), end=date(2026, 8, 20)),           # ends Aug 19
+              curation.build_extras([{"title": "Late", "start": datetime(2026, 8, 20, 2, 30, tzinfo=timezone.utc)}], DEN)[0]]  # Aug 19 20:30–22:30 Denver
+    kept_games, kept_events = curation.drop_past(games, events, date(2026, 8, 20), DEN)
+    assert [g.uid for g in kept_games] == ["edge", "new"]
+    assert [e.uid for e in kept_events] == ["masters"]

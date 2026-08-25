@@ -9,6 +9,7 @@
 
 output: docs/sports.ics
 timezone: America/Denver        # used to read the dates in `exclude:` and `extra:`
+keep_past_days: 5               # hide events that ended more than this many days ago
 
 # Remove generated events you can't watch. Every field is optional; all given
 # fields must match. Dates are inclusive. Edit this on github.com or in the
