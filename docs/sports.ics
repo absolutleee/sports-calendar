@@ -33,8 +33,8 @@ DTSTART:20260829T113000Z
 DTEND:20260829T133000Z
 DTSTAMP:20260829T113000Z
 UID:espn-401879314@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nMatched: Liverpool\nid: espn-
- 401879314
+DESCRIPTION:English Premier League\nAnfield\nTV: USA Net\, Universo\nMatch
+ ed: Liverpool\nid: espn-401879314
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -44,8 +44,8 @@ DTSTART:20260904T190000Z
 DTEND:20260904T210000Z
 DTSTAMP:20260904T190000Z
 UID:espn-401879288@sports-calendar
-DESCRIPTION:English Premier League\nPortman Road\nMatched: Liverpool\nid: 
- espn-401879288
+DESCRIPTION:English Premier League\nPortman Road\nTV: USA Net\nMatched: Li
+ verpool\nid: espn-401879288
 LOCATION:Portman Road
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -55,8 +55,8 @@ DTSTART:20260906T153000Z
 DTEND:20260906T173000Z
 DTSTAMP:20260906T153000Z
 UID:espn-401879292@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\nMatched: Premier Lea
- gue big four\nid: espn-401879292
+DESCRIPTION:English Premier League\nEmirates Stadium\nTV: USA Net\, Tele\n
+ Matched: Premier League big four\nid: espn-401879292
 LOCATION:Emirates Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
