@@ -110,8 +110,8 @@ DTSTART:20260915T190000Z
 DTEND:20260915T210000Z
 DTSTAMP:20260915T190000Z
 UID:espn-401914257@sports-calendar
-DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\nMatched: Liverpool\ni
- d: espn-401914257
+DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\nTV: Paramount+\nMatch
+ ed: Liverpool\nid: espn-401914257
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1582,16 +1582,6 @@ UID:mlb-852839@sports-calendar
 DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets v Yankees / Dodgers / P
  hillies\nid: mlb-852839
 LOCATION:Citizens Bank Park
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:US Open Day 1
-DTSTART;VALUE=DATE:20260831
-DTEND;VALUE=DATE:20260901
-DTSTAMP:20260831T000000Z
-UID:espn-tennis-189-2026-day1@sports-calendar
-DESCRIPTION:US Open · Aug 24–Sep 13\nMatched: Grand Slams\nid: espn-ten
- nis-189-2026-day1
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
