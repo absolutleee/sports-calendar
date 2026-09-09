@@ -66,8 +66,8 @@ DTSTART:20260912T140000Z
 DTEND:20260912T160000Z
 DTSTAMP:20260912T140000Z
 UID:espn-401879279@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nMatched: Liverpool\nid: espn-
- 401879279
+DESCRIPTION:English Premier League\nAnfield\nTV: Peacock\nMatched: Liverpo
+ ol\nid: espn-401879279
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -88,8 +88,8 @@ DTSTART:20260913T153000Z
 DTEND:20260913T173000Z
 DTSTAMP:20260913T153000Z
 UID:espn-401879278@sports-calendar
-DESCRIPTION:English Premier League\nOld Trafford\nMatched: Premier League 
- big four\nid: espn-401879278
+DESCRIPTION:English Premier League\nOld Trafford\nTV: Peacock\, Tele\nMatc
+ hed: Premier League big four\nid: espn-401879278
 LOCATION:Old Trafford
 TRANSP:TRANSPARENT
 END:VEVENT
