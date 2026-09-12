@@ -28,6 +28,13 @@ def espn_season(today: date) -> int:
     return season_end_year(today)
 
 
+def nfl_season(today: date) -> int:
+    # ESPN's `season` param for the NFL is the season START year: the 2026 season
+    # kicks off in Sept 2026 and ends with the Super Bowl in early Feb 2027, so
+    # Jan/Feb still belong to the previous year's season.
+    return today.year if today.month >= 3 else today.year - 1
+
+
 def window(today: date, start_md: str, end_md: str) -> tuple[date, date]:
     """Resolve 'MM-DD' bounds into dates in the season-end year."""
     year = season_end_year(today)

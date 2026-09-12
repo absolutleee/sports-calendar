@@ -48,3 +48,41 @@ def test_golf_and_tennis(fake_fetch):
     cat = Catalog(today=date(2026, 8, 25))
     assert any(e["label"] == "Masters Tournament" for e in cat.golf_calendar("pga"))
     assert [m.name for m in cat.tennis_majors()] == ["Wimbledon"]
+
+
+def test_football_uses_nfl_start_year_and_elimination_dispatch(fake_fetch):
+    calls = fake_fetch([
+        (("football/nfl/teams/19/schedule", "season=2026", "seasontype=2"), {"events": []}),
+        (("football/nfl/teams/19/schedule", "season=2026", "seasontype=3"), {"events": []}),
+        (("football/nfl/standings", "season=2026"), "espn_nfl_standings_2024.json"),
+    ])
+    cat = Catalog(today=date(2026, 9, 11))
+    rule = {"source": "espn", "sport": "football", "league": "nfl", "team": 19}
+    cat.team_games(rule)                       # must request season=2026 (start year), not 2027
+    assert any("season=2026" in c and "football/nfl/teams/19" in c for c in calls)
+    assert not any("season=2027" in c for c in calls)
+    assert cat.eliminated(rule, 2026) is True  # Giants clincher 'e' in fixture
+
+
+def test_eliminated_dispatch_mlb(fake_fetch):
+    fake_fetch([(("statsapi.mlb.com/api/v1/standings", "season=2026"), "mlb_standings_2026.json")])
+    cat = Catalog(today=date(2026, 9, 11))
+    assert cat.eliminated({"source": "mlb", "team": 121}, 2026) is True
+
+
+def test_eliminated_unsupported_source_fails_open():
+    cat = Catalog(today=date(2026, 9, 11))
+    assert cat.eliminated({"source": "nhl", "team": "COL", "name": "Avs"}, 2026) is False
+
+
+def test_game_season_year():
+    from sports_calendar.models import Game, Team
+    cat = Catalog(today=date(2026, 9, 11))
+
+    def g(sport, day):
+        return Game(uid="x", sport=sport, competition="c", competition_name="C",
+                    home=Team("1", "H", "H"), away=Team("2", "A", "A"), day=day)
+
+    assert cat.game_season_year(g("baseball", date(2026, 9, 20))) == 2026
+    assert cat.game_season_year(g("football", date(2026, 11, 1))) == 2026
+    assert cat.game_season_year(g("football", date(2027, 1, 4))) == 2026  # Week 18 in January

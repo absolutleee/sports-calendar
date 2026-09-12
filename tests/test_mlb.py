@@ -60,3 +60,29 @@ def test_parse_tbd_and_postponed():
     assert tbd.time_valid is False
     assert mlb.parse_game(_game(status={"detailedState": "Postponed", "startTimeTBD": False})) is None
     assert mlb.parse_game(_game(status={"detailedState": "Cancelled", "startTimeTBD": False})) is None
+
+
+def test_eliminated(fake_fetch):
+    calls = fake_fetch([(("statsapi.mlb.com/api/v1/standings", "season=2026"), "mlb_standings_2026.json")])
+    # Mets: eliminationNumber E and wildCardEliminationNumber E → out.
+    assert mlb.eliminated("121", 2026) is True
+    # Nationals: division-eliminated (E) but wild-card alive ("5") → still in.
+    assert mlb.eliminated("120", 2026) is False
+    # Phillies: leading, neither "E" → in.
+    assert mlb.eliminated("143", 2026) is False
+    assert "leagueId=103%2C104" in calls[0]
+
+
+def test_eliminated_unknown_team_or_season_fails_open(fake_fetch):
+    fake_fetch([("standings", {"records": []})])
+    assert mlb.eliminated("121", 2027) is False
+
+
+def test_eliminated_fetch_error_fails_open(monkeypatch):
+    from sports_calendar import http
+
+    def boom(*a, **k):
+        raise http.NotFound("x")
+
+    monkeypatch.setattr(http, "get_json", boom)
+    assert mlb.eliminated("121", 2026) is False

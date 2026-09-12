@@ -214,10 +214,33 @@ def annotate(games: list[Game]) -> None:
 
 # --- Driver ------------------------------------------------------------------
 
+def _drop_when_eliminated(rule: dict, games: list[Game], catalog) -> list[Game]:
+    """For `until_eliminated` rules: hide a team's regular-season games in any
+    season it is mathematically out of the playoffs. Postseason games are always
+    kept (if it reached them it wasn't eliminated)."""
+    status: dict[int, bool] = {}
+    kept = []
+    for g in games:
+        if g.season_type != "regular":
+            kept.append(g)
+            continue
+        year = catalog.game_season_year(g)
+        if year not in status:
+            status[year] = catalog.eliminated(rule, year)
+        if status[year]:
+            log.info("dropped %-24s (%s) — %s eliminated in %d", g.uid, g.day, rule["name"], year)
+        else:
+            kept.append(g)
+    return kept
+
+
 def evaluate(rule: dict, catalog) -> list:
     kind = rule.get("type")
     if kind in GAME_RULES:
-        return GAME_RULES[kind](rule, catalog)
+        matched = GAME_RULES[kind](rule, catalog)
+        if rule.get("until_eliminated"):
+            matched = _drop_when_eliminated(rule, matched, catalog)
+        return matched
     if kind in EVENT_RULES:
         return EVENT_RULES[kind](rule, catalog)
     raise ValueError(f"unknown rule type {kind!r} in rule {rule.get('name')!r}")

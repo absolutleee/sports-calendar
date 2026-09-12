@@ -1,6 +1,7 @@
 from datetime import date
 from pathlib import Path
 
+import yaml
 from icalendar import Calendar
 
 from sports_calendar import main
@@ -35,8 +36,16 @@ E2E_MAPPING = [
 
 
 def write_cfg(tmp_path, **replacements):
-    """config.yaml with `keep_past_days` disabled (tests simulate past dates) plus replacements."""
-    text = Path("config.yaml").read_text().replace("keep_past_days: 5", "keep_past_days: 3650")
+    """A temp config.yaml from the real one, but with curation reset: past-day
+    trimming disabled (tests simulate past dates) and exclude/extra emptied so
+    personal curation in config.yaml can't perturb these fixture-based tests.
+    `replacements` then patches the emptied `exclude: []` / `extra: []` (or any
+    other literal) for the tests that exercise curation."""
+    data = yaml.safe_load(Path("config.yaml").read_text())
+    data["keep_past_days"] = 3650
+    data["exclude"] = []
+    data["extra"] = []
+    text = yaml.safe_dump(data, sort_keys=False)
     for old, new in replacements.items():
         text = text.replace(old, new)
     cfg = tmp_path / "config.yaml"

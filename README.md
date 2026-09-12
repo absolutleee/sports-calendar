@@ -41,7 +41,16 @@ Edit `config.yaml` and push — the workflow rebuilds on push. Rule types:
 | `golf_event` | all-day block for a tournament | `tour`, `label`, `title` |
 | `grand_slams` | Day 1 / Men's SF / Men's Final of each major | — |
 
-Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id),
+Add `until_eliminated: true` to any game rule (`mlb` or `espn` `football`
+only) to hide that team's **regular-season** games for a season once it is
+mathematically out of the playoffs — eliminated from its division *and* the
+wild card (MLB), or ESPN's `clincher: e` (NFL). Playoff games are always kept:
+if a team reached them it wasn't eliminated. Next season's games are unaffected,
+and the check fails open (games stay) if standings can't be read, so a flaky
+standings feed never blanks the calendar.
+
+Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
+e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),
 `mlb` (team id), `nhl` (abbrev). Find ESPN ids in the URL of a team page on
 espn.com; MLB ids at `statsapi.mlb.com/api/v1/teams?sportId=1`.
 

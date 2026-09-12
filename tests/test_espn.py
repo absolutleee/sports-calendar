@@ -112,3 +112,35 @@ def test_season_type_detection():
 def test_parse_event_skips_malformed():
     assert espn.parse_event({"id": "1", "date": "2026-01-01T00:00Z", "competitions": [{}]},
                             "soccer", "eng.1", "PL") is None
+
+
+def test_us_team_schedule_tolerates_unpublished_season(monkeypatch, fixture):
+    from sports_calendar import http
+
+    def _get(url, params=None, **k):
+        if params and params.get("seasontype") == 3:
+            raise http.NotFound(url)          # postseason not published yet
+        return fixture("espn_nuggets_2026_27_reg.json")
+
+    monkeypatch.setattr(http, "get_json", _get)
+    games = espn.us_team_schedule("basketball", "nba", "7", 2027)
+    assert len(games) == 80  # regular only; postseason 404 skipped, not fatal
+
+
+def test_us_eliminated(fake_fetch):
+    calls = fake_fetch([(("football/nfl/standings", "season=2024"), "espn_nfl_standings_2024.json")])
+    assert espn.us_eliminated("football", "nfl", "19", 2024) is True   # Giants: clincher 'e'
+    assert espn.us_eliminated("football", "nfl", "7", 2024) is False   # Broncos: clincher 'y'
+    assert espn.us_eliminated("football", "nfl", "6", 2024) is False   # Cowboys: no clincher stat
+    assert espn.us_eliminated("football", "nfl", "999", 2024) is False # unknown team
+    assert "type=2" in calls[0] and "level=3" in calls[0]
+
+
+def test_us_eliminated_fetch_error_fails_open(monkeypatch):
+    from sports_calendar import http
+
+    def boom(*a, **k):
+        raise http.FetchError("x")
+
+    monkeypatch.setattr(http, "get_json", boom)
+    assert espn.us_eliminated("football", "nfl", "19", 2026) is False

@@ -1,0 +1,31 @@
+{
+  "children": [
+    {
+      "name": "American Football Conference",
+      "children": [
+        {
+          "name": "AFC West",
+          "standings": {
+            "entries": [
+              {"team": {"id": "7", "displayName": "Denver Broncos"}, "stats": [{"name": "clincher", "displayValue": "y", "value": 0.0}, {"name": "playoffSeed", "displayValue": "7"}]}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "National Football Conference",
+      "children": [
+        {
+          "name": "NFC East",
+          "standings": {
+            "entries": [
+              {"team": {"id": "19", "displayName": "New York Giants"}, "stats": [{"name": "clincher", "displayValue": "e", "value": 0.0}, {"name": "playoffSeed", "displayValue": "16"}]},
+              {"team": {"id": "6", "displayName": "Dallas Cowboys"}, "stats": [{"name": "playoffSeed", "displayValue": "11"}]}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

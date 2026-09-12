@@ -10,6 +10,7 @@ from sports_calendar.models import Game, Team
 log = logging.getLogger(__name__)
 
 BASE = "https://statsapi.mlb.com/api/v1/schedule"
+STANDINGS = "https://statsapi.mlb.com/api/v1/standings"
 GAME_TYPES = "R,F,D,L,W"  # regular, wild card, division, league championship, world series
 SEASON_TYPES = {"S": "pre", "R": "regular", "F": "post", "D": "post", "L": "post", "W": "post"}
 SKIP_STATES = ("Postponed", "Cancelled", "Canceled")
@@ -53,6 +54,22 @@ def parse_game(g: dict) -> Game | None:
         series_title=g.get("seriesDescription") if season_type == "post" else None,
         series_game=g.get("seriesGameNumber") if season_type == "post" else None,
     )
+
+
+def eliminated(team_id: str, season: int) -> bool:
+    """True if the team is mathematically out of the postseason for `season` —
+    eliminated from its division race AND from the wild card (the two ways in).
+    Unknown / unpublished standings fail open (False), so games keep showing."""
+    try:
+        data = http.get_json(STANDINGS, {"leagueId": "103,104", "season": season})
+    except http.FetchError:
+        return False
+    tid = str(team_id)
+    for record in data.get("records", []) or []:
+        for t in record.get("teamRecords", []) or []:
+            if str((t.get("team") or {}).get("id")) == tid:
+                return t.get("eliminationNumber") == "E" and t.get("wildCardEliminationNumber") == "E"
+    return False
 
 
 def team_schedule(team_id: str, season: int) -> list[Game]:

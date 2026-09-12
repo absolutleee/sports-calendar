@@ -20,7 +20,17 @@ keep_past_days: 5               # hide events that ended more than this many day
 #     sports: [baseball, basketball]
 #   - id: mlb-823649                            # copy from the last line of an event's notes
 #   - rules: [Premier League big four]          # everything a rule produced
-exclude: []
+exclude:
+  # Mets eliminated from the 2026 playoffs — drop the rest of the 2026 season.
+  # 2027 games (Opening Day etc.) are unaffected. Can be removed once the
+  # auto-drop-when-eliminated gating lands.
+  - sports: [baseball]
+    between: [2026-09-06, 2026-11-30]
+  # Weddings in October — skip these two DU Pioneers home series.
+  - title: Michigan Denver
+    between: [2026-10-16, 2026-10-19]
+  - title: Boston College Denver
+    between: [2026-10-23, 2026-10-26]
 
 # Your own events. A date start = all-day (end inclusive, optional).
 # A datetime start = timed event (`hours` default 2).
@@ -145,6 +155,7 @@ rules:
     source: mlb
     team: 121
     opponents: [147, 119, 143]
+    until_eliminated: true          # drop the season's games once mathematically out
 
   - name: Mets at Coors Field
     type: head_to_head
@@ -152,6 +163,7 @@ rules:
     team: 121
     opponents: [115]
     only_away: true
+    until_eliminated: true
 
   - name: Mets postseason
     type: postseason
@@ -212,6 +224,26 @@ rules:
     league: nba
     window: ["05-25", "06-30"]
     notes_prefix: NBA Finals
+
+  # ------------------------------------------------------------ Football
+  # `team_all` = every regular-season game plus any playoff games. With
+  # `until_eliminated`, the regular-season games disappear once the team is
+  # mathematically out of the playoffs; playoff games (if they get there) stay.
+  - name: Giants games
+    type: team_all
+    source: espn
+    sport: football
+    league: nfl
+    team: 19
+    until_eliminated: true
+
+  - name: Broncos games
+    type: team_all
+    source: espn
+    sport: football
+    league: nfl
+    team: 7
+    until_eliminated: true
 
   # ------------------------------------------------------------------ Golf
   - name: The Masters

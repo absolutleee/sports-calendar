@@ -29,16 +29,25 @@ def mk(uid, home, away, day, *, sport="soccer", comp="eng.1", comp_name="Premier
 
 
 class FakeCatalog:
-    def __init__(self, team_games=None, competition_games=None, golf=None, majors=None):
+    def __init__(self, team_games=None, competition_games=None, golf=None, majors=None, eliminated_years=None):
         self._team = team_games or {}
         self._comp = competition_games or []
         self._golf = golf or []
         self._majors = majors or []
+        self._eliminated_years = set(eliminated_years or [])
         self.team_calls = []
 
     def team_games(self, rule):
         self.team_calls.append(str(rule["team"]))
         return self._team.get(str(rule["team"]), [])
+
+    def game_season_year(self, game):
+        if game.sport == "football":
+            return game.day.year if game.day.month >= 3 else game.day.year - 1
+        return game.day.year
+
+    def eliminated(self, rule, year):
+        return year in self._eliminated_years
 
     def competition_games(self, rule):
         return self._comp
@@ -165,3 +174,29 @@ def test_apply_rules_dedupes_and_merges_rule_names():
     ], cat)
     assert len(games) == 1 and games[0].matched_rules == ["LFC", "NUFC"]
     assert alldays == []
+
+
+def test_until_eliminated_drops_only_eliminated_seasons_regular_games():
+    games = [
+        mk("y26", METS, RMA, date(2026, 9, 20), sport="baseball", comp="mlb", comp_name="MLB"),
+        mk("p26", METS, RMA, date(2026, 10, 5), sport="baseball", comp="mlb", comp_name="MLB", season_type="post"),
+        mk("y27", METS, RMA, date(2027, 5, 4), sport="baseball", comp="mlb", comp_name="MLB"),
+    ]
+    cat = FakeCatalog({"121": games}, eliminated_years={2026})
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121, "until_eliminated": True}
+    out = {g.uid for g in rules.evaluate(rule, cat)}
+    assert out == {"p26", "y27"}  # 2026 regular dropped; postseason + next season kept
+
+
+def test_until_eliminated_noop_when_not_eliminated():
+    games = [mk("a", METS, RMA, date(2026, 9, 20), sport="baseball", comp="mlb", comp_name="MLB")]
+    cat = FakeCatalog({"121": games})  # no eliminated years
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121, "until_eliminated": True}
+    assert [g.uid for g in rules.evaluate(rule, cat)] == ["a"]
+
+
+def test_without_flag_elimination_is_ignored():
+    games = [mk("a", METS, RMA, date(2026, 9, 20), sport="baseball", comp="mlb", comp_name="MLB")]
+    cat = FakeCatalog({"121": games}, eliminated_years={2026})
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121}  # no until_eliminated
+    assert [g.uid for g in rules.evaluate(rule, cat)] == ["a"]

@@ -13,9 +13,11 @@ from sports_calendar.models import Game, Team
 log = logging.getLogger(__name__)
 
 BASE = "https://site.api.espn.com/apis/site/v2/sports"
+STANDINGS_BASE = "https://site.web.api.espn.com/apis/v2/sports"
 
 LEAGUE_NAMES = {
     "nba": "NBA",
+    "nfl": "NFL",
     "mens-college-hockey": "NCAA Hockey",
 }
 
@@ -132,14 +134,51 @@ def soccer_team_schedule(team_id: str) -> list[Game]:
 
 
 def us_team_schedule(sport: str, league: str, team_id: str, season: int) -> list[Game]:
-    """Regular season + postseason for NBA / NCAA style leagues."""
+    """Regular season + postseason for NBA / NCAA / NFL style leagues."""
     url = f"{BASE}/{sport}/{league}/teams/{team_id}/schedule"
     name = LEAGUE_NAMES.get(league, league)
     games: list[Game] = []
     for seasontype in (2, 3):
-        data = http.get_json(url, {"season": season, "seasontype": seasontype})
+        try:
+            data = http.get_json(url, {"season": season, "seasontype": seasontype})
+        except http.NotFound:
+            continue  # season / postseason not published yet
         games += parse_schedule(data, sport, league, name)
     return _dedupe(games)
+
+
+def _standing_entries(node) -> list:
+    """ESPN standings nest conference → division → standings.entries; pull every
+    team entry out regardless of depth."""
+    out: list = []
+    if isinstance(node, dict):
+        standings = node.get("standings")
+        if isinstance(standings, dict) and standings.get("entries"):
+            out.extend(standings["entries"])
+        for value in node.values():
+            out.extend(_standing_entries(value))
+    elif isinstance(node, list):
+        for value in node:
+            out.extend(_standing_entries(value))
+    return out
+
+
+def us_eliminated(sport: str, league: str, team_id: str, season: int) -> bool:
+    """True if ESPN's standings mark the team eliminated from playoff contention
+    (clincher code 'e') for `season`. Missing data fails open (False)."""
+    url = f"{STANDINGS_BASE}/{sport}/{league}/standings"
+    try:
+        data = http.get_json(url, {"season": season, "type": 2, "level": 3})
+    except http.FetchError:
+        return False
+    tid = str(team_id)
+    for entry in _standing_entries(data):
+        if str((entry.get("team") or {}).get("id")) == tid:
+            for stat in entry.get("stats", []) or []:
+                if stat.get("name") == "clincher":
+                    return str(stat.get("displayValue", "")).lower() == "e"
+            return False
+    return False
 
 
 def scoreboard(sport: str, league: str, start: date, end: date) -> list[Game]:

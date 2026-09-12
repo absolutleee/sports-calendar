@@ -32,3 +32,11 @@ def test_window_resolves_in_season_end_year():
 def test_tennis_years():
     assert seasons.tennis_years(date(2026, 8, 25)) == [2026]
     assert seasons.tennis_years(date(2026, 11, 2)) == [2026, 2027]
+
+
+def test_nfl_season_start_year():
+    assert seasons.nfl_season(date(2026, 9, 11)) == 2026   # in-season
+    assert seasons.nfl_season(date(2026, 12, 20)) == 2026
+    assert seasons.nfl_season(date(2027, 1, 10)) == 2026   # January = prev season's playoffs
+    assert seasons.nfl_season(date(2027, 2, 5)) == 2026    # Super Bowl
+    assert seasons.nfl_season(date(2027, 3, 1)) == 2027    # offseason → next season
