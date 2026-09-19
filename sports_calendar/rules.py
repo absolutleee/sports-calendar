@@ -5,6 +5,7 @@ import logging
 import re
 from datetime import date, timedelta
 
+from sports_calendar import http
 from sports_calendar.models import AllDayEvent, Game
 
 log = logging.getLogger(__name__)
@@ -246,11 +247,20 @@ def evaluate(rule: dict, catalog) -> list:
     raise ValueError(f"unknown rule type {kind!r} in rule {rule.get('name')!r}")
 
 
-def apply_rules(rule_list: list[dict], catalog) -> tuple[list[Game], list[AllDayEvent]]:
+def apply_rules(rule_list: list[dict], catalog) -> tuple[list[Game], list[AllDayEvent], list[str]]:
+    """Returns (games, events, failures). A rule whose source fails to fetch is
+    logged and skipped rather than aborting the whole build; its name is added to
+    `failures` so the caller can decide how loudly to complain."""
     games: dict[str, Game] = {}
     events: dict[str, AllDayEvent] = {}
+    failures: list[str] = []
     for rule in rule_list:
-        matched = evaluate(rule, catalog)
+        try:
+            matched = evaluate(rule, catalog)
+        except http.FetchError as exc:
+            log.warning("rule %-32s → source failed, skipping: %s", rule.get("name"), exc)
+            failures.append(rule.get("name"))
+            continue
         log.info("rule %-32s → %d", rule.get("name"), len(matched))
         for item in matched:
             store = games if isinstance(item, Game) else events
@@ -261,4 +271,4 @@ def apply_rules(rule_list: list[dict], catalog) -> tuple[list[Game], list[AllDay
                 kept.context = item.context
     result = sorted(games.values(), key=Game.sort_key)
     annotate(result)
-    return result, sorted(events.values(), key=lambda e: e.start)
+    return result, sorted(events.values(), key=lambda e: e.start), failures

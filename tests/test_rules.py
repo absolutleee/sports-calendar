@@ -168,12 +168,34 @@ def test_unknown_type_raises():
 def test_apply_rules_dedupes_and_merges_rule_names():
     g = mk("a", LIV, NEW, date(2026, 8, 29))
     cat = FakeCatalog({"364": [g], "361": [g]})
-    games, alldays = rules.apply_rules([
+    games, alldays, failures = rules.apply_rules([
         {"name": "LFC", "type": "team_all", "source": "espn_soccer", "team": 364},
         {"name": "NUFC", "type": "team_all", "source": "espn_soccer", "team": 361},
     ], cat)
     assert len(games) == 1 and games[0].matched_rules == ["LFC", "NUFC"]
-    assert alldays == []
+    assert alldays == [] and failures == []
+
+
+def test_apply_rules_skips_failed_source_and_reports_it():
+    """One source failing (e.g. ESPN 400s) must not sink the whole build: the
+    other rules' games survive and the failed rule is reported, not raised."""
+    from sports_calendar import http
+
+    good = mk("a", LIV, NEW, date(2026, 8, 29))
+
+    class Cat(FakeCatalog):
+        def team_games(self, rule):
+            if str(rule["team"]) == "999":
+                raise http.FetchError("400 Bad Request")
+            return super().team_games(rule)
+
+    cat = Cat({"364": [good]})
+    games, alldays, failures = rules.apply_rules([
+        {"name": "Good", "type": "team_all", "source": "espn_soccer", "team": 364},
+        {"name": "Bad", "type": "team_all", "source": "espn_soccer", "team": 999},
+    ], cat)
+    assert [g.uid for g in games] == ["a"]
+    assert failures == ["Bad"]
 
 
 def test_until_eliminated_drops_only_eliminated_seasons_regular_games():

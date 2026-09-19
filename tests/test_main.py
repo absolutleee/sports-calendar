@@ -100,6 +100,23 @@ def test_keep_past_days_hides_history(fake_fetch, tmp_path):
     assert not any(str(e["SUMMARY"]) == "The Masters" for e in cal.walk("VEVENT"))
 
 
+def test_run_survives_single_source_failure(fake_fetch, tmp_path):
+    from sports_calendar import http
+
+    mapping = [("uefa.champions/scoreboard", http.FetchError("400 Bad Request"))] + E2E_MAPPING
+    fake_fetch(mapping)
+    out = tmp_path / "sports.ics"
+    code = main.run(write_cfg(tmp_path), out, today=date(2026, 5, 15))
+    assert code == 0
+    assert out.exists()
+    cal = Calendar.from_ical(out.read_bytes())
+    summaries = [str(e["SUMMARY"]) for e in cal.walk("VEVENT")]
+    # The UCL scoreboard source failed, but team schedules etc. still built the file.
+    assert any(s.startswith("Liverpool ") or " Liverpool" in s for s in summaries)
+    # ...and the events that depended on the failed source are simply absent.
+    assert "PSG Arsenal · UCL Final" not in summaries
+
+
 def test_run_fails_cleanly_on_fetch_error(monkeypatch, tmp_path):
     from sports_calendar import http
 

@@ -22,7 +22,8 @@ def fake_fetch(monkeypatch):
 
     mapping: list of (needles, payload). needles is a str or tuple of str; every
     needle must appear in the full URL (url + '?' + encoded params). payload is a
-    fixture filename (str) or a dict. First match wins. Unmatched URLs raise.
+    fixture filename (str), a dict, or an Exception instance (which is raised, to
+    simulate a source failure). First match wins. Unmatched URLs raise.
     """
     from sports_calendar import http
 
@@ -36,6 +37,8 @@ def fake_fetch(monkeypatch):
                 if isinstance(needles, str):
                     needles = (needles,)
                 if all(n in full for n in needles):
+                    if isinstance(payload, Exception):
+                        raise payload
                     return load_fixture(payload) if isinstance(payload, str) else payload
             raise AssertionError(f"unexpected fetch: {full}")
 

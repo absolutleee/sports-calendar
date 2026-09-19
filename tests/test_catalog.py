@@ -39,6 +39,26 @@ def test_competition_games_dispatch(fake_fetch):
     assert scf[0].series_title == "Stanley Cup Final"
 
 
+def test_competition_games_skips_far_future_window(fake_fetch):
+    # In September, a spring knockout window resolves to next year (~7 months out).
+    # ESPN has no data there yet and 400s, so we must not even make the request.
+    calls = fake_fetch([])  # any fetch raises "unexpected fetch"
+    cat = Catalog(today=date(2026, 9, 19))
+    rule = {"name": "UCL KO", "source": "espn_soccer", "league": "uefa.champions",
+            "window": ["04-01", "06-15"]}
+    assert cat.competition_games(rule) == []
+    assert calls == []
+
+
+def test_competition_games_fetches_window_within_lookahead(fake_fetch):
+    calls = fake_fetch([("uefa.champions/scoreboard", "espn_ucl_2025_26.json")])
+    cat = Catalog(today=date(2026, 5, 15))  # window is current → must fetch
+    rule = {"name": "UCL KO", "source": "espn_soccer", "league": "uefa.champions",
+            "window": ["04-01", "06-15"]}
+    assert cat.competition_games(rule)
+    assert calls and "dates=20260401-20260615" in calls[0]
+
+
 def test_golf_and_tennis(fake_fetch):
     fake_fetch([
         ("golf/pga/scoreboard", "espn_pga_scoreboard.json"),

@@ -10,6 +10,12 @@ from sports_calendar.sources import espn, mlb, nhl
 
 log = logging.getLogger(__name__)
 
+# A windowed competition (a knockout/finals window like "04-01".."06-15") rolls
+# to next year once its window has passed, so for most of the year it points many
+# months ahead — at fixtures that don't exist yet. ESPN 400s on those far-future
+# scoreboard queries, so don't even ask until the window is within reach.
+FETCH_LOOKAHEAD_DAYS = 60
+
 
 class Catalog:
     def __init__(self, today: date):
@@ -37,6 +43,10 @@ class Catalog:
         if source == "nhl":
             return nhl.stanley_cup_final(seasons.nhl_season_id(self.today))
         start, end = seasons.window(self.today, *rule["window"])
+        if (start - self.today).days > FETCH_LOOKAHEAD_DAYS:
+            log.info("skipping %r: window opens %s, >%d days out",
+                     rule.get("name"), start, FETCH_LOOKAHEAD_DAYS)
+            return []
         if source == "espn_soccer":
             return espn.scoreboard("soccer", rule["league"], start, end)
         if source == "espn":

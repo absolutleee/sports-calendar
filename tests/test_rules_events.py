@@ -92,6 +92,6 @@ def test_context_us_sports():
 def test_apply_rules_annotates_context():
     g = mk("a", ARS, RMA, date(2026, 5, 30), comp="uefa.champions", round_slug="final")
     cat = FakeCatalog(competition_games=[g])
-    games, _ = rules.apply_rules([{"name": "UCL", "type": "round", "source": "espn_soccer", "league": "uefa.champions",
-                                   "window": ["04-01", "06-15"], "rounds": ["final"]}], cat)
+    games, _, _ = rules.apply_rules([{"name": "UCL", "type": "round", "source": "espn_soccer", "league": "uefa.champions",
+                                      "window": ["04-01", "06-15"], "rounds": ["final"]}], cat)
     assert games[0].context == "UCL Final"

@@ -10,7 +10,6 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
-from sports_calendar import http
 from sports_calendar.catalog import Catalog
 from sports_calendar.curation import apply_excludes, build_extras, drop_past
 from sports_calendar.ics import build_calendar
@@ -26,11 +25,12 @@ def load_config(path: Path) -> dict:
 def run(config_path: Path, out_path: Path, today: date) -> int:
     config = load_config(config_path)
     catalog = Catalog(today=today)
-    try:
-        games, alldays = apply_rules(config["rules"], catalog)
-    except http.FetchError as exc:
-        log.error("aborting, a source failed: %s", exc)
-        return 1
+    games, alldays, failures = apply_rules(config["rules"], catalog)
+    if failures:
+        log.warning("built with %d failed source(s): %s", len(failures), ", ".join(failures))
+        if not games and not alldays:
+            log.error("aborting, every source failed")
+            return 1
     display_names = config.get("display_names") or {}
     tz = ZoneInfo(config.get("timezone") or "America/Denver")
     total = len(games) + len(alldays)
