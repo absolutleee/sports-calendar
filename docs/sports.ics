@@ -968,8 +968,8 @@ DTSTART:20270123T010000Z
 DTEND:20270123T033000Z
 DTSTAMP:20270123T010000Z
 UID:nhl-2026020810@sports-calendar
-DESCRIPTION:NHL\nAmerican Airlines Center\nTV: Prime Video\nMatched: Avs v
-  Stars\nid: nhl-2026020810
+DESCRIPTION:NHL\nAmerican Airlines Center\nTV: Prime Video\, ALT\nMatched:
+  Avs v Stars\nid: nhl-2026020810
 LOCATION:American Airlines Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -990,8 +990,8 @@ DTSTART:20270124T220000Z
 DTEND:20270125T003000Z
 DTSTAMP:20270124T220000Z
 UID:nhl-2026020826@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\nMatched: Avs v Stars\nid: nh
- l-2026020826
+DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\, ALT\nMatched: Avs v Stars\n
+ id: nhl-2026020826
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
