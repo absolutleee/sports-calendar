@@ -84,3 +84,39 @@ def test_connection_error_retries(monkeypatch):
     monkeypatch.setattr(http.requests, "get", fake_get)
     assert http.get_json("https://x/y") == {"ok": 1}
     assert len(attempts) == 3
+
+
+def test_failure_is_remembered_for_the_run(monkeypatch):
+    """A URL that failed isn't retried later in the same build, so every rule that
+    needs it fails alike: a main-calendar rule can't lose a game that a later
+    secondary-calendar rule then fetches successfully and shows instead."""
+    calls = []
+
+    def fake_get(*a, **k):
+        calls.append(1)
+        return FakeResponse(500)
+
+    monkeypatch.setattr(http.requests, "get", fake_get)
+    with pytest.raises(http.FetchError):
+        http.get_json("https://x/y")
+    attempts = len(calls)
+    monkeypatch.setattr(http.requests, "get", lambda *a, **k: FakeResponse(200, {"ok": 1}))
+    with pytest.raises(http.FetchError):
+        http.get_json("https://x/y")
+    assert len(calls) == attempts
+    http.clear_cache()   # a new build starts fresh
+    assert http.get_json("https://x/y") == {"ok": 1}
+
+
+def test_not_found_is_remembered_for_the_run(monkeypatch):
+    calls = []
+
+    def fake_get(*a, **k):
+        calls.append(1)
+        return FakeResponse(404)
+
+    monkeypatch.setattr(http.requests, "get", fake_get)
+    for _ in range(2):
+        with pytest.raises(http.NotFound):
+            http.get_json("https://x/missing")
+    assert len(calls) == 1

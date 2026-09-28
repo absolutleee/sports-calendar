@@ -179,6 +179,7 @@ rules:
     source: mlb
     team: 121
     hide_when_under_500: 5          # none at all while 5+ games under .500 (checked daily)
+    until_eliminated: true          # ...or once mathematically out of the playoffs
 
   # ---------------------------------------------------------------- Hockey
   - name: Avs opener

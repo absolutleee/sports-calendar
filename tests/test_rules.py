@@ -257,3 +257,11 @@ def test_skip_preseason_is_opt_in():
     assert {g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))} == {"pre", "reg"}
     rule["skip_preseason"] = True
     assert {g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))} == {"reg"}
+
+
+def test_eliminated_hides_games_even_within_500_limit():
+    cat = FakeCatalog({"121": _mets_seasons()}, eliminated_years={2026}, under_500={2026: 3})
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121,
+            "until_eliminated": True, "hide_when_under_500": 5}
+    # Only 3 under .500 but eliminated → 2026 regular season hidden.
+    assert {g.uid for g in rules.evaluate(rule, cat)} == {"p26", "r27"}

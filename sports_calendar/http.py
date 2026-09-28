@@ -12,6 +12,10 @@ log = logging.getLogger(__name__)
 
 USER_AGENT = "sports-calendar/1.0 (+https://github.com)"
 _cache: dict[str, Any] = {}
+# URLs that already failed this run. Re-raised without retrying, so every rule
+# that needs a failed URL fails alike: otherwise a main-calendar rule could lose
+# a game that a later secondary-calendar rule then fetched and showed instead.
+_failed: dict[str, "FetchError"] = {}
 _sleep = time.sleep  # patched in tests
 
 
@@ -25,12 +29,15 @@ class NotFound(FetchError):
 
 def clear_cache() -> None:
     _cache.clear()
+    _failed.clear()
 
 
 def get_json(url: str, params: dict | None = None, *, attempts: int = 3, timeout: int = 20) -> Any:
     key = url + ("?" + urlencode(params) if params else "")
     if key in _cache:
         return _cache[key]
+    if key in _failed:
+        raise _failed[key]
 
     delay = 1.0
     last_error: Exception | None = None
@@ -41,7 +48,8 @@ def get_json(url: str, params: dict | None = None, *, attempts: int = 3, timeout
                 raise NotFound(key)
             resp.raise_for_status()
             data = resp.json()
-        except NotFound:
+        except NotFound as exc:
+            _failed[key] = exc
             raise
         except (requests.RequestException, ValueError) as exc:
             last_error = exc
@@ -53,4 +61,5 @@ def get_json(url: str, params: dict | None = None, *, attempts: int = 3, timeout
         _cache[key] = data
         return data
 
-    raise FetchError(f"{key}: {last_error}")
+    _failed[key] = FetchError(f"{key}: {last_error}")
+    raise _failed[key]

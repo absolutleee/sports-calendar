@@ -27,7 +27,8 @@ Alerts are intentionally off; titles are built for scanning:
 
 A second file, `docs/sports-more.ics`, holds "secondary favourite" games:
 every Avs, Rangers, Giants and Broncos game while that team is still in playoff
-contention, plus most Mets games while they're within 5 of .500. Subscribe to it
+contention, plus most Mets games while they're both in contention and within 5
+of .500. Subscribe to it
 the same way:
 
     https://raw.githubusercontent.com/USER/sports-calendar/main/docs/sports-more.ics
@@ -148,8 +149,11 @@ matching nothing.
 - Playoff games, cup draws and next season's fixtures appear the day the league
   publishes them; the calendar looks as far ahead as the sources do (MLB and NHL
   publish a full season; ESPN's PGA calendar rolls to the next season in January).
-- If any source fails, the run aborts and the previous calendar stays
-  published; GitHub emails you about the failed workflow.
+- If a source fails (site down, bad response), the build carries on without it:
+  the games that source provides are missing until the next successful build,
+  and the Actions log names the failed rules. Only if every source for a
+  calendar fails does the run abort — then the previous calendars stay
+  published and GitHub emails you about the failed workflow.
 - GitHub pauses scheduled workflows in repos with no commits for 60 days. If
   the calendar stops updating, open the Actions tab and re-enable it.
 - `fixtures/` holds recorded API responses used by the tests; they are not
