@@ -90,9 +90,16 @@ def test_eliminated_dispatch_mlb(fake_fetch):
     assert cat.eliminated({"source": "mlb", "team": 121}, 2026) is True
 
 
+def test_eliminated_dispatch_nhl(fake_fetch):
+    fake_fetch([("v1/standings/now", "nhl_standings_2026_04.json")])
+    cat = Catalog(today=date(2026, 4, 10))
+    assert cat.eliminated({"source": "nhl", "team": "NYR"}, 2026) is True
+    assert cat.eliminated({"source": "nhl", "team": "COL"}, 2026) is False
+
+
 def test_eliminated_unsupported_source_fails_open():
     cat = Catalog(today=date(2026, 9, 11))
-    assert cat.eliminated({"source": "nhl", "team": "COL", "name": "Avs"}, 2026) is False
+    assert cat.eliminated({"source": "espn_soccer", "team": 364, "name": "Liverpool"}, 2026) is False
 
 
 def test_game_season_year():
@@ -106,3 +113,6 @@ def test_game_season_year():
     assert cat.game_season_year(g("baseball", date(2026, 9, 20))) == 2026
     assert cat.game_season_year(g("football", date(2026, 11, 1))) == 2026
     assert cat.game_season_year(g("football", date(2027, 1, 4))) == 2026  # Week 18 in January
+    # NHL seasons are named by the year they end: Oct 2026 and Apr 2027 are both "2027".
+    assert cat.game_season_year(g("hockey", date(2026, 10, 9))) == 2027
+    assert cat.game_season_year(g("hockey", date(2027, 4, 10))) == 2027

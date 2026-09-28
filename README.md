@@ -23,6 +23,19 @@ Alerts are intentionally off; titles are built for scanning:
     The Masters                      all-day, Thu–Sun
     Wimbledon Men's Final            all-day
 
+### Secondary calendar ("More Sports")
+
+A second file, `docs/sports-more.ics`, holds "secondary favourite" games:
+every Avs, Rangers, Giants and Broncos game while that team is still in playoff
+contention, plus most Mets games while they're within 5 of .500. Subscribe to it
+the same way:
+
+    https://raw.githubusercontent.com/USER/sports-calendar/main/docs/sports-more.ics
+
+then untick **More Sports** in the calendar list to hide it (Mac and iPhone each
+remember their own ticks). Tick it again to see the games. Anything already on
+the main calendar is left off it, so both can be shown at once without duplicates.
+
 ## Changing what's on the calendar
 
 Edit `config.yaml` and push — the workflow rebuilds on push. Rule types:
@@ -41,13 +54,24 @@ Edit `config.yaml` and push — the workflow rebuilds on push. Rule types:
 | `golf_event` | all-day block for a tournament | `tour`, `label`, `title` |
 | `grand_slams` | Day 1 / Men's SF / Men's Final of each major | — |
 
-Add `until_eliminated: true` to any game rule (`mlb` or `espn` `football`
-only) to hide that team's **regular-season** games for a season once it is
-mathematically out of the playoffs — eliminated from its division *and* the
-wild card (MLB), or ESPN's `clincher: e` (NFL). Playoff games are always kept:
+Add `until_eliminated: true` to any game rule (`mlb`, `nhl` or `espn`
+`football` only) to hide that team's **regular-season** games for a season once
+it is mathematically out of the playoffs — eliminated from its division *and*
+the wild card (MLB), the standings' `clinchIndicator: e` (NHL), or ESPN's
+`clincher: e` (NFL). Playoff games are always kept:
 if a team reached them it wasn't eliminated. Next season's games are unaffected,
 and the check fails open (games stay) if standings can't be read, so a flaky
 standings feed never blanks the calendar.
+
+Other per-rule options:
+
+- `calendar: secondary` puts the rule's games on `docs/sports-more.ics` instead
+  of the main calendar (configured under `secondary:` in `config.yaml`).
+- `hide_when_under_500: 5` (`mlb` only) hides that team's regular-season games for
+  a season while it is 5 or more games under .500 (losses − wins ≥ 5). The
+  record is re-checked on every daily build, so the games come back once the
+  team is within 5 again. Unknown records (e.g. before the season) keep the games.
+- `skip_preseason: true` drops preseason games (the NHL schedule includes them).
 
 Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
 e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),

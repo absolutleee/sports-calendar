@@ -95,12 +95,12 @@ def _event_sort_key(e: AllDayEvent | ManualEvent):
 
 
 def build_calendar(games: list[Game], alldays: list[AllDayEvent | ManualEvent],
-                   display_names: dict[str, dict[str, str]]) -> bytes:
+                   display_names: dict[str, dict[str, str]], name: str = CALENDAR_NAME) -> bytes:
     cal = Calendar()
     cal.add("prodid", "-//sports-calendar//EN")
     cal.add("version", "2.0")
     cal.add("calscale", "GREGORIAN")
-    cal.add("x-wr-calname", CALENDAR_NAME)
+    cal.add("x-wr-calname", name)
     cal.add("x-published-ttl", "PT12H")
     cal.add("refresh-interval", timedelta(hours=12), parameters={"VALUE": "DURATION"})
 

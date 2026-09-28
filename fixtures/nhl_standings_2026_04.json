@@ -1,0 +1,9 @@
+{
+  "wildCardIndicator": true,
+  "standings": [
+    {"clinchIndicator": "p", "date": "2026-04-10", "seasonId": 20252026, "teamAbbrev": {"default": "COL"}},
+    {"clinchIndicator": "x", "date": "2026-04-10", "seasonId": 20252026, "teamAbbrev": {"default": "DAL"}},
+    {"clinchIndicator": "e", "date": "2026-04-10", "seasonId": 20252026, "teamAbbrev": {"default": "NYR"}},
+    {"date": "2026-04-10", "seasonId": 20252026, "teamAbbrev": {"default": "BOS"}}
+  ]
+}

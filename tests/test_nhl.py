@@ -77,3 +77,28 @@ def test_parse_game_tbd_and_postponed():
     assert nhl.parse_game(_game(gameScheduleState="TBD")).time_valid is False
     assert nhl.parse_game(_game(gameScheduleState="PPD")) is None
     assert nhl.parse_game(_game(gameScheduleState="CNCL")) is None
+
+
+def test_eliminated(fake_fetch):
+    calls = fake_fetch([("v1/standings/now", "nhl_standings_2026_04.json")])
+    assert nhl.eliminated("NYR", 2026) is True     # clinchIndicator "e"
+    assert nhl.eliminated("COL", 2026) is False    # "p": clinched
+    assert nhl.eliminated("BOS", 2026) is False    # still in the race: no indicator
+    assert nhl.eliminated("XXX", 2026) is False    # unknown team fails open
+    assert calls[0].endswith("/v1/standings/now")
+
+
+def test_eliminated_other_season_fails_open(fake_fetch):
+    # Standings are for 2025-26; a question about 2026-27 can't be answered from them.
+    fake_fetch([("v1/standings/now", "nhl_standings_2026_04.json")])
+    assert nhl.eliminated("NYR", 2027) is False
+
+
+def test_eliminated_fetch_error_fails_open(monkeypatch):
+    from sports_calendar import http
+
+    def boom(*a, **k):
+        raise http.FetchError("down")
+
+    monkeypatch.setattr(http, "get_json", boom)
+    assert nhl.eliminated("NYR", 2026) is False

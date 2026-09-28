@@ -64,6 +64,21 @@ def parse_game(g: dict, *, default_round: int | None = None, default_title: str 
     )
 
 
+def eliminated(abbrev: str, season_end_year: int) -> bool:
+    """True if the current NHL standings mark the team eliminated (clinchIndicator
+    'e') in the season ending `season_end_year`. The API only answers for the
+    season in progress, so any other season — and missing data — fails open."""
+    try:
+        data = http.get_json(f"{BASE}/standings/now")
+    except http.FetchError:
+        return False
+    season_id = f"{season_end_year - 1}{season_end_year}"
+    for t in data.get("standings", []) or []:
+        if (t.get("teamAbbrev") or {}).get("default") == abbrev and str(t.get("seasonId")) == season_id:
+            return t.get("clinchIndicator") == "e"
+    return False
+
+
 def club_schedule(abbrev: str, season_id: str) -> list[Game]:
     data = http.get_json(f"{BASE}/club-schedule-season/{abbrev}/{season_id}")
     games = [parse_game(g) for g in data.get("games", []) or []]

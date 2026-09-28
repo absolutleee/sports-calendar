@@ -56,20 +56,36 @@ def parse_game(g: dict) -> Game | None:
     )
 
 
-def eliminated(team_id: str, season: int) -> bool:
-    """True if the team is mathematically out of the postseason for `season` —
-    eliminated from its division race AND from the wild card (the two ways in).
-    Unknown / unpublished standings fail open (False), so games keep showing."""
+def _standing(team_id: str, season: int) -> dict | None:
+    """The team's entry in the `season` standings, or None if unavailable."""
     try:
         data = http.get_json(STANDINGS, {"leagueId": "103,104", "season": season})
     except http.FetchError:
-        return False
+        return None
     tid = str(team_id)
     for record in data.get("records", []) or []:
         for t in record.get("teamRecords", []) or []:
             if str((t.get("team") or {}).get("id")) == tid:
-                return t.get("eliminationNumber") == "E" and t.get("wildCardEliminationNumber") == "E"
-    return False
+                return t
+    return None
+
+
+def eliminated(team_id: str, season: int) -> bool:
+    """True if the team is mathematically out of the postseason for `season` —
+    eliminated from its division race AND from the wild card (the two ways in).
+    Unknown / unpublished standings fail open (False), so games keep showing."""
+    t = _standing(team_id, season)
+    return bool(t) and t.get("eliminationNumber") == "E" and t.get("wildCardEliminationNumber") == "E"
+
+
+def games_under_500(team_id: str, season: int) -> int | None:
+    """Losses minus wins for `season` (negative = over .500), or None when the
+    standings are unavailable — callers treat None as "don't hide anything"."""
+    record = (_standing(team_id, season) or {}).get("leagueRecord") or {}
+    try:
+        return int(record["losses"]) - int(record["wins"])
+    except (KeyError, TypeError, ValueError):
+        return None
 
 
 def team_schedule(team_id: str, season: int) -> list[Game]:

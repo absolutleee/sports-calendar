@@ -235,12 +235,38 @@ def _drop_when_eliminated(rule: dict, games: list[Game], catalog) -> list[Game]:
     return kept
 
 
+def _drop_when_under_500(rule: dict, games: list[Game], catalog) -> list[Game]:
+    """For `hide_when_under_500: N` rules: hide a team's regular-season games in
+    any season it is N or more games under .500 (losses - wins >= N), checked
+    against the current record on every build. Unknown records keep the games."""
+    limit = int(rule["hide_when_under_500"])
+    under: dict[int, int | None] = {}
+    kept = []
+    for g in games:
+        if g.season_type != "regular":
+            kept.append(g)
+            continue
+        year = catalog.game_season_year(g)
+        if year not in under:
+            under[year] = catalog.games_under_500(rule, year)
+            if under[year] is not None and under[year] >= limit:
+                log.info("rule %r: hiding %d regular-season games — %d under .500",
+                         rule["name"], year, under[year])
+        if under[year] is None or under[year] < limit:
+            kept.append(g)
+    return kept
+
+
 def evaluate(rule: dict, catalog) -> list:
     kind = rule.get("type")
     if kind in GAME_RULES:
         matched = GAME_RULES[kind](rule, catalog)
+        if rule.get("skip_preseason"):
+            matched = [g for g in matched if g.season_type != "pre"]
         if rule.get("until_eliminated"):
             matched = _drop_when_eliminated(rule, matched, catalog)
+        if rule.get("hide_when_under_500") is not None:
+            matched = _drop_when_under_500(rule, matched, catalog)
         return matched
     if kind in EVENT_RULES:
         return EVENT_RULES[kind](rule, catalog)

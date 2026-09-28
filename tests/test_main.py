@@ -26,6 +26,7 @@ E2E_MAPPING = [
     ("playoff-bracket/2026", "nhl_bracket_2026.json"),
     ("playoff-bracket/", {"series": []}),  # any other season: playoffs not set
     ("playoff-series/20252026/o/", "nhl_series_scf_2026.json"),
+    ("v1/standings/now", {"standings": []}),  # NHL: nobody eliminated
     ("golf/pga/scoreboard", "espn_pga_scoreboard.json"),
     (("tennis/atp/scoreboard", "dates=202601"), "espn_tennis_ao_2026.json"),
     (("tennis/atp/scoreboard", "dates=202607"), "espn_tennis_wimbledon_2026.json"),
@@ -154,3 +155,60 @@ def test_exclude_and_extra_from_config(fake_fetch, tmp_path):
     assert events["Ryder Cup"]["DTSTART"].dt == date(2027, 9, 24) and events["Ryder Cup"]["DTEND"].dt == date(2027, 9, 27)
     assert str(events["Fury Usyk"]["DTEND"].dt - events["Fury Usyk"]["DTSTART"].dt) == "3:00:00"
     assert str(events["Fury Usyk"]["DESCRIPTION"]).endswith("id: extra-fury-usyk-2026-12-19")
+
+
+def _uids(path):
+    return {str(e["UID"]) for e in Calendar.from_ical(path.read_bytes()).walk("VEVENT")}
+
+
+def _summaries(path):
+    return [str(e["SUMMARY"]) for e in Calendar.from_ical(path.read_bytes()).walk("VEVENT")]
+
+
+def test_secondary_calendar_split(fake_fetch, tmp_path):
+    fake_fetch(E2E_MAPPING)
+    out = tmp_path / "sports.ics"
+    assert main.run(write_cfg(tmp_path), out, today=date(2026, 5, 15)) == 0
+    more = tmp_path / "sports-more.ics"
+    assert more.exists()
+    assert str(Calendar.from_ical(more.read_bytes())["X-WR-CALNAME"]) == "More Sports"
+    assert str(Calendar.from_ical(out.read_bytes())["X-WR-CALNAME"]) == "Sports"
+
+    # Nothing on the main calendar is repeated on the secondary one.
+    assert _uids(out).isdisjoint(_uids(more))
+
+    main_mets = [s for s in _summaries(out) if "Mets" in s]
+    more_mets = [s for s in _summaries(more) if "Mets" in s]
+    assert "Pirates Mets · Opening Day" in main_mets
+    # Main keeps only the subway series, Mets at Coors (away team first → "Mets Rockies") and Opening Day.
+    for s in main_mets:
+        assert "Yankees" in s or s.startswith("Mets Rockies") or "Opening Day" in s, s
+    assert not any("Yankees" in s or s.startswith("Mets Rockies") for s in more_mets)
+    assert any("Dodgers" in s for s in more_mets) and any("Phillies" in s for s in more_mets)
+    assert len(more_mets) > 100
+
+    # Avs: Stars games / opener / playoffs stay on main; everything else is secondary.
+    assert any(s.endswith("· Season Opener") and "Avs" in s for s in _summaries(out))
+    more_avs = [s for s in _summaries(more) if "Avs" in s]
+    assert len(more_avs) > 50
+    assert not any("Stars" in s or "Season Opener" in s for s in more_avs)
+
+
+def test_secondary_mets_hidden_when_5_under_500(fake_fetch, tmp_path):
+    fake_fetch([(("api/v1/standings", "season=2026"), "mlb_standings_2026.json"),   # Mets 74-88
+                ("api/v1/standings", {"records": []})] + E2E_MAPPING)
+    out = tmp_path / "sports.ics"
+    assert main.run(write_cfg(tmp_path), out, today=date(2026, 5, 15)) == 0
+    assert not any("Mets" in s for s in _summaries(tmp_path / "sports-more.ics"))
+    # Main calendar Mets games don't depend on the record or elimination (the
+    # fixture standings have the Mets eliminated): Opening Day and the subway series stay.
+    assert "Pirates Mets · Opening Day" in _summaries(out)
+    assert any("Yankees" in s for s in _summaries(out))
+
+
+def test_unknown_calendar_name_fails_build(fake_fetch, tmp_path):
+    fake_fetch(E2E_MAPPING)
+    cfg = write_cfg(tmp_path, **{"calendar: secondary": "calendar: secondry"})
+    import pytest
+    with pytest.raises(ValueError, match="secondry"):
+        main.run(cfg, tmp_path / "sports.ics", today=date(2026, 5, 15))

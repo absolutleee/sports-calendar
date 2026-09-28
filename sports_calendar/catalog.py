@@ -58,19 +58,32 @@ class Catalog:
         January game still belongs to the previous calendar year's season."""
         if game.sport == "football":
             return game.day.year if game.day.month >= 3 else game.day.year - 1
+        if game.sport == "hockey":
+            return seasons.season_end_year(game.day)
         return game.day.year
 
     def eliminated(self, rule: dict, season_year: int) -> bool:
         """Is the rule's team mathematically out of the `season_year` postseason?
-        Only baseball (MLB) and football (ESPN/NFL) expose this today."""
+        Baseball (MLB), football (ESPN/NFL) and the NHL expose this today."""
         source = rule["source"]
         if source == "mlb":
             return mlb.eliminated(str(rule["team"]), season_year)
+        if source == "nhl":
+            return nhl.eliminated(str(rule["team"]), season_year)
         if source == "espn" and rule.get("sport") == "football":
             return espn.us_eliminated(rule["sport"], rule["league"], str(rule["team"]), season_year)
         log.warning("until_eliminated is not supported for source %r (rule %r); ignoring it",
                     source, rule.get("name"))
         return False
+
+    def games_under_500(self, rule: dict, season_year: int) -> int | None:
+        """The rule's team's losses minus wins in `season_year`; None if unknown.
+        Only baseball (MLB) today."""
+        if rule["source"] == "mlb":
+            return mlb.games_under_500(str(rule["team"]), season_year)
+        log.warning("hide_when_under_500 is not supported for source %r (rule %r); ignoring it",
+                    rule["source"], rule.get("name"))
+        return None
 
     def golf_calendar(self, tour: str) -> list[dict]:
         return espn.golf_calendar(tour)

@@ -2,9 +2,9 @@
   "records": [
     {
       "teamRecords": [
-        {"team": {"id": 121, "name": "New York Mets"}, "divisionRank": "4", "eliminationNumber": "E", "wildCardEliminationNumber": "E"},
-        {"team": {"id": 120, "name": "Washington Nationals"}, "divisionRank": "5", "eliminationNumber": "E", "wildCardEliminationNumber": "5"},
-        {"team": {"id": 143, "name": "Philadelphia Phillies"}, "divisionRank": "1", "eliminationNumber": "-", "wildCardEliminationNumber": "-"}
+        {"team": {"id": 121, "name": "New York Mets"}, "divisionRank": "4", "eliminationNumber": "E", "wildCardEliminationNumber": "E", "leagueRecord": {"wins": 74, "losses": 88, "ties": 0, "pct": ".457"}},
+        {"team": {"id": 120, "name": "Washington Nationals"}, "divisionRank": "5", "eliminationNumber": "E", "wildCardEliminationNumber": "5", "leagueRecord": {"wins": 70, "losses": 74, "ties": 0, "pct": ".486"}},
+        {"team": {"id": 143, "name": "Philadelphia Phillies"}, "divisionRank": "1", "eliminationNumber": "-", "wildCardEliminationNumber": "-", "leagueRecord": {"wins": 90, "losses": 60, "ties": 0, "pct": ".600"}}
       ]
     }
   ]

@@ -29,12 +29,14 @@ def mk(uid, home, away, day, *, sport="soccer", comp="eng.1", comp_name="Premier
 
 
 class FakeCatalog:
-    def __init__(self, team_games=None, competition_games=None, golf=None, majors=None, eliminated_years=None):
+    def __init__(self, team_games=None, competition_games=None, golf=None, majors=None, eliminated_years=None,
+                 under_500=None):
         self._team = team_games or {}
         self._comp = competition_games or []
         self._golf = golf or []
         self._majors = majors or []
         self._eliminated_years = set(eliminated_years or [])
+        self._under_500 = under_500 or {}   # season year -> games under .500
         self.team_calls = []
 
     def team_games(self, rule):
@@ -48,6 +50,9 @@ class FakeCatalog:
 
     def eliminated(self, rule, year):
         return year in self._eliminated_years
+
+    def games_under_500(self, rule, year):
+        return self._under_500.get(year)
 
     def competition_games(self, rule):
         return self._comp
@@ -222,3 +227,33 @@ def test_without_flag_elimination_is_ignored():
     cat = FakeCatalog({"121": games}, eliminated_years={2026})
     rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121}  # no until_eliminated
     assert [g.uid for g in rules.evaluate(rule, cat)] == ["a"]
+
+
+def _mets_seasons():
+    return [
+        mk("r26", METS, RMA, date(2026, 9, 20), sport="baseball", comp="mlb", comp_name="MLB"),
+        mk("p26", METS, RMA, date(2026, 10, 5), sport="baseball", comp="mlb", comp_name="MLB", season_type="post"),
+        mk("r27", METS, RMA, date(2027, 5, 4), sport="baseball", comp="mlb", comp_name="MLB"),
+    ]
+
+
+def test_hide_when_under_500_drops_that_seasons_regular_games():
+    cat = FakeCatalog({"121": _mets_seasons()}, under_500={2026: 5, 2027: 4})
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121, "hide_when_under_500": 5}
+    # 5 under in 2026 → hidden; 4 under in 2027 → "within 5" → shown; postseason always kept.
+    assert {g.uid for g in rules.evaluate(rule, cat)} == {"p26", "r27"}
+
+
+def test_hide_when_under_500_unknown_record_fails_open():
+    cat = FakeCatalog({"121": _mets_seasons()}, under_500={2026: 14})  # 2027 standings not published
+    rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121, "hide_when_under_500": 5}
+    assert {g.uid for g in rules.evaluate(rule, cat)} == {"p26", "r27"}
+
+
+def test_skip_preseason_is_opt_in():
+    games = [mk("pre", DAL, COL, date(2026, 9, 25), sport="hockey", comp="nhl", comp_name="NHL", season_type="pre"),
+             mk("reg", DAL, COL, date(2026, 10, 9), sport="hockey", comp="nhl", comp_name="NHL")]
+    rule = {"name": "Avs", "type": "team_all", "source": "nhl", "team": "COL"}
+    assert {g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))} == {"pre", "reg"}
+    rule["skip_preseason"] = True
+    assert {g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))} == {"reg"}

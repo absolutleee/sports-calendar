@@ -86,3 +86,22 @@ def test_eliminated_fetch_error_fails_open(monkeypatch):
 
     monkeypatch.setattr(http, "get_json", boom)
     assert mlb.eliminated("121", 2026) is False
+
+
+def test_games_under_500(fake_fetch):
+    fake_fetch([(("statsapi.mlb.com/api/v1/standings", "season=2026"), "mlb_standings_2026.json")])
+    assert mlb.games_under_500("121", 2026) == 14    # 74-88
+    assert mlb.games_under_500("120", 2026) == 4     # 70-74
+    assert mlb.games_under_500("143", 2026) == -30   # 90-60: 30 over
+
+
+def test_games_under_500_unknown_fails_open(fake_fetch, monkeypatch):
+    fake_fetch([("standings", {"records": []})])
+    assert mlb.games_under_500("121", 2027) is None
+    from sports_calendar import http
+
+    def boom(*a, **k):
+        raise http.FetchError("down")
+
+    monkeypatch.setattr(http, "get_json", boom)
+    assert mlb.games_under_500("121", 2026) is None

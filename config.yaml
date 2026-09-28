@@ -8,6 +8,15 @@
 #            (July 1 onward counts as next year's season).
 
 output: docs/sports.ics
+
+# A second, separate calendar for "secondary favourite" games — subscribe to it
+# too and untick it in Apple Calendar so it's hidden until you want it. Rules
+# with `calendar: secondary` go here; anything already on the main calendar is
+# left off it, so both can be shown at once without duplicates.
+secondary:
+  output: docs/sports-more.ics
+  name: More Sports
+
 timezone: America/Denver        # used to read the dates in `exclude:` and `extra:`
 keep_past_days: 5               # hide events that ended more than this many days ago
 
@@ -21,11 +30,6 @@ keep_past_days: 5               # hide events that ended more than this many day
 #   - id: mlb-823649                            # copy from the last line of an event's notes
 #   - rules: [Premier League big four]          # everything a rule produced
 exclude:
-  # Mets eliminated from the 2026 playoffs — drop the rest of the 2026 season.
-  # 2027 games (Opening Day etc.) are unaffected. Can be removed once the
-  # auto-drop-when-eliminated gating lands.
-  - sports: [baseball]
-    between: [2026-09-06, 2026-11-30]
   # Weddings in October — skip these two DU Pioneers home series.
   - title: Michigan Denver
     between: [2026-10-16, 2026-10-19]
@@ -150,12 +154,12 @@ rules:
     source: mlb
     team: 121
 
-  - name: Mets v Yankees / Dodgers / Phillies
+  # Subway series and Mets at Coors stay on the main calendar no matter the record.
+  - name: Mets v Yankees
     type: head_to_head
     source: mlb
     team: 121
-    opponents: [147, 119, 143]
-    until_eliminated: true          # drop the season's games once mathematically out
+    opponents: [147]
 
   - name: Mets at Coors Field
     type: head_to_head
@@ -163,12 +167,18 @@ rules:
     team: 121
     opponents: [115]
     only_away: true
-    until_eliminated: true
 
   - name: Mets postseason
     type: postseason
     source: mlb
     team: 121
+
+  - name: Mets games (secondary)
+    calendar: secondary
+    type: team_all
+    source: mlb
+    team: 121
+    hide_when_under_500: 5          # none at all while 5+ games under .500 (checked daily)
 
   # ---------------------------------------------------------------- Hockey
   - name: Avs opener
@@ -201,6 +211,23 @@ rules:
     type: finals
     source: nhl
 
+  # Secondary calendar: only while still in playoff contention.
+  - name: Avs games (secondary)
+    calendar: secondary
+    type: team_all
+    source: nhl
+    team: COL
+    skip_preseason: true
+    until_eliminated: true
+
+  - name: Rangers games (secondary)
+    calendar: secondary
+    type: team_all
+    source: nhl
+    team: NYR
+    skip_preseason: true
+    until_eliminated: true
+
   # ------------------------------------------------------------ Basketball
   - name: Nuggets v Thunder
     type: head_to_head
@@ -226,10 +253,39 @@ rules:
     notes_prefix: NBA Finals
 
   # ------------------------------------------------------------ Football
-  # `team_all` = every regular-season game plus any playoff games. With
-  # `until_eliminated`, the regular-season games disappear once the team is
-  # mathematically out of the playoffs; playoff games (if they get there) stay.
-  - name: Giants games
+  # Openers and playoff games on the main calendar; the rest of the regular
+  # season on the secondary. With `until_eliminated`, the secondary games
+  # disappear once the team is mathematically out of the playoffs.
+  - name: Giants opener
+    type: opener
+    source: espn
+    sport: football
+    league: nfl
+    team: 19
+
+  - name: Broncos opener
+    type: opener
+    source: espn
+    sport: football
+    league: nfl
+    team: 7
+
+  - name: Giants playoffs
+    type: postseason
+    source: espn
+    sport: football
+    league: nfl
+    team: 19
+
+  - name: Broncos playoffs
+    type: postseason
+    source: espn
+    sport: football
+    league: nfl
+    team: 7
+
+  - name: Giants games (secondary)
+    calendar: secondary
     type: team_all
     source: espn
     sport: football
@@ -237,7 +293,8 @@ rules:
     team: 19
     until_eliminated: true
 
-  - name: Broncos games
+  - name: Broncos games (secondary)
+    calendar: secondary
     type: team_all
     source: espn
     sport: football
