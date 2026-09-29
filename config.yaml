@@ -35,6 +35,8 @@ exclude:
     between: [2026-10-16, 2026-10-19]
   - title: Boston College Denver
     between: [2026-10-23, 2026-10-26]
+  - title: St Thomas Denver
+    between: [2026-11-20, 2026-11-22]
 
 # Your own events. A date start = all-day (end inclusive, optional).
 # A datetime start = timed event (`hours` default 2).
