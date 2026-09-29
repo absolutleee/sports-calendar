@@ -77,6 +77,12 @@ rules:
     team: 83
     competitions: [uefa.champions]
 
+  - name: Barcelona games (secondary)
+    calendar: secondary
+    type: team_all
+    source: espn_soccer
+    team: 83
+
   - name: Champions League knockouts
     type: round
     source: espn_soccer

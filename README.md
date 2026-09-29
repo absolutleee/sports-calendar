@@ -26,9 +26,9 @@ Alerts are intentionally off; titles are built for scanning:
 ### Secondary calendar ("More Sports")
 
 A second file, `docs/sports-more.ics`, holds "secondary favourite" games:
-every Avs, Rangers, Giants and Broncos game while that team is still in playoff
-contention, plus most Mets games while they're both in contention and within 5
-of .500. Subscribe to it
+every Barcelona match, every Avs, Rangers, Giants and Broncos game while that
+team is still in playoff contention, plus most Mets games while they're both in
+contention and within 5 of .500. Subscribe to it
 the same way:
 
     https://raw.githubusercontent.com/USER/sports-calendar/main/docs/sports-more.ics
