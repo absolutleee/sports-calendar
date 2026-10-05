@@ -143,7 +143,7 @@ DTSTART:20261011T170000Z
 DTEND:20261011T190000Z
 DTSTAMP:20261011T170000Z
 UID:espn-401872988@sports-calendar
-DESCRIPTION:NFL\nNorthwest Stadium\nTV: FOX\nMatched: Giants games (second
+DESCRIPTION:NFL\nNorthwest Stadium\nTV: Fox\nMatched: Giants games (second
  ary)\nid: espn-401872988
 LOCATION:Northwest Stadium
 TRANSP:TRANSPARENT
@@ -220,8 +220,8 @@ DTSTART:20261017T163000Z
 DTEND:20261017T183000Z
 DTSTAMP:20261017T163000Z
 UID:espn-401882846@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio La Cartuja\nTV: ESPN+\nMatched: Barcel
- ona games (secondary)\nid: espn-401882846
+DESCRIPTION:Spanish LALIGA\nEstadio La Cartuja\nTV: ESPN Deportes\, ESPN+
+ \nMatched: Barcelona games (secondary)\nid: espn-401882846
 LOCATION:Estadio La Cartuja
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -242,7 +242,7 @@ DTSTART:20261018T170000Z
 DTEND:20261018T190000Z
 DTSTAMP:20261018T170000Z
 UID:espn-401873000@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: FOX\nMatched: Giants games (secondar
+DESCRIPTION:NFL\nMetLife Stadium\nTV: Fox\nMatched: Giants games (secondar
  y)\nid: espn-401873000
 LOCATION:MetLife Stadium
 TRANSP:TRANSPARENT
@@ -319,7 +319,7 @@ DTSTART:20261025T170000Z
 DTEND:20261025T190000Z
 DTSTAMP:20261025T170000Z
 UID:espn-401873016@sports-calendar
-DESCRIPTION:NFL\nReliant Stadium\nTV: FOX\nMatched: Giants games (secondar
+DESCRIPTION:NFL\nReliant Stadium\nTV: Fox\nMatched: Giants games (secondar
  y)\nid: espn-401873016
 LOCATION:Reliant Stadium
 TRANSP:TRANSPARENT
@@ -506,7 +506,7 @@ DTSTART:20261108T180000Z
 DTEND:20261108T200000Z
 DTSTAMP:20261108T180000Z
 UID:espn-401873044@sports-calendar
-DESCRIPTION:NFL\nLincoln Financial Field\nTV: FOX\nMatched: Giants games (
+DESCRIPTION:NFL\nLincoln Financial Field\nTV: Fox\nMatched: Giants games (
  secondary)\nid: espn-401873044
 LOCATION:Lincoln Financial Field
 TRANSP:TRANSPARENT
@@ -748,7 +748,7 @@ DTSTART:20261129T180000Z
 DTEND:20261129T200000Z
 DTSTAMP:20261129T180000Z
 UID:espn-401873088@sports-calendar
-DESCRIPTION:NFL\nLucas Oil Stadium\nTV: FOX\nMatched: Giants games (second
+DESCRIPTION:NFL\nLucas Oil Stadium\nTV: Fox\nMatched: Giants games (second
  ary)\nid: espn-401873088
 LOCATION:Lucas Oil Stadium
 TRANSP:TRANSPARENT
@@ -825,7 +825,7 @@ DTSTART:20261206T180000Z
 DTEND:20261206T200000Z
 DTSTAMP:20261206T180000Z
 UID:espn-401873095@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: FOX\nMatched: Giants games (secondar
+DESCRIPTION:NFL\nMetLife Stadium\nTV: Fox\nMatched: Giants games (secondar
  y)\nid: espn-401873095
 LOCATION:MetLife Stadium
 TRANSP:TRANSPARENT
@@ -847,7 +847,7 @@ DTSTART:20261206T210500Z
 DTEND:20261206T230500Z
 DTSTAMP:20261206T210500Z
 UID:espn-401873103@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\nTV: FOX\nMatched: Broncos gam
+DESCRIPTION:NFL\nEmpower Field at Mile High\nTV: Fox\nMatched: Broncos gam
  es (secondary)\nid: espn-401873103
 LOCATION:Empower Field at Mile High
 TRANSP:TRANSPARENT
@@ -946,7 +946,7 @@ DTSTART:20261213T212500Z
 DTEND:20261213T232500Z
 DTSTAMP:20261213T212500Z
 UID:espn-401873121@sports-calendar
-DESCRIPTION:NFL\nLumen Field\nTV: FOX\nMatched: Giants games (secondary)\n
+DESCRIPTION:NFL\nLumen Field\nTV: Fox\nMatched: Giants games (secondary)\n
  id: espn-401873121
 LOCATION:Lumen Field
 TRANSP:TRANSPARENT
@@ -1210,7 +1210,7 @@ DTSTART:20270103T180000Z
 DTEND:20270103T200000Z
 DTSTAMP:20270103T180000Z
 UID:espn-401873165@sports-calendar
-DESCRIPTION:NFL\nAT&T Stadium\nTV: FOX\nMatched: Giants games (secondary)
+DESCRIPTION:NFL\nAT&T Stadium\nTV: Fox\nMatched: Giants games (secondary)
  \nid: espn-401873165
 LOCATION:AT&T Stadium
 TRANSP:TRANSPARENT
