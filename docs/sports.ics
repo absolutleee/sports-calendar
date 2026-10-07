@@ -11,8 +11,8 @@ DTSTART:20261011T153000Z
 DTEND:20261011T173000Z
 DTSTAMP:20261011T153000Z
 UID:espn-401879264@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nMatched: Liverpool\nid: espn-
- 401879264
+DESCRIPTION:English Premier League\nAnfield\nTV: NBC\, Tele\nMatched: Live
+ rpool\nid: espn-401879264
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -66,8 +66,8 @@ DTSTART:20261017T140000Z
 DTEND:20261017T160000Z
 DTSTAMP:20261017T140000Z
 UID:espn-401879262@sports-calendar
-DESCRIPTION:English Premier League\nGtech Community Stadium\nMatched: Live
- rpool\nid: espn-401879262
+DESCRIPTION:English Premier League\nGtech Community Stadium\nTV: Peacock\n
+ Matched: Liverpool\nid: espn-401879262
 LOCATION:Gtech Community Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
