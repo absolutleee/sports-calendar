@@ -451,8 +451,8 @@ DTSTART:20261122T173000Z
 DTEND:20261122T200000Z
 DTSTAMP:20261122T173000Z
 UID:nhl-2026020373@sports-calendar
-DESCRIPTION:NHL\nMadison Square Garden\nTV: CARNHL\, HHN\, MSG\nMatched: R
- angers games (secondary)\nid: nhl-2026020373
+DESCRIPTION:NHL\nMadison Square Garden\nTV: NHLN\, CARNHL\, HHN\, MSG\nMat
+ ched: Rangers games (secondary)\nid: nhl-2026020373
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -550,8 +550,8 @@ DTSTART:20261129T000000Z
 DTEND:20261129T023000Z
 DTSTAMP:20261129T000000Z
 UID:nhl-2026020419@sports-calendar
-DESCRIPTION:NHL\nMadison Square Garden\nTV: MSG\nMatched: Rangers games (s
- econdary)\nid: nhl-2026020419
+DESCRIPTION:NHL\nMadison Square Garden\nTV: NHLN\, MSG\nMatched: Rangers g
+ ames (secondary)\nid: nhl-2026020419
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
