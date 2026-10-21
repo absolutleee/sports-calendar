@@ -55,8 +55,8 @@ DTSTART:20261024T163000Z
 DTEND:20261024T183000Z
 DTSTAMP:20261024T163000Z
 UID:espn-401878767@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\nMatched: Tottenham v 
- Chelsea / Arsenal\nid: espn-401878767
+DESCRIPTION:English Premier League\nStamford Bridge\nTV: Tele\, Peacock\nM
+ atched: Tottenham v Chelsea / Arsenal\nid: espn-401878767
 LOCATION:Stamford Bridge
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -66,8 +66,8 @@ DTSTART:20261025T140000Z
 DTEND:20261025T160000Z
 DTSTAMP:20261025T140000Z
 UID:espn-401878765@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nMatched: Liverpool\nid: espn-
- 401878765
+DESCRIPTION:English Premier League\nAnfield\nTV: Peacock\nMatched: Liverpo
+ ol\nid: espn-401878765
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -88,8 +88,8 @@ DTSTART:20261028T200000Z
 DTEND:20261028T220000Z
 DTSTAMP:20261028T200000Z
 UID:espn-401921842@sports-calendar
-DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\nMatched: Liverpool\ni
- d: espn-401921842
+DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\nTV: Paramount+\nMatch
+ ed: Liverpool\nid: espn-401921842
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -99,8 +99,8 @@ DTSTART:20261031T010000Z
 DTEND:20261031T033000Z
 DTSTAMP:20261031T010000Z
 UID:espn-401904866@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\nMatched: Denver Pioneers home\nid:
-  espn-401904866
+DESCRIPTION:NCAA Hockey\nMagness Arena\nTV: NCHCHockey.com\nMatched: Denve
+ r Pioneers home\nid: espn-401904866
 LOCATION:Magness Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -143,8 +143,8 @@ DTSTART:20261101T000000Z
 DTEND:20261101T023000Z
 DTSTAMP:20261101T000000Z
 UID:espn-401904867@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\nMatched: Denver Pioneers home\nid:
-  espn-401904867
+DESCRIPTION:NCAA Hockey\nMagness Arena\nTV: NCHCHockey.com\nMatched: Denve
+ r Pioneers home\nid: espn-401904867
 LOCATION:Magness Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -594,8 +594,8 @@ DTSTART:20270203T020000Z
 DTEND:20270203T043000Z
 DTSTAMP:20270203T020000Z
 UID:espn-401910479@sports-calendar
-DESCRIPTION:NBA\nBall Arena\nMatched: Nuggets v Thunder\nid: espn-40191047
- 9
+DESCRIPTION:NBA\nBall Arena\nTV: KSBI\nMatched: Nuggets v Thunder\nid: esp
+ n-401910479
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -836,8 +836,8 @@ DTSTART:20270412T003000Z
 DTEND:20270412T030000Z
 DTSTAMP:20270412T003000Z
 UID:espn-401910948@sports-calendar
-DESCRIPTION:NBA\nBall Arena\nMatched: Nuggets v Thunder\nid: espn-40191094
- 8
+DESCRIPTION:NBA\nBall Arena\nTV: KSBI\nMatched: Nuggets v Thunder\nid: esp
+ n-401910948
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
