@@ -6,17 +6,6 @@ X-WR-CALNAME:Sports
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-SUMMARY:Brentford Liverpool
-DTSTART:20261017T140000Z
-DTEND:20261017T160000Z
-DTSTAMP:20261017T140000Z
-UID:espn-401879262@sports-calendar
-DESCRIPTION:English Premier League\nGtech Community Stadium\nTV: Peacock\n
- Matched: Liverpool\nid: espn-401879262
-LOCATION:Gtech Community Stadium
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Liverpool Villarreal · UCL
 DTSTART:20261020T190000Z
 DTEND:20261020T210000Z
@@ -55,8 +44,8 @@ DTSTART:20261024T163000Z
 DTEND:20261024T183000Z
 DTSTAMP:20261024T163000Z
 UID:espn-401878767@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\nTV: Tele\, Peacock\nM
- atched: Tottenham v Chelsea / Arsenal\nid: espn-401878767
+DESCRIPTION:English Premier League\nStamford Bridge\nTV: NBCSN\, Tele\, Pe
+ acock\nMatched: Tottenham v Chelsea / Arsenal\nid: espn-401878767
 LOCATION:Stamford Bridge
 TRANSP:TRANSPARENT
 END:VEVENT
