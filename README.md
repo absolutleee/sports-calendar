@@ -18,6 +18,7 @@ Alerts are intentionally off; titles are built for scanning:
     Stars Avs                        US sports: away team first
     Avs Stars · 1st Round G3         suffix only when it adds information
     PSG Arsenal · UCL Final
+    Rapids Seattle · MLS West Round One G2
     Pirates Mets · Opening Day
     Barcelona Real Madrid · time TBD kickoff not set yet → all-day until it is
     The Masters                      all-day, Thu–Sun
@@ -44,11 +45,11 @@ Edit `config.yaml` and push — the workflow rebuilds on push. Rule types:
 | type | what it matches | fields |
 |---|---|---|
 | `team_all` | every game of a team | `team`, optional `competitions` |
-| `head_to_head` | games vs listed opponents (any competition unless filtered — includes pre-season friendlies) | `team`, `opponents`, optional `competitions`, `only_away` |
+| `head_to_head` | games vs listed opponents (any competition unless filtered — includes pre-season friendlies) | `team`, `opponents`, optional `competitions`, `only_away` or `only_home` (not neutral sites) |
 | `group_h2h` | games where both sides are in a set | `teams`, optional `competitions` |
 | `opener` | first regular-season game | `team` |
 | `home_games` | non-neutral home games | `team` |
-| `postseason` | all playoff games | `team` |
+| `postseason` | all playoff games (MLS / NWSL playoffs included) | `team`, optional `competitions` |
 | `round` | competition games in given rounds | `league`, `window`, `rounds` |
 | `tournament_all` | every game of a competition | `league`, `window` |
 | `finals` | championship series | `source: nhl`, or `league`+`window`+`notes_prefix` for ESPN |
@@ -73,6 +74,9 @@ Other per-rule options:
   record is re-checked on every daily build, so the games come back once the
   team is within 5 again. Unknown records (e.g. before the season) keep the games.
 - `skip_preseason: true` drops preseason games (the NHL schedule includes them).
+- `cities: [Denver, Commerce City]` (`espn` / `espn_soccer` only) keeps only
+  games whose venue is in one of those cities — e.g. national-team games in
+  the Denver area. The state ESPN appends ("Denver, Colorado") is ignored.
 
 Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
 e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),
@@ -85,7 +89,9 @@ US team that shares it.
 
 ESPN competition slugs used in `competitions:` / `league:`: `eng.1` Premier
 League, `eng.2` Championship, `esp.1` La Liga, `ita.1` Serie A, `ger.1`
-Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `club.friendly`.
+Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `club.friendly`,
+`usa.1` MLS, `usa.nwsl` NWSL, `fifa.friendly` / `fifa.friendly.w` men's /
+women's international friendlies.
 
 ## Removing games / adding your own events
 

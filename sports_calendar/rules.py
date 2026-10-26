@@ -20,6 +20,13 @@ def _in_competitions(rule: dict, game: Game) -> bool:
     return not comps or game.competition in comps
 
 
+def _in_cities(rule: dict, game: Game) -> bool:
+    """`cities: [Denver, Commerce City]` matches the venue's city, ignoring the
+    state after the comma. ESPN sources only; other sources have no city."""
+    cities = {c.casefold() for c in rule["cities"]}
+    return (game.venue_city or "").split(",")[0].strip().casefold() in cities
+
+
 # --- Game rules --------------------------------------------------------------
 
 def _team_all(rule, catalog) -> list[Game]:
@@ -36,6 +43,8 @@ def _head_to_head(rule, catalog) -> list[Game]:
         if opp is None or opp.id not in opponents or not _in_competitions(rule, g):
             continue
         if rule.get("only_away") and g.away.id != team:
+            continue
+        if rule.get("only_home") and (g.home.id != team or g.neutral):
             continue
         out.append(g)
     return out
@@ -76,7 +85,8 @@ def _home_games(rule, catalog) -> list[Game]:
 
 def _postseason(rule, catalog) -> list[Game]:
     team = str(rule["team"])
-    return [g for g in catalog.team_games(rule) if g.involves(team) and g.season_type == "post"]
+    return [g for g in catalog.team_games(rule)
+            if g.involves(team) and g.season_type == "post" and _in_competitions(rule, g)]
 
 
 def _round(rule, catalog) -> list[Game]:
@@ -166,11 +176,12 @@ COMPETITION_LABELS = {
     "club.friendly": "Friendly", "eng.2": "Championship",
     "eng.fa": "FA Cup", "eng.league_cup": "EFL Cup", "eng.charity": "Community Shield",
     "esp.copa_del_rey": "Copa del Rey", "esp.super_cup": "Supercopa",
+    "usa.1": "MLS", "usa.nwsl": "NWSL",
     "ita.coppa_italia": "Coppa Italia", "ita.super_cup": "Supercoppa",
     "ger.dfb_pokal": "DFB-Pokal", "ger.super_cup": "Supercup",
 }
 # Domestic leagues: no suffix for ordinary league games.
-DOMESTIC_LEAGUES = {"eng.1", "esp.1", "ita.1", "ger.1", "fra.1", "eng.2"}
+DOMESTIC_LEAGUES = {"eng.1", "esp.1", "ita.1", "ger.1", "fra.1", "eng.2", "usa.1", "usa.nwsl"}
 ROUND_LABELS = {
     "quarterfinals": "Quarterfinal", "semifinals": "Semifinal", "final": "Final",
     "round-of-16": "Round of 16", "round-of-32": "Round of 32", "knockout-round-playoffs": "Knockout Play-off",
@@ -188,10 +199,17 @@ NOTE_REPLACEMENTS = [
 def context_for(game: Game) -> str | None:
     if game.sport == "soccer":
         round_label = ROUND_LABELS.get(game.round_slug or "")
+        if not round_label and game.season_type == "post" and game.series_title:
+            # MLS / NWSL playoffs: "West Round One" (+ " G2" in a best-of-3)
+            round_label = game.series_title
+            if game.series_game:
+                round_label += f" G{game.series_game}"
         label = COMPETITION_LABELS.get(game.competition)
         if label is None and game.competition not in DOMESTIC_LEAGUES:
             label = game.competition_name
         if game.competition in DOMESTIC_LEAGUES and not round_label:
+            label = None
+        if label and round_label and round_label.startswith(label):  # "MLS Cup", not "MLS MLS Cup"
             label = None
         leg = _LEG.match(game.notes or "")
         parts = [p for p in (label, round_label, leg.group(0) if leg else None) if p]
@@ -263,6 +281,8 @@ def evaluate(rule: dict, catalog) -> list:
         matched = GAME_RULES[kind](rule, catalog)
         if rule.get("skip_preseason"):
             matched = [g for g in matched if g.season_type != "pre"]
+        if rule.get("cities"):
+            matched = [g for g in matched if _in_cities(rule, g)]
         if rule.get("until_eliminated"):
             matched = _drop_when_eliminated(rule, matched, catalog)
         if rule.get("hide_when_under_500") is not None:

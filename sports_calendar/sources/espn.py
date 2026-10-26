@@ -47,11 +47,27 @@ def _broadcast(comp: dict) -> str | None:
 _POST = re.compile(r"\bpost")            # "Postseason", "post-season"
 _PRE = re.compile(r"\bpre(-?season)?\b")   # "Preseason" but NOT "Premier League"
 
+# MLS and NWSL playoff games carry no postseason type number, only a stage name:
+# "Western Conference Playoffs - Round One", "Playoffs - Semifinals", "MLS Cup".
+US_SOCCER_LEAGUES = {"usa.1", "usa.nwsl"}
+_US_SOCCER_PLAYOFFS = re.compile(r"\bplayoffs\b|\bmls cup\b")
+_CONFERENCE = re.compile(r"^(East|West)ern Conference\b")
 
-def _season_type(event: dict) -> str:
+
+def _playoff_stage(name: str) -> str:
+    """'Western Conference Playoffs - Round One' → 'West Round One';
+    'Playoffs - Semifinals' → 'Semifinals'; 'MLS Cup' → 'MLS Cup'."""
+    stage = name.rsplit(" - ", 1)[-1]
+    conf = _CONFERENCE.match(name)
+    return f"{conf.group(1)} {stage}" if conf else stage
+
+
+def _season_type(event: dict, league_slug: str) -> str:
     st = event.get("seasonType") or {}
     season = event.get("season") or {}
     if st.get("type") == 3 or season.get("type") == 3:
+        return "post"
+    if league_slug in US_SOCCER_LEAGUES and _US_SOCCER_PLAYOFFS.search(st.get("name", "").lower()):
         return "post"
     if st.get("type") == 1:
         return "pre"
@@ -87,6 +103,11 @@ def parse_event(event: dict, sport: str, league_slug: str, league_name: str) -> 
             break
     m = _GAME_NO.search(notes or "")
     time_valid = comp.get("timeValid", event.get("timeValid", True))
+    season_type = _season_type(event, slug)
+    venue = comp.get("venue") or {}
+    series_title = None
+    if slug in US_SOCCER_LEAGUES and season_type == "post":
+        series_title = _playoff_stage((event.get("seasonType") or {}).get("name", ""))
 
     return Game(
         uid=f"espn-{event['id']}",
@@ -98,13 +119,15 @@ def parse_event(event: dict, sport: str, league_slug: str, league_name: str) -> 
         day=start.date(),
         start=start,
         time_valid=bool(time_valid),
-        venue=(comp.get("venue") or {}).get("fullName"),
+        venue=venue.get("fullName"),
+        venue_city=(venue.get("address") or {}).get("city"),
         neutral=bool(comp.get("neutralSite", False)),
         broadcast=_broadcast(comp),
-        season_type=_season_type(event),
+        season_type=season_type,
         round_slug=(event.get("season") or {}).get("slug"),
         notes=notes,
         series_game=int(m.group(1)) if m else None,
+        series_title=series_title,
     )
 
 

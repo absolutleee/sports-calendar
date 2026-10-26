@@ -56,6 +56,7 @@ display_names:
     Man City: City
     Inter Milan: Inter
     Spurs: Tottenham
+    Colorado: Rapids
   hockey:
     Avalanche: Avs
 
@@ -155,6 +156,33 @@ rules:
     source: espn_soccer
     league: fifa.world
     window: ["06-01", "07-31"]
+
+  - name: Rapids playoffs
+    type: postseason
+    source: espn_soccer
+    team: 184
+    competitions: [usa.1]           # MLS Cup Playoffs, wild card through MLS Cup
+
+  - name: Denver Summit home v Gotham / KC / Spirit
+    type: head_to_head
+    source: espn_soccer
+    team: 131563                    # Denver Summit FC
+    opponents: [15364, 20907, 15365]  # Gotham FC, Kansas City Current, Washington Spirit
+    only_home: true
+
+  # National teams, only when playing in the Denver area (Empower Field is in
+  # Denver, Dick's Sporting Goods Park in Commerce City).
+  - name: USMNT in Denver
+    type: team_all
+    source: espn_soccer
+    team: 660
+    cities: [Denver, Commerce City]
+
+  - name: USWNT in Denver
+    type: team_all
+    source: espn_soccer
+    team: 2765
+    cities: [Denver, Commerce City]
 
   # -------------------------------------------------------------- Baseball
   - name: Mets Opening Day

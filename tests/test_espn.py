@@ -109,6 +109,30 @@ def test_season_type_detection():
     assert espn.parse_event({**ev, "season": {"year": 2025, "type": 13530, "slug": "promotion-semifinals"}}, "soccer", "eng.2", "C").season_type == "regular"
 
 
+def test_mls_and_nwsl_playoffs_are_postseason():
+    """MLS / NWSL playoff games have no postseason type number, only a stage name."""
+    ev = {"id": "1", "date": "2025-11-02T01:30Z", "competitions": [{
+        "competitors": [{"homeAway": "home", "team": {"id": "9723", "displayName": "Portland Timbers"}},
+                        {"homeAway": "away", "team": {"id": "22529", "displayName": "San Diego FC"}}],
+        "notes": [{"headline": "Game 2, POR wins 3-2 on penalties"}],
+        "venue": {"fullName": "Providence Park", "address": {"city": "Portland, Oregon", "country": "USA"}}}]}
+
+    def parse(slug, name):
+        return espn.parse_event({**ev, "league": {"slug": slug}, "seasonType": {"id": "7", "type": 13129, "name": name}},
+                                "soccer", "all", "Soccer")
+
+    g = parse("usa.1", "Western Conference Playoffs - Round One")
+    assert g.season_type == "post" and g.series_title == "West Round One" and g.series_game == 2
+    assert g.venue_city == "Portland, Oregon"
+    assert parse("usa.1", "Eastern Conference Playoffs - Wild Card").series_title == "East Wild Card"
+    assert parse("usa.1", "MLS Cup").series_title == "MLS Cup"
+    assert parse("usa.nwsl", "Playoffs - Championship").series_title == "Championship"
+    regular = parse("usa.1", "Regular Season")
+    assert regular.season_type == "regular" and regular.series_title is None
+    # only US leagues: other competitions keep their existing classification
+    assert parse("uefa.champions", "Knockout Round Playoffs").season_type == "regular"
+
+
 def test_parse_event_skips_malformed():
     assert espn.parse_event({"id": "1", "date": "2026-01-01T00:00Z", "competitions": [{}]},
                             "soccer", "eng.1", "PL") is None

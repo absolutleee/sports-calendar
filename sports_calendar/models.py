@@ -23,6 +23,7 @@ class Game:
     start: datetime | None = None  # aware UTC datetime, None when unknown
     time_valid: bool = True      # False when the league has not set a start time yet
     venue: str | None = None
+    venue_city: str | None = None  # ESPN only: "Commerce City, Colorado", "Denver, Colorado"
     neutral: bool = False
     broadcast: str | None = None
     season_type: str = "regular"  # pre | regular | post
@@ -30,7 +31,7 @@ class Game:
     notes: str | None = None       # ESPN notes headline, e.g. "1st Leg", "NBA Finals - Game 1"
     series_round: int | None = None
     series_game: int | None = None
-    series_title: str | None = None  # "Stanley Cup Final", "World Series"
+    series_title: str | None = None  # "Stanley Cup Final", "World Series", MLS "West Round One"
     matched_rules: list[str] = field(default_factory=list)
     context: str | None = None     # title suffix, set by rules.annotate
 

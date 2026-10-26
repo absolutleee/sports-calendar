@@ -18,6 +18,12 @@ METS = Team("121", "New York Mets", "Mets")
 ROX = Team("115", "Colorado Rockies", "Rockies")
 COL = Team("COL", "Colorado Avalanche", "Avalanche")
 DAL = Team("DAL", "Dallas Stars", "Stars")
+RAP = Team("184", "Colorado Rapids", "Colorado")
+SEA = Team("9726", "Seattle Sounders FC", "Seattle")
+SUM = Team("131563", "Denver Summit FC", "Denver")
+GOT = Team("15364", "Gotham FC", "Gotham")
+USA = Team("660", "United States", "USA")
+MEX = Team("203", "Mexico", "Mexico")
 
 
 def mk(uid, home, away, day, *, sport="soccer", comp="eng.1", comp_name="Premier League", **over):
@@ -93,6 +99,27 @@ def test_head_to_head_filters_opponents_competition_and_only_away():
     assert [g.uid for g in rules.evaluate(rule, cat)] == ["away"]
 
 
+def test_head_to_head_only_home_skips_away_and_neutral():
+    games = [mk("home", SUM, GOT, date(2027, 4, 1), comp="usa.nwsl"),
+             mk("away", GOT, SUM, date(2027, 5, 1), comp="usa.nwsl"),
+             mk("neutral", SUM, GOT, date(2027, 11, 20), comp="usa.nwsl", neutral=True)]
+    cat = FakeCatalog({"131563": games})
+    rule = {"name": "Summit", "type": "head_to_head", "source": "espn_soccer", "team": 131563,
+            "opponents": [15364], "only_home": True}
+    assert [g.uid for g in rules.evaluate(rule, cat)] == ["home"]
+
+
+def test_cities_matches_venue_city_ignoring_state():
+    games = [mk("denver", USA, MEX, date(2027, 6, 1), comp="fifa.friendly", venue_city="Denver, Colorado"),
+             mk("dsg", USA, MEX, date(2027, 6, 5), comp="fifa.friendly", venue_city="Commerce City, Colorado"),
+             mk("elsewhere", USA, MEX, date(2027, 6, 9), comp="fifa.friendly", venue_city="Glendale, Arizona"),
+             mk("unknown", USA, MEX, date(2027, 6, 12), comp="fifa.friendly")]
+    cat = FakeCatalog({"660": games})
+    rule = {"name": "USMNT in Denver", "type": "team_all", "source": "espn_soccer", "team": 660,
+            "cities": ["Denver", "commerce city"]}
+    assert [g.uid for g in rules.evaluate(rule, cat)] == ["denver", "dsg"]
+
+
 def test_group_h2h_fetches_each_team_and_dedupes():
     ars_che = mk("ac", ARS, CHE, date(2026, 9, 1))
     che_mci = mk("cm", CHE, MCI, date(2026, 10, 1))
@@ -138,6 +165,14 @@ def test_postseason():
     cat = FakeCatalog({"COL": games})
     out = rules.evaluate({"name": "Avs playoffs", "type": "postseason", "source": "nhl", "team": "COL"}, cat)
     assert [g.uid for g in out] == ["p"]
+
+    games = [mk("reg", RAP, SEA, date(2026, 11, 1), comp="usa.1"),
+             mk("mls", RAP, SEA, date(2026, 11, 20), comp="usa.1", season_type="post"),
+             mk("cup", RAP, SEA, date(2026, 8, 20), comp="leagues.cup", season_type="post")]
+    cat = FakeCatalog({"184": games})
+    out = rules.evaluate({"name": "Rapids playoffs", "type": "postseason", "source": "espn_soccer", "team": 184,
+                          "competitions": ["usa.1"]}, cat)
+    assert [g.uid for g in out] == ["mls"]
 
 
 def test_round_tournament_all_and_finals():

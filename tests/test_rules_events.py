@@ -56,6 +56,16 @@ def test_context_soccer():
     assert rules.context_for(mk("a", ARS, RMA, date(2026, 7, 19), comp="fifa.world", round_slug="final")) == "World Cup Final"
     # unknown non-domestic competition falls back to ESPN's name
     assert rules.context_for(mk("a", LIV, NEW, date(2026, 8, 29), comp="xyz.cup", comp_name="Mystery Cup")) == "Mystery Cup"
+    # MLS / NWSL: no suffix in the regular season; playoff stage (+ game in a series) after
+    assert rules.context_for(mk("a", LIV, NEW, date(2026, 10, 1), comp="usa.1", comp_name="MLS")) is None
+    assert rules.context_for(mk("a", LIV, NEW, date(2026, 11, 9), comp="usa.1", season_type="post",
+                                series_title="West Round One", series_game=2)) == "MLS West Round One G2"
+    assert rules.context_for(mk("a", LIV, NEW, date(2026, 11, 29), comp="usa.1", season_type="post",
+                                series_title="West Final")) == "MLS West Final"
+    assert rules.context_for(mk("a", LIV, NEW, date(2026, 12, 6), comp="usa.1", season_type="post",
+                                series_title="MLS Cup")) == "MLS Cup"
+    assert rules.context_for(mk("a", LIV, NEW, date(2026, 11, 22), comp="usa.nwsl", season_type="post",
+                                series_title="Championship")) == "NWSL Championship"
 
 
 def test_context_us_sports():
