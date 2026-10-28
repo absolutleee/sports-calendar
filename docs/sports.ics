@@ -6,17 +6,6 @@ X-WR-CALNAME:Sports
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-SUMMARY:Nuggets Thunder
-DTSTART:20261023T013000Z
-DTEND:20261023T040000Z
-DTSTAMP:20261023T013000Z
-UID:espn-401909094@sports-calendar
-DESCRIPTION:NBA\nPaycom Center\nTV: ESPN\nMatched: Nuggets v Thunder\nid: 
- espn-401909094
-LOCATION:Paycom Center
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Chelsea Tottenham
 DTSTART:20261024T163000Z
 DTEND:20261024T183000Z
@@ -77,8 +66,8 @@ DTSTART:20261031T123000Z
 DTEND:20261031T143000Z
 DTSTAMP:20261031T123000Z
 UID:espn-401879248@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\nMatched: Premier Leag
- ue big four\nid: espn-401879248
+DESCRIPTION:English Premier League\nStamford Bridge\nTV: USA Net\, Tele\nM
+ atched: Premier League big four\nid: espn-401879248
 LOCATION:Stamford Bridge
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -88,8 +77,8 @@ DTSTART:20261031T173000Z
 DTEND:20261031T193000Z
 DTSTAMP:20261031T173000Z
 UID:espn-401884754@sports-calendar
-DESCRIPTION:German Bundesliga\nAllianz Arena\nMatched: Bayern v Dortmund\n
- id: espn-401884754
+DESCRIPTION:German Bundesliga\nAllianz Arena\nTV: USA Net\, Fandango\nMatc
+ hed: Bayern v Dortmund\nid: espn-401884754
 LOCATION:Allianz Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -121,8 +110,8 @@ DTSTART:20261101T163000Z
 DTEND:20261101T183000Z
 DTSTAMP:20261101T163000Z
 UID:espn-401879246@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nMatched: Liverpool\nid: espn-
- 401879246
+DESCRIPTION:English Premier League\nAnfield\nTV: Peacock\, Tele\nMatched: 
+ Liverpool\nid: espn-401879246
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
