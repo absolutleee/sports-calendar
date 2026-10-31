@@ -55,8 +55,8 @@ DTSTART:20261101T163000Z
 DTEND:20261101T183000Z
 DTSTAMP:20261101T163000Z
 UID:espn-401879246@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\nTV: Peacock\, Tele\nMatched: 
- Liverpool\nid: espn-401879246
+DESCRIPTION:English Premier League\nAnfield\nTV: NBCSN\, Tele\, Peacock\nM
+ atched: Liverpool\nid: espn-401879246
 LOCATION:Anfield
 TRANSP:TRANSPARENT
 END:VEVENT
