@@ -79,6 +79,9 @@ Other per-rule options:
   states — e.g. USWNT games in Colorado. ESPN gives venues as "Commerce City,
   Colorado": a city matches the part before the comma, a state the part after.
   ESPN sometimes leaves the state off, so list key cities too when using `states`.
+- `plain_title: true` leaves the competition / round out of the title of every
+  game the rule matches ("USA Haiti", not "USA Haiti · Nations League 1st Leg");
+  it stays in the event notes. "time TBD" still shows.
 
 Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
 e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),
@@ -87,7 +90,9 @@ espn.com; MLB ids at `statsapi.mlb.com/api/v1/teams?sportId=1`.
 
 `display_names` maps a source's short name to what you want in the title, per
 sport (`soccer: {Man United: United}`), so a soccer nickname can't rename a
-US team that shares it.
+US team that shares it. A key can also be a team id, for two teams with the
+same short name: `soccer: {2765: USWNT}` renames the women's national team
+while the men (also "USA" on ESPN) stay USA.
 
 ESPN competition slugs used in `competitions:` / `league:`: `eng.1` Premier
 League, `eng.2` Championship, `esp.1` La Liga, `ita.1` Serie A, `ger.1`

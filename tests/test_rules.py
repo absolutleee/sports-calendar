@@ -228,6 +228,16 @@ def test_apply_rules_dedupes_and_merges_rule_names():
     assert alldays == [] and failures == []
 
 
+def test_apply_rules_plain_title_from_any_matching_rule():
+    shared, other = mk("a", USA, MEX, date(2030, 6, 20), comp="fifa.world"), mk("b", MEX, LIV, date(2030, 6, 25))
+    cat = FakeCatalog({"660": [shared], "203": [shared, other]})
+    games, _, _ = rules.apply_rules([
+        {"name": "Mexico", "type": "team_all", "source": "espn_soccer", "team": 203},
+        {"name": "USMNT", "type": "team_all", "source": "espn_soccer", "team": 660, "plain_title": True},
+    ], cat)
+    assert {g.uid: g.plain_title for g in games} == {"a": True, "b": False}
+
+
 def test_apply_rules_skips_failed_source_and_reports_it():
     """One source failing (e.g. ESPN 400s) must not sink the whole build: the
     other rules' games survive and the failed rule is reported, not raised."""

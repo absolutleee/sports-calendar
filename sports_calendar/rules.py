@@ -319,6 +319,8 @@ def apply_rules(rule_list: list[dict], catalog) -> tuple[list[Game], list[AllDay
             kept = store.setdefault(item.uid, item)
             if rule["name"] not in kept.matched_rules:
                 kept.matched_rules.append(rule["name"])
+            if rule.get("plain_title") and isinstance(kept, Game):
+                kept.plain_title = True
             if kept is not item and item.context and not kept.context:
                 kept.context = item.context
     result = sorted(games.values(), key=Game.sort_key)

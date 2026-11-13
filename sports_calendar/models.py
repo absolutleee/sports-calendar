@@ -34,6 +34,7 @@ class Game:
     series_title: str | None = None  # "Stanley Cup Final", "World Series", MLS "West Round One"
     matched_rules: list[str] = field(default_factory=list)
     context: str | None = None     # title suffix, set by rules.annotate
+    plain_title: bool = False      # a `plain_title` rule matched: context goes in the description only
 
     def involves(self, team_id) -> bool:
         return str(team_id) in (self.home.id, self.away.id)

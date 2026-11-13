@@ -5,7 +5,7 @@ from datetime import datetime, time, timedelta, timezone
 
 from icalendar import Calendar, Event
 
-from sports_calendar.models import AllDayEvent, Game, ManualEvent
+from sports_calendar.models import AllDayEvent, Game, ManualEvent, Team
 
 DURATIONS = {
     "soccer": timedelta(hours=2),
@@ -17,9 +17,12 @@ UID_DOMAIN = "sports-calendar"
 CALENDAR_NAME = "Sports"
 
 
-def shorten(name: str, sport: str, display_names: dict[str, dict[str, str]]) -> str:
-    """display_names is scoped per sport so e.g. soccer's 'Spurs' can't rename the NBA Spurs."""
-    return (display_names.get(sport) or {}).get(name, name)
+def shorten(team: Team, sport: str, display_names: dict[str, dict[str, str]]) -> str:
+    """display_names is scoped per sport so e.g. soccer's 'Spurs' can't rename the NBA Spurs.
+    A key is the source's short name, or a team id to tell apart teams that share
+    one (the USMNT and USWNT are both 'USA'); an id wins over a name."""
+    names = {str(k): v for k, v in (display_names.get(sport) or {}).items()}
+    return names.get(team.id) or names.get(team.short, team.short)
 
 
 def title_for(game: Game, display_names: dict[str, dict[str, str]]) -> str:
@@ -27,8 +30,9 @@ def title_for(game: Game, display_names: dict[str, dict[str, str]]) -> str:
         first, second = game.home, game.away
     else:
         first, second = game.away, game.home
-    title = f"{shorten(first.short, game.sport, display_names)} {shorten(second.short, game.sport, display_names)}"
-    parts = [p for p in (game.context, None if game.time_valid else "time TBD") if p]
+    title = f"{shorten(first, game.sport, display_names)} {shorten(second, game.sport, display_names)}"
+    context = None if game.plain_title else game.context
+    parts = [p for p in (context, None if game.time_valid else "time TBD") if p]
     if parts:
         title += " · " + " · ".join(parts)
     return title

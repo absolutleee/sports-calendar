@@ -59,6 +59,7 @@ display_names:
     Inter Milan: Inter
     Spurs: Tottenham
     Colorado: Rapids
+    2765: USWNT                     # ESPN team id: the women's team is "USA" too; the men stay USA
   hockey:
     Avalanche: Avs
 
@@ -165,6 +166,12 @@ rules:
     team: 184
     competitions: [usa.1]           # MLS Cup Playoffs, wild card through MLS Cup
 
+  - name: Inter Miami playoffs
+    type: postseason
+    source: espn_soccer
+    team: 20232
+    competitions: [usa.1]
+
   - name: Denver Summit home v Gotham / KC / Spirit
     type: head_to_head
     source: espn_soccer
@@ -173,11 +180,13 @@ rules:
     only_home: true
 
   # National teams. USMNT: every match. USWNT: matches played in Colorado,
-  # plus every Women's World Cup match wherever it's played.
+  # plus every Women's World Cup match wherever it's played. `plain_title`
+  # keeps the competition out of the title ("USA Haiti"); it's in the notes.
   - name: USMNT
     type: team_all
     source: espn_soccer
     team: 660
+    plain_title: true
 
   - name: USWNT in Colorado
     type: team_all
@@ -185,12 +194,14 @@ rules:
     team: 2765
     states: [Colorado]
     cities: [Denver, Commerce City]   # in case ESPN leaves the state off the venue
+    plain_title: true
 
   - name: USWNT World Cup
     type: team_all
     source: espn_soccer
     team: 2765
     competitions: [fifa.wwc]        # FIFA Women's World Cup (2027: Brazil, Jun 24 – Jul 25)
+    plain_title: true
 
   # -------------------------------------------------------------- Baseball
   - name: Mets Opening Day

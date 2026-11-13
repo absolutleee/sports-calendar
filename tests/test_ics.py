@@ -42,6 +42,21 @@ def test_display_names_are_scoped_per_sport():
     assert ics.title_for(g, {"soccer": {"Spurs": "Tottenham"}}) == "Knicks Spurs"
 
 
+def test_display_names_by_team_id_tell_apart_shared_short_names():
+    usmnt = Team("660", "United States", "USA")
+    uswnt = Team("2765", "United States", "USA")
+    spain = Team("164", "Spain", "Spain")
+    names = {"soccer": {2765: "USWNT"}}  # YAML reads a bare id as an int
+    assert ics.title_for(game(home=uswnt, away=spain), names) == "USWNT Spain"
+    assert ics.title_for(game(home=usmnt, away=spain), names) == "USA Spain"
+
+
+def test_plain_title_keeps_context_in_description_only():
+    g = game(context="Nations League 1st Leg", plain_title=True, time_valid=False)
+    assert ics.title_for(g, NAMES) == "Liverpool Nottm Forest · time TBD"
+    assert ics.description_for(g).startswith("Premier League · Nations League 1st Leg")
+
+
 def test_title_time_tbd():
     assert ics.title_for(game(time_valid=False), NAMES) == "Liverpool Nottm Forest · time TBD"
     assert ics.title_for(game(time_valid=False, context="UCL Final"), NAMES) == "Liverpool Nottm Forest · UCL Final · time TBD"
