@@ -172,19 +172,25 @@ rules:
     opponents: [15364, 20907, 15365]  # Gotham FC, Kansas City Current, Washington Spirit
     only_home: true
 
-  # National teams, only when playing in the Denver area (Empower Field is in
-  # Denver, Dick's Sporting Goods Park in Commerce City).
-  - name: USMNT in Denver
+  # National teams. USMNT: every match. USWNT: matches played in Colorado,
+  # plus every Women's World Cup match wherever it's played.
+  - name: USMNT
     type: team_all
     source: espn_soccer
     team: 660
-    cities: [Denver, Commerce City]
 
-  - name: USWNT in Denver
+  - name: USWNT in Colorado
     type: team_all
     source: espn_soccer
     team: 2765
-    cities: [Denver, Commerce City]
+    states: [Colorado]
+    cities: [Denver, Commerce City]   # in case ESPN leaves the state off the venue
+
+  - name: USWNT World Cup
+    type: team_all
+    source: espn_soccer
+    team: 2765
+    competitions: [fifa.wwc]        # FIFA Women's World Cup (2027: Brazil, Jun 24 – Jul 25)
 
   # -------------------------------------------------------------- Baseball
   - name: Mets Opening Day

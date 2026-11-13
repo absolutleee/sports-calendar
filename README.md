@@ -74,9 +74,11 @@ Other per-rule options:
   record is re-checked on every daily build, so the games come back once the
   team is within 5 again. Unknown records (e.g. before the season) keep the games.
 - `skip_preseason: true` drops preseason games (the NHL schedule includes them).
-- `cities: [Denver, Commerce City]` (`espn` / `espn_soccer` only) keeps only
-  games whose venue is in one of those cities — e.g. national-team games in
-  the Denver area. The state ESPN appends ("Denver, Colorado") is ignored.
+- `cities: [Denver, Commerce City]` and/or `states: [Colorado]` (`espn` /
+  `espn_soccer` only) keep only games whose venue is in one of those cities or
+  states — e.g. USWNT games in Colorado. ESPN gives venues as "Commerce City,
+  Colorado": a city matches the part before the comma, a state the part after.
+  ESPN sometimes leaves the state off, so list key cities too when using `states`.
 
 Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
 e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),
@@ -89,9 +91,10 @@ US team that shares it.
 
 ESPN competition slugs used in `competitions:` / `league:`: `eng.1` Premier
 League, `eng.2` Championship, `esp.1` La Liga, `ita.1` Serie A, `ger.1`
-Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `club.friendly`,
-`usa.1` MLS, `usa.nwsl` NWSL, `fifa.friendly` / `fifa.friendly.w` men's /
-women's international friendlies.
+Bundesliga, `uefa.champions`, `uefa.europa`, `fifa.world`, `fifa.wwc` Women's
+World Cup, `club.friendly`, `usa.1` MLS, `usa.nwsl` NWSL, `fifa.friendly` /
+`fifa.friendly.w` men's / women's international friendlies,
+`concacaf.nations.league`, `concacaf.gold` Gold Cup.
 
 ## Removing games / adding your own events
 

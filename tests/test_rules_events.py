@@ -54,6 +54,10 @@ def test_context_soccer():
     assert rules.context_for(mk("a", ARS, RMA, date(2026, 5, 9), comp="eng.2", round_slug="promotion-semifinals", notes="1st Leg")) == "Championship Play-off Semifinal 1st Leg"
     assert rules.context_for(mk("a", ARS, RMA, date(2026, 6, 11), comp="fifa.world", round_slug="group-stage")) == "World Cup"
     assert rules.context_for(mk("a", ARS, RMA, date(2026, 7, 19), comp="fifa.world", round_slug="final")) == "World Cup Final"
+    assert rules.context_for(mk("a", ARS, RMA, date(2027, 7, 10), comp="fifa.wwc", round_slug="quarterfinals")) == "Women's World Cup Quarterfinal"
+    assert rules.context_for(mk("a", ARS, RMA, date(2026, 12, 13), comp="fifa.friendly", comp_name="International Friendly")) == "Friendly"
+    assert rules.context_for(mk("a", ARS, RMA, date(2026, 11, 14), comp="concacaf.nations.league",
+                                comp_name="Concacaf Nations League", notes="1st Leg")) == "Nations League 1st Leg"
     # unknown non-domestic competition falls back to ESPN's name
     assert rules.context_for(mk("a", LIV, NEW, date(2026, 8, 29), comp="xyz.cup", comp_name="Mystery Cup")) == "Mystery Cup"
     # MLS / NWSL: no suffix in the regular season; playoff stage (+ game in a series) after

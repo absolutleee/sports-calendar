@@ -120,6 +120,18 @@ def test_cities_matches_venue_city_ignoring_state():
     assert [g.uid for g in rules.evaluate(rule, cat)] == ["denver", "dsg"]
 
 
+def test_states_match_venue_state_or_listed_city():
+    games = [mk("springs", USA, MEX, date(2027, 6, 1), comp="fifa.friendly", venue_city="Colorado Springs, Colorado"),
+             mk("dsg-no-state", USA, MEX, date(2027, 6, 5), comp="fifa.friendly", venue_city="Commerce City"),
+             mk("elsewhere", USA, MEX, date(2027, 6, 9), comp="fifa.friendly", venue_city="Glendale, Arizona"),
+             mk("no-state", USA, MEX, date(2027, 6, 10), comp="fifa.friendly", venue_city="Mansfield"),
+             mk("unknown", USA, MEX, date(2027, 6, 12), comp="fifa.friendly")]
+    cat = FakeCatalog({"660": games})
+    rule = {"name": "USWNT in Colorado", "type": "team_all", "source": "espn_soccer", "team": 660,
+            "states": ["colorado"], "cities": ["Commerce City"]}
+    assert [g.uid for g in rules.evaluate(rule, cat)] == ["springs", "dsg-no-state"]
+
+
 def test_group_h2h_fetches_each_team_and_dedupes():
     ars_che = mk("ac", ARS, CHE, date(2026, 9, 1))
     che_mci = mk("cm", CHE, MCI, date(2026, 10, 1))

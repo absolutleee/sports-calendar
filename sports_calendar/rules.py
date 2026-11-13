@@ -20,11 +20,16 @@ def _in_competitions(rule: dict, game: Game) -> bool:
     return not comps or game.competition in comps
 
 
-def _in_cities(rule: dict, game: Game) -> bool:
-    """`cities: [Denver, Commerce City]` matches the venue's city, ignoring the
-    state after the comma. ESPN sources only; other sources have no city."""
-    cities = {c.casefold() for c in rule["cities"]}
-    return (game.venue_city or "").split(",")[0].strip().casefold() in cities
+def _in_places(rule: dict, game: Game) -> bool:
+    """`cities: [Denver, Commerce City]` and/or `states: [Colorado]` keep games
+    whose venue is in any listed city or state. ESPN gives the venue as
+    "Commerce City, Colorado" (sometimes without the state), so a city matches
+    the part before the comma and a state the part after it. ESPN sources only;
+    other sources have no venue location, so nothing matches."""
+    city, _, state = (game.venue_city or "").partition(",")
+    cities = {c.casefold() for c in rule.get("cities") or []}
+    states = {s.casefold() for s in rule.get("states") or []}
+    return city.strip().casefold() in cities or (bool(state) and state.strip().casefold() in states)
 
 
 # --- Game rules --------------------------------------------------------------
@@ -173,7 +178,8 @@ EVENT_RULES = {
 COMPETITION_LABELS = {
     "uefa.champions": "UCL", "uefa.europa": "UEL", "uefa.europa.conf": "Conference League",
     "uefa.super_cup": "Super Cup", "fifa.world": "World Cup", "fifa.cwc": "Club World Cup",
-    "club.friendly": "Friendly", "eng.2": "Championship",
+    "fifa.wwc": "Women's World Cup", "concacaf.nations.league": "Nations League", "concacaf.gold": "Gold Cup",
+    "club.friendly": "Friendly", "fifa.friendly": "Friendly", "fifa.friendly.w": "Friendly", "eng.2": "Championship",
     "eng.fa": "FA Cup", "eng.league_cup": "EFL Cup", "eng.charity": "Community Shield",
     "esp.copa_del_rey": "Copa del Rey", "esp.super_cup": "Supercopa",
     "usa.1": "MLS", "usa.nwsl": "NWSL",
@@ -281,8 +287,8 @@ def evaluate(rule: dict, catalog) -> list:
         matched = GAME_RULES[kind](rule, catalog)
         if rule.get("skip_preseason"):
             matched = [g for g in matched if g.season_type != "pre"]
-        if rule.get("cities"):
-            matched = [g for g in matched if _in_cities(rule, g)]
+        if rule.get("cities") or rule.get("states"):
+            matched = [g for g in matched if _in_places(rule, g)]
         if rule.get("until_eliminated"):
             matched = _drop_when_eliminated(rule, matched, catalog)
         if rule.get("hide_when_under_500") is not None:
