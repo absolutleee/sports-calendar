@@ -39,6 +39,18 @@ LOCATION:Magness Arena
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Haiti USA · Nations League 1st Leg
+DTSTART:20261114T213000Z
+DTEND:20261114T233000Z
+DTSTAMP:20261114T213000Z
+UID:espn-401929710@sports-calendar
+DESCRIPTION:Concacaf Nations League · Nations League 1st Leg\nNu Stadium
+ \nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock\nMatched: USMNT\nid: espn
+ -401929710
+LOCATION:Nu Stadium
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Lindenwood Denver
 DTSTART:20261115T010000Z
 DTEND:20261115T033000Z
@@ -47,6 +59,18 @@ UID:espn-401904871@sports-calendar
 DESCRIPTION:NCAA Hockey\nMagness Arena\nMatched: Denver Pioneers home\nid:
   espn-401904871
 LOCATION:Magness Arena
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:USA Haiti · Nations League 2nd Leg
+DTSTART:20261118T000000Z
+DTEND:20261118T020000Z
+DTSTAMP:20261118T000000Z
+UID:espn-401929766@sports-calendar
+DESCRIPTION:Concacaf Nations League · Nations League 2nd Leg\nTQL Stadium
+ \nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock\nMatched: USMNT\nid: espn
+ -401929766
+LOCATION:TQL Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -212,6 +236,17 @@ UID:espn-401878742@sports-calendar
 DESCRIPTION:English Premier League\nEtihad Stadium\nMatched: Premier Leagu
  e big four\nid: espn-401878742
 LOCATION:Etihad Stadium
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:USA Jamaica · Friendly
+DTSTART:20261213T203000Z
+DTEND:20261213T223000Z
+DTSTAMP:20261213T203000Z
+UID:espn-401930977@sports-calendar
+DESCRIPTION:International Friendly · Friendly\nChase Stadium\nTV: TNT\, H
+ BO Max\, Tele\, Universo\, Peacock\nMatched: USMNT\nid: espn-401930977
+LOCATION:Chase Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
