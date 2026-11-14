@@ -57,6 +57,18 @@ def test_plain_title_keeps_context_in_description_only():
     assert ics.description_for(g).startswith("Premier League · Nations League 1st Leg")
 
 
+def test_mls_playoff_notes_give_round_and_venue_with_city():
+    miami, columbus = Team("20232", "Inter Miami CF", "Miami"), Team("183", "Columbus Crew", "Columbus")
+    g = game(home=miami, away=columbus, competition="usa.1", competition_name="MLS", season_type="post",
+             series_title="East Round One", context="MLS East Round One", plain_title=True,
+             venue="Nu Stadium", venue_city="Miami, Florida")
+    assert ics.title_for(g, NAMES) == "Miami Columbus"
+    assert ics.description_for(g).splitlines()[:2] == ["MLS Playoffs · East Round One", "Nu Stadium, Miami, Florida"]
+    g.series_game = 2
+    assert ics.description_for(g).startswith("MLS Playoffs · East Round One · Game 2\n")
+    assert ics.place_for(game()) == "Anfield"  # no city from the source: venue only
+
+
 def test_title_time_tbd():
     assert ics.title_for(game(time_valid=False), NAMES) == "Liverpool Nottm Forest · time TBD"
     assert ics.title_for(game(time_valid=False, context="UCL Final"), NAMES) == "Liverpool Nottm Forest · UCL Final · time TBD"

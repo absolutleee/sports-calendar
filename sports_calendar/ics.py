@@ -38,12 +38,25 @@ def title_for(game: Game, display_names: dict[str, dict[str, str]]) -> str:
     return title
 
 
+def place_for(game: Game) -> str | None:
+    """'Nu Stadium, Miami, Florida': the venue plus its city when the source
+    gives one (ESPN does; MLB and NHL give the venue only)."""
+    return ", ".join(p for p in (game.venue, game.venue_city) if p) or None
+
+
+def _what(game: Game) -> str:
+    """First line of the notes: competition and, for playoffs, the round."""
+    if game.sport == "soccer" and game.season_type == "post" and game.series_title:
+        line = f"{game.competition_name} Playoffs · {game.series_title}"  # MLS Playoffs · East Round One
+        return line + (f" · Game {game.series_game}" if game.series_game else "")
+    return f"{game.competition_name} · {game.context}" if game.context else game.competition_name
+
+
 def description_for(game: Game) -> str:
-    lines = [game.competition_name]
-    if game.context:
-        lines[0] += f" · {game.context}"
-    if game.venue:
-        lines.append(game.venue)
+    lines = [_what(game)]
+    place = place_for(game)
+    if place:
+        lines.append(place)
     if game.broadcast:
         lines.append(f"TV: {game.broadcast}")
     if game.matched_rules:
@@ -57,8 +70,9 @@ def _game_event(game: Game, display_names: dict[str, dict[str, str]]) -> Event:
     ev.add("uid", f"{game.uid}@{UID_DOMAIN}")
     ev.add("summary", title_for(game, display_names))
     ev.add("description", description_for(game))
-    if game.venue:
-        ev.add("location", game.venue)
+    place = place_for(game)
+    if place:
+        ev.add("location", place)
     if game.time_valid and game.start is not None:
         ev.add("dtstart", game.start)
         ev.add("dtend", game.start + DURATIONS.get(game.sport, timedelta(hours=2)))

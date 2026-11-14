@@ -18,11 +18,15 @@ Alerts are intentionally off; titles are built for scanning:
     Stars Avs                        US sports: away team first
     Avs Stars · 1st Round G3         suffix only when it adds information
     PSG Arsenal · UCL Final
-    Rapids Seattle · MLS West Round One G2
+    Rapids Seattle                   MLS playoffs & USA games: teams only;
+                                     round in the notes ("MLS Playoffs · West Round One")
     Pirates Mets · Opening Day
     Barcelona Real Madrid · time TBD kickoff not set yet → all-day until it is
     The Masters                      all-day, Thu–Sun
     Wimbledon Men's Final            all-day
+
+Each event's location and notes give the venue and, for ESPN games, its city
+("Nu Stadium, Miami, Florida").
 
 ### Secondary calendar ("More Sports")
 
