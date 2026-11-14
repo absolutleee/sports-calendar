@@ -66,9 +66,14 @@ def description_for(game: Game) -> str:
         lines.append(place)
     if game.broadcast:
         lines.append(f"TV: {game.broadcast}")
-    if game.matched_rules:
-        lines.append("Matched: " + ", ".join(game.matched_rules))
     return "\n".join(lines)
+
+
+def _add_matched_rules(ev: Event, rule_names: list[str]) -> None:
+    """Which config rules put the event here: kept in a property calendar apps
+    don't show, so it's in the .ics for debugging without cluttering the notes."""
+    if rule_names:
+        ev.add("x-matched-rules", ", ".join(rule_names))
 
 
 def _game_event(game: Game, display_names: dict[str, dict[str, str]]) -> Event:
@@ -76,6 +81,7 @@ def _game_event(game: Game, display_names: dict[str, dict[str, str]]) -> Event:
     ev.add("uid", f"{game.uid}@{UID_DOMAIN}")
     ev.add("summary", title_for(game, display_names))
     ev.add("description", description_for(game))
+    _add_matched_rules(ev, game.matched_rules)
     place = place_for(game)
     if place:
         ev.add("location", place)
@@ -96,11 +102,9 @@ def _simple_event(e: AllDayEvent | ManualEvent) -> Event:
     ev = Event()
     ev.add("uid", f"{e.uid}@{UID_DOMAIN}")
     ev.add("summary", e.title)
-    lines = [e.description] if e.description else []
-    if e.matched_rules:
-        lines.append("Matched: " + ", ".join(e.matched_rules))
-    if lines:
-        ev.add("description", "\n".join(lines))
+    if e.description:
+        ev.add("description", e.description)
+    _add_matched_rules(ev, e.matched_rules)
     ev.add("dtstart", e.start)
     ev.add("dtend", e.end)
     if isinstance(e.start, datetime):

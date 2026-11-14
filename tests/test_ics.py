@@ -98,8 +98,8 @@ def test_build_calendar_timed_event():
     assert ev["DTEND"].dt == datetime(2026, 8, 29, 13, 30, tzinfo=timezone.utc)
     assert str(ev["LOCATION"]) == "Anfield"
     desc = str(ev["DESCRIPTION"])
-    assert "Premier League" in desc and "TV: NBC" in desc and "Matched: Liverpool" in desc
-    assert desc.splitlines()[-1] == "Matched: Liverpool"  # no id line: it's in the UID
+    assert desc == "Premier League\nAnfield\nTV: NBC"  # id is in the UID, rule names in X-MATCHED-RULES
+    assert str(ev["X-MATCHED-RULES"]) == "Liverpool"
     assert "VALARM" not in data.decode()
 
 
