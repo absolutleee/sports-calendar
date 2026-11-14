@@ -38,9 +38,9 @@ def title_for(game: Game, display_names: dict[str, dict[str, str]]) -> str:
         context = None
     else:
         context = None if game.plain_title else game.context
-    parts = [p for p in (context, None if game.time_valid else "time TBD") if p]
-    if parts:
-        title += " · " + " · ".join(parts)
+    # No "time TBD" marker: a game without a start time is already an all-day event.
+    if context:
+        title += f" · {context}"
     return title
 
 

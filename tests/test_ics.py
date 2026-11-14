@@ -61,8 +61,8 @@ def test_display_names_by_team_id_tell_apart_shared_short_names():
 
 
 def test_plain_title_keeps_context_in_description_only():
-    g = game(context="Nations League 1st Leg", plain_title=True, time_valid=False)
-    assert ics.title_for(g, NAMES) == "Liverpool Nottm Forest · time TBD"
+    g = game(context="Nations League 1st Leg", plain_title=True)
+    assert ics.title_for(g, NAMES) == "Liverpool Nottm Forest"
     assert ics.description_for(g).startswith("Premier League · Nations League 1st Leg")
 
 
@@ -79,9 +79,10 @@ def test_mls_playoff_notes_give_round_and_venue_with_city():
     assert ics.place_for(game()) == "Anfield"  # no city from the source: venue only
 
 
-def test_title_time_tbd():
-    assert ics.title_for(game(time_valid=False), NAMES) == "Liverpool Nottm Forest · time TBD"
-    assert ics.title_for(game(time_valid=False, context="UCL Final"), NAMES) == "Liverpool Nottm Forest · UCL Final · time TBD"
+def test_title_has_no_time_tbd_marker():
+    """An unset start time already shows as an all-day event; the title doesn't repeat it."""
+    assert ics.title_for(game(time_valid=False), NAMES) == "Liverpool Nottm Forest"
+    assert ics.title_for(game(time_valid=False, context="UCL Final"), NAMES) == "Liverpool Nottm Forest · UCL Final"
 
 
 def test_build_calendar_timed_event():

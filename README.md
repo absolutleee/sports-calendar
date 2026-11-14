@@ -21,7 +21,7 @@ Alerts are intentionally off; titles are built for scanning:
     PSG Arsenal · UCL Final          suffix only when it adds information
     USA Haiti                        USA games (`plain_title`): teams only
     Pirates Mets · Opening Day
-    Barcelona Real Madrid · time TBD kickoff not set yet → all-day until it is
+    Barcelona Real Madrid            kickoff not set yet → all-day until it is
     The Masters                      all-day, Thu–Sun
     Wimbledon Men's Final            all-day
 
@@ -85,7 +85,7 @@ Other per-rule options:
   ESPN sometimes leaves the state off, so list key cities too when using `states`.
 - `plain_title: true` leaves the competition / round out of the title of every
   game the rule matches ("USA Haiti", not "USA Haiti · Nations League 1st Leg");
-  it stays in the event notes. "time TBD" still shows.
+  it stays in the event notes.
 
 Sources: `espn_soccer` (club id), `espn` (needs `sport` + `league`, team id;
 e.g. `football`/`nfl`, `basketball`/`nba`, `hockey`/`mens-college-hockey`),
