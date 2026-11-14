@@ -12,7 +12,6 @@ DTEND:20261110T033000Z
 DTSTAMP:20261110T010000Z
 UID:nhl-2026020283@sports-calendar
 DESCRIPTION:NHL\nRogers Place\nTV: MSG\nMatched: Rangers games (secondary)
- \nid: nhl-2026020283
 LOCATION:Rogers Place
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -23,7 +22,6 @@ DTEND:20261111T023000Z
 DTSTAMP:20261111T000000Z
 UID:nhl-2026020286@sports-calendar
 DESCRIPTION:NHL\nScotiabank Arena\nTV: ALT\nMatched: Avs games (secondary)
- \nid: nhl-2026020286
 LOCATION:Scotiabank Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -34,7 +32,7 @@ DTEND:20261112T030000Z
 DTSTAMP:20261112T003000Z
 UID:nhl-2026020294@sports-calendar
 DESCRIPTION:NHL\nScotiabank Saddledome\nTV: MSGSN\nMatched: Rangers games 
- (secondary)\nid: nhl-2026020294
+ (secondary)
 LOCATION:Scotiabank Saddledome
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -45,7 +43,7 @@ DTEND:20261113T023000Z
 DTSTAMP:20261113T000000Z
 UID:nhl-2026020301@sports-calendar
 DESCRIPTION:NHL\nCanadian Tire Centre\nTV: ALT\nMatched: Avs games (second
- ary)\nid: nhl-2026020301
+ ary)
 LOCATION:Canadian Tire Centre
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -56,7 +54,7 @@ DTEND:20261113T031500Z
 DTSTAMP:20261113T011500Z
 UID:espn-401873052@sports-calendar
 DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: Prime Video\nMatch
- ed: Giants games (secondary)\nid: espn-401873052
+ ed: Giants games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -67,7 +65,7 @@ DTEND:20261114T043000Z
 DTSTAMP:20261114T020000Z
 UID:nhl-2026020310@sports-calendar
 DESCRIPTION:NHL\nRogers Arena\nTV: MSGSN\nMatched: Rangers games (secondar
- y)\nid: nhl-2026020310
+ y)
 LOCATION:Rogers Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -78,7 +76,7 @@ DTEND:20261115T023000Z
 DTSTAMP:20261115T000000Z
 UID:nhl-2026020315@sports-calendar
 DESCRIPTION:NHL\nCentre Bell\nTV: ALT2\, KTVD\nMatched: Avs games (seconda
- ry)\nid: nhl-2026020315
+ ry)
 LOCATION:Centre Bell
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -89,7 +87,7 @@ DTEND:20261117T030000Z
 DTSTAMP:20261117T003000Z
 UID:nhl-2026020331@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: TNT\, truTV\, HBO MAX\nMatched
- : Rangers games (secondary)\nid: nhl-2026020331
+ : Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -100,7 +98,7 @@ DTEND:20261119T053000Z
 DTSTAMP:20261119T030000Z
 UID:nhl-2026020346@sports-calendar
 DESCRIPTION:NHL\nDelta Center\nTV: TNT\, HBO MAX\, ALT\nMatched: Avs games
-  (secondary)\nid: nhl-2026020346
+  (secondary)
 LOCATION:Delta Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -111,7 +109,7 @@ DTEND:20261120T043000Z
 DTSTAMP:20261120T020000Z
 UID:nhl-2026020356@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: FOXLA+\, Prime Video\, KUSA\, ALT\, KTVD
- \nMatched: Avs games (secondary)\nid: nhl-2026020356
+ \nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -122,7 +120,7 @@ DTEND:20261122T150000Z
 DTSTAMP:20261122T130000Z
 UID:espn-401882804@sports-calendar
 DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN Deporte
- s\, ESPN+\nMatched: Barcelona games (secondary)\nid: espn-401882804
+ s\, ESPN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -133,7 +131,7 @@ DTEND:20261122T200000Z
 DTSTAMP:20261122T173000Z
 UID:nhl-2026020373@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: NHLN\, HHN\, MSG\, CARNHL\nMat
- ched: Rangers games (secondary)\nid: nhl-2026020373
+ ched: Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -144,7 +142,7 @@ DTEND:20261122T232500Z
 DTSTAMP:20261122T212500Z
 UID:espn-401873069@sports-calendar
 DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Gian
- ts games (secondary)\nid: espn-401873069
+ ts games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -155,7 +153,7 @@ DTEND:20261122T232500Z
 DTSTAMP:20261122T212500Z
 UID:espn-401873075@sports-calendar
 DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: CBS\nMatched: Br
- oncos games (secondary)\nid: espn-401873075
+ oncos games (secondary)
 LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -166,7 +164,7 @@ DTEND:20261126T023000Z
 DTSTAMP:20261126T000000Z
 UID:nhl-2026020387@sports-calendar
 DESCRIPTION:NHL\nKeyBank Center\nTV: MSG-B\, MSG 2\nMatched: Rangers games
-  (secondary)\nid: nhl-2026020387
+  (secondary)
 LOCATION:KeyBank Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -177,7 +175,7 @@ DTEND:20261126T050000Z
 DTSTAMP:20261126T023000Z
 UID:nhl-2026020397@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, KTVD\nMatched: Avs games (secondary
- )\nid: nhl-2026020397
+ )
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -188,7 +186,7 @@ DTEND:20261127T220000Z
 DTSTAMP:20261127T200000Z
 UID:espn-401873083@sports-calendar
 DESCRIPTION:NFL\nAcrisure Stadium\, Pittsburgh\nTV: Prime Video\nMatched: 
- Broncos games (secondary)\nid: espn-401873083
+ Broncos games (secondary)
 LOCATION:Acrisure Stadium\, Pittsburgh
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -199,7 +197,7 @@ DTEND:20261127T233000Z
 DTSTAMP:20261127T210000Z
 UID:nhl-2026020408@sports-calendar
 DESCRIPTION:NHL\nGrand Casino Arena\nTV: Wild+\, ALT\, MINNHL\nMatched: Av
- s games (secondary)\nid: nhl-2026020408
+ s games (secondary)
 LOCATION:Grand Casino Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -210,7 +208,7 @@ DTEND:20261128T010000Z
 DTSTAMP:20261127T223000Z
 UID:nhl-2026020411@sports-calendar
 DESCRIPTION:NHL\nUnited Center\nTV: TNT\, truTV\, HBO MAX\nMatched: Ranger
- s games (secondary)\nid: nhl-2026020411
+ s games (secondary)
 LOCATION:United Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -221,7 +219,7 @@ DTEND:20261129T023000Z
 DTSTAMP:20261129T000000Z
 UID:nhl-2026020419@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: NHLN\, MSG\nMatched: Rangers g
- ames (secondary)\nid: nhl-2026020419
+ ames (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -232,7 +230,7 @@ DTEND:20261129T043000Z
 DTSTAMP:20261129T020000Z
 UID:nhl-2026020425@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, NBCSCA\nMatched: Avs games (seconda
- ry)\nid: nhl-2026020425
+ ry)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -243,7 +241,7 @@ DTEND:20261129T171500Z
 DTSTAMP:20261129T151500Z
 UID:espn-401882794@sports-calendar
 DESCRIPTION:Spanish LALIGA\nRiazor\, La Coruña\nTV: ESPN+\nMatched: Barce
- lona games (secondary)\nid: espn-401882794
+ lona games (secondary)
 LOCATION:Riazor\, La Coruña
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -254,7 +252,7 @@ DTEND:20261129T200000Z
 DTSTAMP:20261129T180000Z
 UID:espn-401873088@sports-calendar
 DESCRIPTION:NFL\nLucas Oil Stadium\, Indianapolis\nTV: Fox\nMatched: Giant
- s games (secondary)\nid: espn-401873088
+ s games (secondary)
 LOCATION:Lucas Oil Stadium\, Indianapolis
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -265,7 +263,7 @@ DTEND:20261201T023000Z
 DTSTAMP:20261201T000000Z
 UID:nhl-2026020431@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: HHN\, MSG\, CARNHL\nMatched: R
- angers games (secondary)\nid: nhl-2026020431
+ angers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -276,7 +274,7 @@ DTEND:20261202T033000Z
 DTSTAMP:20261202T010000Z
 UID:nhl-2026020440@sports-calendar
 DESCRIPTION:NHL\nTD Garden\nTV: TNT\, truTV\, HBO MAX\, NESN\nMatched: Avs
-  games (secondary)\nid: nhl-2026020440
+  games (secondary)
 LOCATION:TD Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -287,7 +285,7 @@ DTEND:20261204T023000Z
 DTSTAMP:20261204T000000Z
 UID:nhl-2026020450@sports-calendar
 DESCRIPTION:NHL\nLittle Caesars Arena\nTV: DSN\, ALT\, KTVD\nMatched: Avs 
- games (secondary)\nid: nhl-2026020450
+ games (secondary)
 LOCATION:Little Caesars Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -298,7 +296,7 @@ DTEND:20261204T023000Z
 DTSTAMP:20261204T000000Z
 UID:nhl-2026020451@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: NBCSCA\, MSG\nMatched: Rangers
-  games (secondary)\nid: nhl-2026020451
+  games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -309,7 +307,7 @@ DTEND:20261206T023000Z
 DTSTAMP:20261206T000000Z
 UID:nhl-2026020470@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ALT\, MSG\nMatched: Avs games 
- (secondary)\, Rangers games (secondary)\nid: nhl-2026020470
+ (secondary)\, Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -320,7 +318,7 @@ DTEND:20261206T200000Z
 DTSTAMP:20261206T180000Z
 UID:espn-401873095@sports-calendar
 DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: Fox\nMatched: Gian
- ts games (secondary)\nid: espn-401873095
+ ts games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -330,8 +328,8 @@ DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 DTSTAMP:20261206T000000Z
 UID:espn-401882783@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882783
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -342,7 +340,7 @@ DTEND:20261206T230500Z
 DTSTAMP:20261206T210500Z
 UID:espn-401873103@sports-calendar
 DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: Fox\nMatched: Br
- oncos games (secondary)\nid: espn-401873103
+ oncos games (secondary)
 LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -353,7 +351,7 @@ DTEND:20261207T203000Z
 DTSTAMP:20261207T180000Z
 UID:nhl-2026020482@sports-calendar
 DESCRIPTION:NHL\nUBS Arena\nTV: ALT\, MSGSN\nMatched: Avs games (secondary
- )\nid: nhl-2026020482
+ )
 LOCATION:UBS Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -364,7 +362,7 @@ DTEND:20261208T023000Z
 DTSTAMP:20261208T000000Z
 UID:nhl-2026020484@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSGSN\, MSG\nMatched: Rangers 
- games (secondary)\nid: nhl-2026020484
+ games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -375,7 +373,7 @@ DTEND:20261209T023000Z
 DTSTAMP:20261209T000000Z
 UID:nhl-2026020490@sports-calendar
 DESCRIPTION:NHL\nLenovo Center\nTV: HHN\, MSG\, CARNHL\nMatched: Rangers g
- ames (secondary)\nid: nhl-2026020490
+ ames (secondary)
 LOCATION:Lenovo Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -386,7 +384,7 @@ DTEND:20261209T033000Z
 DTSTAMP:20261209T010000Z
 UID:nhl-2026020491@sports-calendar
 DESCRIPTION:NHL\nEnterprise Center\nTV: ESPN+\, HULU\, Disney+\nMatched: A
- vs games (secondary)\nid: nhl-2026020491
+ vs games (secondary)
 LOCATION:Enterprise Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -397,7 +395,7 @@ DTEND:20261212T023000Z
 DTSTAMP:20261212T000000Z
 UID:nhl-2026020510@sports-calendar
 DESCRIPTION:NHL\nLittle Caesars Arena\nTV: DSN\, MSG\nMatched: Rangers gam
- es (secondary)\nid: nhl-2026020510
+ es (secondary)
 LOCATION:Little Caesars Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -408,7 +406,7 @@ DTEND:20261213T043000Z
 DTSTAMP:20261213T020000Z
 UID:nhl-2026020524@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT2\, MNMT2\, KTVD\nMatched: Avs games (
- secondary)\nid: nhl-2026020524
+ secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -419,7 +417,7 @@ DTEND:20261213T200000Z
 DTSTAMP:20261213T180000Z
 UID:espn-401873112@sports-calendar
 DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Bron
- cos games (secondary)\nid: espn-401873112
+ cos games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -429,8 +427,8 @@ DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 DTSTAMP:20261213T000000Z
 UID:espn-401882770@sports-calendar
-DESCRIPTION:Spanish LALIGA\nLa Rosaleda\, Malaga\nTV: ESPN+\nMatched: Barc
- elona games (secondary)\nid: espn-401882770
+DESCRIPTION:Time TBD\nSpanish LALIGA\nLa Rosaleda\, Malaga\nTV: ESPN+\nMat
+ ched: Barcelona games (secondary)
 LOCATION:La Rosaleda\, Malaga
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -441,7 +439,7 @@ DTEND:20261213T232500Z
 DTSTAMP:20261213T212500Z
 UID:espn-401873121@sports-calendar
 DESCRIPTION:NFL\nLumen Field\, Seattle\nTV: Fox\nMatched: Giants games (se
- condary)\nid: espn-401873121
+ condary)
 LOCATION:Lumen Field\, Seattle
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -452,7 +450,7 @@ DTEND:20261214T013000Z
 DTSTAMP:20261213T230000Z
 UID:nhl-2026020528@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: CBJHN\, MSG\, CBJNHL\nMatched:
-  Rangers games (secondary)\nid: nhl-2026020528
+  Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -463,7 +461,7 @@ DTEND:20261215T043000Z
 DTSTAMP:20261215T020000Z
 UID:nhl-2026020534@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: Mammoth+\, Utah16\, ALT\nMatched: Avs gam
- es (secondary)\nid: nhl-2026020534
+ es (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -474,7 +472,7 @@ DTEND:20261216T023000Z
 DTSTAMP:20261216T000000Z
 UID:nhl-2026020539@sports-calendar
 DESCRIPTION:NHL\nPrudential Center\nTV: MSGSN2\, MSG\nMatched: Rangers gam
- es (secondary)\nid: nhl-2026020539
+ es (secondary)
 LOCATION:Prudential Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -485,7 +483,7 @@ DTEND:20261217T030000Z
 DTSTAMP:20261217T003000Z
 UID:nhl-2026020547@sports-calendar
 DESCRIPTION:NHL\nXfinity Mobile Arena\nTV: TNT\, truTV\, HBO MAX\nMatched:
-  Rangers games (secondary)\nid: nhl-2026020547
+  Rangers games (secondary)
 LOCATION:Xfinity Mobile Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -496,7 +494,7 @@ DTEND:20261217T043000Z
 DTSTAMP:20261217T020000Z
 UID:nhl-2026020548@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: KUSA\, ALT\, MSGSN\, KTVD\nMatched: Avs g
- ames (secondary)\nid: nhl-2026020548
+ ames (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -507,7 +505,7 @@ DTEND:20261219T023000Z
 DTSTAMP:20261219T000000Z
 UID:nhl-2026020561@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSGSN\, MSG 2\, SCRIPPS\nMatch
- ed: Rangers games (secondary)\nid: nhl-2026020561
+ ed: Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -518,7 +516,7 @@ DTEND:20261219T043000Z
 DTSTAMP:20261219T020000Z
 UID:nhl-2026020565@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: HHN\, ALT\, CARNHL\nMatched: Avs games (s
- econdary)\nid: nhl-2026020565
+ econdary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -529,7 +527,7 @@ DTEND:20261220T200000Z
 DTSTAMP:20261220T180000Z
 UID:espn-401873130@sports-calendar
 DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Gian
- ts games (secondary)\nid: espn-401873130
+ ts games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -539,8 +537,8 @@ DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 DTSTAMP:20261220T000000Z
 UID:espn-401882762@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882762
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -551,7 +549,7 @@ DTEND:20261220T232500Z
 DTSTAMP:20261220T212500Z
 UID:espn-401873137@sports-calendar
 DESCRIPTION:NFL\nAllegiant Stadium\, Las Vegas\nTV: CBS\nMatched: Broncos 
- games (secondary)\nid: espn-401873137
+ games (secondary)
 LOCATION:Allegiant Stadium\, Las Vegas
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -562,7 +560,7 @@ DTEND:20261221T023000Z
 DTSTAMP:20261221T000000Z
 UID:nhl-2026020582@sports-calendar
 DESCRIPTION:NHL\nUBS Arena\nTV: MSGSN2\, MSG\nMatched: Rangers games (seco
- ndary)\nid: nhl-2026020582
+ ndary)
 LOCATION:UBS Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -573,7 +571,7 @@ DTEND:20261221T033000Z
 DTSTAMP:20261221T010000Z
 UID:nhl-2026020584@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\, ALT\, KONG\nMatched: Avs ga
- mes (secondary)\nid: nhl-2026020584
+ mes (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -584,7 +582,7 @@ DTEND:20261223T023000Z
 DTSTAMP:20261223T000000Z
 UID:nhl-2026020592@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSGSN2\, MSG\nMatched: Rangers
-  games (secondary)\nid: nhl-2026020592
+  games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -595,7 +593,7 @@ DTEND:20261225T233000Z
 DTSTAMP:20261225T213000Z
 UID:espn-401873142@sports-calendar
 DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: Netflix\nMatched
- : Broncos games (secondary)\nid: espn-401873142
+ : Broncos games (secondary)
 LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -606,7 +604,7 @@ DTEND:20261228T003000Z
 DTSTAMP:20261227T220000Z
 UID:nhl-2026020614@sports-calendar
 DESCRIPTION:NHL\nEnterprise Center\nTV: BN+\, MSG 2\, STLNHL\nMatched: Ran
- gers games (secondary)\nid: nhl-2026020614
+ gers games (secondary)
 LOCATION:Enterprise Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -617,7 +615,7 @@ DTEND:20261228T033000Z
 DTSTAMP:20261228T010000Z
 UID:nhl-2026020618@sports-calendar
 DESCRIPTION:NHL\nHonda Center\nTV: Prime Video\, KTTV\, ALT2\nMatched: Avs
-  games (secondary)\nid: nhl-2026020618
+  games (secondary)
 LOCATION:Honda Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -628,7 +626,7 @@ DTEND:20261229T031500Z
 DTSTAMP:20261229T011500Z
 UID:espn-401873155@sports-calendar
 DESCRIPTION:NFL\nFord Field\, Detroit\nTV: ESPN\nMatched: Giants games (se
- condary)\nid: espn-401873155
+ condary)
 LOCATION:Ford Field\, Detroit
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -639,7 +637,7 @@ DTEND:20261230T023000Z
 DTSTAMP:20261230T000000Z
 UID:nhl-2026020629@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: DSN\, MSG\nMatched: Rangers ga
- mes (secondary)\nid: nhl-2026020629
+ mes (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -650,7 +648,7 @@ DTEND:20261230T043000Z
 DTSTAMP:20261230T020000Z
 UID:nhl-2026020633@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: BN+\, ALT\, STLNHL\, KTVD\nMatched: Avs g
- ames (secondary)\nid: nhl-2026020633
+ ames (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -661,7 +659,7 @@ DTEND:20270101T013000Z
 DTSTAMP:20261231T230000Z
 UID:nhl-2026020647@sports-calendar
 DESCRIPTION:NHL\nRice-Eccles Stadium\nTV: TNT\, truTV\, HBO MAX\nMatched: 
- Avs games (secondary)\nid: nhl-2026020647
+ Avs games (secondary)
 LOCATION:Rice-Eccles Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -672,7 +670,7 @@ DTEND:20270101T043000Z
 DTSTAMP:20270101T020000Z
 UID:nhl-2026020649@sports-calendar
 DESCRIPTION:NHL\nAmerican Airlines Center\nTV: Prime Video\, MSGSN\, KDFI
- \nMatched: Rangers games (secondary)\nid: nhl-2026020649
+ \nMatched: Rangers games (secondary)
 LOCATION:American Airlines Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -683,7 +681,7 @@ DTEND:20270103T053000Z
 DTSTAMP:20270103T030000Z
 UID:nhl-2026020667@sports-calendar
 DESCRIPTION:NHL\nT-Mobile Arena\nTV: ALT\, SCRIPPS\nMatched: Avs games (se
- condary)\nid: nhl-2026020667
+ condary)
 LOCATION:T-Mobile Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -693,8 +691,8 @@ DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 DTSTAMP:20270103T000000Z
 UID:espn-401873157@sports-calendar
-DESCRIPTION:NFL\nGillette Stadium\, Foxborough\nMatched: Broncos games (se
- condary)\nid: espn-401873157
+DESCRIPTION:Time TBD\nNFL\nGillette Stadium\, Foxborough\nMatched: Broncos
+  games (secondary)
 LOCATION:Gillette Stadium\, Foxborough
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -705,7 +703,7 @@ DTEND:20270103T200000Z
 DTSTAMP:20270103T180000Z
 UID:espn-401873165@sports-calendar
 DESCRIPTION:NFL\nAT&T Stadium\, Arlington\nTV: Fox\nMatched: Giants games 
- (secondary)\nid: espn-401873165
+ (secondary)
 LOCATION:AT&T Stadium\, Arlington
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -715,8 +713,8 @@ DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 DTSTAMP:20270103T000000Z
 UID:espn-401882754@sports-calendar
-DESCRIPTION:Spanish LALIGA\nRCDE Stadium\, Barcelona\nTV: ESPN+\nMatched: 
- Barcelona games (secondary)\nid: espn-401882754
+DESCRIPTION:Time TBD\nSpanish LALIGA\nRCDE Stadium\, Barcelona\nTV: ESPN+
+ \nMatched: Barcelona games (secondary)
 LOCATION:RCDE Stadium\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -727,7 +725,7 @@ DTEND:20270104T013000Z
 DTSTAMP:20270103T230000Z
 UID:nhl-2026020670@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: CBJHN\, MSG\, CBJNHL\nMatched:
-  Rangers games (secondary)\nid: nhl-2026020670
+  Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -738,7 +736,7 @@ DTEND:20270105T043000Z
 DTSTAMP:20270105T020000Z
 UID:nhl-2026020678@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, SCRIPPS\nMatched: Avs games (second
- ary)\nid: nhl-2026020678
+ ary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -749,7 +747,7 @@ DTEND:20270106T023000Z
 DTSTAMP:20270106T000000Z
 UID:nhl-2026020682@sports-calendar
 DESCRIPTION:NHL\nNationwide Arena\nTV: CBJHN\, MSG\, CBJNHL\nMatched: Rang
- ers games (secondary)\nid: nhl-2026020682
+ ers games (secondary)
 LOCATION:Nationwide Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -759,8 +757,7 @@ DTSTART:20270107T023000Z
 DTEND:20270107T050000Z
 DTSTAMP:20270107T023000Z
 UID:nhl-2026020691@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)\nid: 
- nhl-2026020691
+DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -771,7 +768,7 @@ DTEND:20270108T023000Z
 DTSTAMP:20270108T000000Z
 UID:nhl-2026020696@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ESPN\nMatched: Rangers games (
- secondary)\nid: nhl-2026020696
+ secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -782,7 +779,7 @@ DTEND:20270109T043000Z
 DTSTAMP:20270109T020000Z
 UID:nhl-2026020706@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\, ALT\, KING\, KONG\nMatched:
-  Avs games (secondary)\nid: nhl-2026020706
+  Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -793,7 +790,7 @@ DTEND:20270110T053000Z
 DTSTAMP:20270110T030000Z
 UID:nhl-2026020721@sports-calendar
 DESCRIPTION:NHL\nSAP Center at San Jose\nTV: NBCSCA\, MSG\nMatched: Ranger
- s games (secondary)\nid: nhl-2026020721
+ s games (secondary)
 LOCATION:SAP Center at San Jose
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -803,8 +800,8 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401873179@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nMatched: Broncos gam
- es (secondary)\nid: espn-401873179
+DESCRIPTION:Time TBD\nNFL\nEmpower Field at Mile High\, Denver\nMatched: B
+ roncos games (secondary)
 LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -814,8 +811,8 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401873182@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nMatched: Giants games 
- (secondary)\nid: espn-401873182
+DESCRIPTION:Time TBD\nNFL\nMetLife Stadium\, East Rutherford\nMatched: Gia
+ nts games (secondary)
 LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -825,8 +822,8 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401882740@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEl Sadar\, Pamplona\nTV: ESPN+\nMatched: Barce
- lona games (secondary)\nid: espn-401882740
+DESCRIPTION:Time TBD\nSpanish LALIGA\nEl Sadar\, Pamplona\nTV: ESPN+\nMatc
+ hed: Barcelona games (secondary)
 LOCATION:El Sadar\, Pamplona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -837,7 +834,7 @@ DTEND:20270111T033000Z
 DTSTAMP:20270111T010000Z
 UID:nhl-2026020723@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, SCRIPPS\nMatched: Avs games (second
- ary)\nid: nhl-2026020723
+ ary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -848,7 +845,7 @@ DTEND:20270112T053000Z
 DTSTAMP:20270112T030000Z
 UID:nhl-2026020727@sports-calendar
 DESCRIPTION:NHL\nCrypto.com Arena\nTV: ABTV \, MSG\nMatched: Rangers games
-  (secondary)\nid: nhl-2026020727
+  (secondary)
 LOCATION:Crypto.com Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -859,7 +856,7 @@ DTEND:20270113T023000Z
 DTSTAMP:20270113T000000Z
 UID:nhl-2026020730@sports-calendar
 DESCRIPTION:NHL\nPPG Paints Arena\nTV: ESPN+\, HULU\, Disney+\nMatched: Av
- s games (secondary)\nid: nhl-2026020730
+ s games (secondary)
 LOCATION:PPG Paints Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -870,7 +867,7 @@ DTEND:20270113T053000Z
 DTSTAMP:20270113T030000Z
 UID:nhl-2026020737@sports-calendar
 DESCRIPTION:NHL\nHonda Center\nTV: FOXLA+\, Prime Video\, MSG\nMatched: Ra
- ngers games (secondary)\nid: nhl-2026020737
+ ngers games (secondary)
 LOCATION:Honda Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -881,7 +878,7 @@ DTEND:20270115T030000Z
 DTSTAMP:20270115T003000Z
 UID:nhl-2026020744@sports-calendar
 DESCRIPTION:NHL\nKeyBank Center\nTV: MSG-B\, ALT2\nMatched: Avs games (sec
- ondary)\nid: nhl-2026020744
+ ondary)
 LOCATION:KeyBank Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -892,7 +889,7 @@ DTEND:20270116T193000Z
 DTSTAMP:20270116T170000Z
 UID:nhl-2026020758@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ABC\nMatched: Rangers games (s
- econdary)\nid: nhl-2026020758
+ econdary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -903,7 +900,7 @@ DTEND:20270117T023000Z
 DTSTAMP:20270117T000000Z
 UID:nhl-2026020765@sports-calendar
 DESCRIPTION:NHL\nCapital One Arena\nTV: MNMT\, ALT2\, KTVD\nMatched: Avs g
- ames (secondary)\nid: nhl-2026020765
+ ames (secondary)
 LOCATION:Capital One Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -913,8 +910,8 @@ DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 DTSTAMP:20270117T000000Z
 UID:espn-401882733@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882733
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -925,7 +922,7 @@ DTEND:20270118T013000Z
 DTSTAMP:20270117T230000Z
 UID:nhl-2026020773@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: Prime Video\, MSG\nMatched: Ra
- ngers games (secondary)\nid: nhl-2026020773
+ ngers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -935,8 +932,7 @@ DTSTART:20270118T200000Z
 DTEND:20270118T223000Z
 DTSTAMP:20270118T200000Z
 UID:nhl-2026020779@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)\nid: 
- nhl-2026020779
+DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -947,7 +943,7 @@ DTEND:20270120T023000Z
 DTSTAMP:20270120T000000Z
 UID:nhl-2026020788@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: NBCSP\, MSG\nMatched: Rangers 
- games (secondary)\nid: nhl-2026020788
+ games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -958,7 +954,7 @@ DTEND:20270121T043000Z
 DTSTAMP:20270121T020000Z
 UID:nhl-2026020795@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: KUSA\, ALT\, NESN\, KTVD\nMatched: Avs ga
- mes (secondary)\nid: nhl-2026020795
+ mes (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -969,7 +965,7 @@ DTEND:20270122T023000Z
 DTSTAMP:20270122T000000Z
 UID:nhl-2026020805@sports-calendar
 DESCRIPTION:NHL\nCanada Life Centre\nTV: MSG\nMatched: Rangers games (seco
- ndary)\nid: nhl-2026020805
+ ndary)
 LOCATION:Canada Life Centre
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -980,7 +976,7 @@ DTEND:20270124T033000Z
 DTSTAMP:20270124T010000Z
 UID:nhl-2026020821@sports-calendar
 DESCRIPTION:NHL\nGrand Casino Arena\nTV: Wild+\, MSG\, MINNHL\nMatched: Ra
- ngers games (secondary)\nid: nhl-2026020821
+ ngers games (secondary)
 LOCATION:Grand Casino Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -990,8 +986,8 @@ DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 DTSTAMP:20270124T000000Z
 UID:espn-401882726@sports-calendar
-DESCRIPTION:Spanish LALIGA\nMendizorrotza\, Vitoria-Gasteiz\nTV: ESPN+\nMa
- tched: Barcelona games (secondary)\nid: espn-401882726
+DESCRIPTION:Time TBD\nSpanish LALIGA\nMendizorrotza\, Vitoria-Gasteiz\nTV:
+  ESPN+\nMatched: Barcelona games (secondary)
 LOCATION:Mendizorrotza\, Vitoria-Gasteiz
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1002,7 +998,7 @@ DTEND:20270126T023000Z
 DTSTAMP:20270126T000000Z
 UID:nhl-2026020831@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: Prime Video\, MSG\, KING\, KON
- G\nMatched: Rangers games (secondary)\nid: nhl-2026020831
+ G\nMatched: Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1013,7 +1009,7 @@ DTEND:20270127T043000Z
 DTSTAMP:20270127T020000Z
 UID:nhl-2026020845@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, KTVD\nMatched: Avs games (secondary
- )\nid: nhl-2026020845
+ )
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1024,7 +1020,7 @@ DTEND:20270128T030000Z
 DTSTAMP:20270128T003000Z
 UID:nhl-2026020847@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: TNT\, HBO MAX\, MSG\nMatched: 
- Rangers games (secondary)\nid: nhl-2026020847
+ Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1035,7 +1031,7 @@ DTEND:20270129T033000Z
 DTSTAMP:20270129T010000Z
 UID:nhl-2026020853@sports-calendar
 DESCRIPTION:NHL\nEnterprise Center\nTV: ABC32\, BN+\, ALT\, STLNHL\nMatche
- d: Avs games (secondary)\nid: nhl-2026020853
+ d: Avs games (secondary)
 LOCATION:Enterprise Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1046,7 +1042,7 @@ DTEND:20270130T023000Z
 DTSTAMP:20270130T000000Z
 UID:nhl-2026020862@sports-calendar
 DESCRIPTION:NHL\nPPG Paints Arena\nTV: SN-PIT\, MSG\nMatched: Rangers game
- s (secondary)\nid: nhl-2026020862
+ s (secondary)
 LOCATION:PPG Paints Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1057,7 +1053,7 @@ DTEND:20270131T003000Z
 DTSTAMP:20270130T220000Z
 UID:nhl-2026020868@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, MSG-B\nMatched: Avs games (secondar
- y)\nid: nhl-2026020868
+ y)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1068,7 +1064,7 @@ DTEND:20270131T023000Z
 DTSTAMP:20270131T000000Z
 UID:nhl-2026020870@sports-calendar
 DESCRIPTION:NHL\nCanadian Tire Centre\nTV: MSG\nMatched: Rangers games (se
- condary)\nid: nhl-2026020870
+ condary)
 LOCATION:Canadian Tire Centre
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1078,8 +1074,8 @@ DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 DTSTAMP:20270131T000000Z
 UID:espn-401882713@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882713
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1090,7 +1086,7 @@ DTEND:20270202T210000Z
 DTSTAMP:20270202T190000Z
 UID:espn-401892163@sports-calendar
 DESCRIPTION:Spanish Supercopa · Supercopa\nŞükrü Saracoğlu Stadium\, 
- Istanbul\nMatched: Barcelona games (secondary)\nid: espn-401892163
+ Istanbul\nMatched: Barcelona games (secondary)
 LOCATION:Şükrü Saracoğlu Stadium\, Istanbul
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1101,7 +1097,7 @@ DTEND:20270204T030000Z
 DTSTAMP:20270204T003000Z
 UID:nhl-2026020889@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSG 2\nMatched: Rangers games 
- (secondary)\nid: nhl-2026020889
+ (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1112,7 +1108,7 @@ DTEND:20270210T030000Z
 DTSTAMP:20270210T003000Z
 UID:nhl-2026020898@sports-calendar
 DESCRIPTION:NHL\nLenovo Center\nTV: ESPN+\, HULU\, Disney+\nMatched: Avs g
- ames (secondary)\nid: nhl-2026020898
+ ames (secondary)
 LOCATION:Lenovo Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1123,7 +1119,7 @@ DTEND:20270213T023000Z
 DTSTAMP:20270213T000000Z
 UID:nhl-2026020908@sports-calendar
 DESCRIPTION:NHL\nAmerant Bank Arena\nTV: ALT2\, SCRIPPS\nMatched: Avs game
- s (secondary)\nid: nhl-2026020908
+ s (secondary)
 LOCATION:Amerant Bank Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1134,7 +1130,7 @@ DTEND:20270213T023000Z
 DTSTAMP:20270213T000000Z
 UID:nhl-2026020909@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSGSN\, MSG\nMatched: Rangers 
- games (secondary)\nid: nhl-2026020909
+ games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1145,7 +1141,7 @@ DTEND:20270214T023000Z
 DTSTAMP:20270214T000000Z
 UID:nhl-2026020919@sports-calendar
 DESCRIPTION:NHL\nBenchmark International Arena\nTV: The Spot\, ALT\, KTVD
- \nMatched: Avs games (secondary)\nid: nhl-2026020919
+ \nMatched: Avs games (secondary)
 LOCATION:Benchmark International Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1156,7 +1152,6 @@ DTEND:20270214T203000Z
 DTSTAMP:20270214T180000Z
 UID:nhl-2026020927@sports-calendar
 DESCRIPTION:NHL\nCentre Bell\nTV: MSG\nMatched: Rangers games (secondary)
- \nid: nhl-2026020927
 LOCATION:Centre Bell
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1166,8 +1161,8 @@ DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 DTSTAMP:20270214T000000Z
 UID:espn-401882687@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio de la Cerámica\, Villarreal\nTV: ESPN
- +\nMatched: Barcelona games (secondary)\nid: espn-401882687
+DESCRIPTION:Time TBD\nSpanish LALIGA\nEstadio de la Cerámica\, Villarreal
+ \nTV: ESPN+\nMatched: Barcelona games (secondary)
 LOCATION:Estadio de la Cerámica\, Villarreal
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1178,7 +1173,7 @@ DTEND:20270215T223000Z
 DTSTAMP:20270215T200000Z
 UID:nhl-2026020932@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: CBJHN\, ALT\, CBJNHL\nMatched: Avs games 
- (secondary)\nid: nhl-2026020932
+ (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1189,7 +1184,7 @@ DTEND:20270216T013000Z
 DTSTAMP:20270215T230000Z
 UID:nhl-2026020931@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSG-B\, MSGSN\nMatched: Ranger
- s games (secondary)\nid: nhl-2026020931
+ s games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1200,7 +1195,7 @@ DTEND:20270218T043000Z
 DTSTAMP:20270218T020000Z
 UID:nhl-2026020949@sports-calendar
 DESCRIPTION:NHL\nRogers Place\nTV: TNT\, HBO MAX\, ALT\nMatched: Avs games
-  (secondary)\nid: nhl-2026020949
+  (secondary)
 LOCATION:Rogers Place
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1211,7 +1206,7 @@ DTEND:20270219T023000Z
 DTSTAMP:20270219T000000Z
 UID:nhl-2026020955@sports-calendar
 DESCRIPTION:NHL\nUBS Arena\nTV: MSGSN2\, MSG\nMatched: Rangers games (seco
- ndary)\nid: nhl-2026020955
+ ndary)
 LOCATION:UBS Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1222,7 +1217,7 @@ DTEND:20270220T200000Z
 DTSTAMP:20270220T173000Z
 UID:nhl-2026020967@sports-calendar
 DESCRIPTION:NHL\nXfinity Mobile Arena\nTV: ABC\nMatched: Rangers games (se
- condary)\nid: nhl-2026020967
+ condary)
 LOCATION:Xfinity Mobile Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1233,7 +1228,7 @@ DTEND:20270221T053000Z
 DTSTAMP:20270221T030000Z
 UID:nhl-2026020975@sports-calendar
 DESCRIPTION:NHL\nRogers Arena\nTV: ALT\, KTVD\nMatched: Avs games (seconda
- ry)\nid: nhl-2026020975
+ ry)
 LOCATION:Rogers Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1244,7 +1239,7 @@ DTEND:20270221T203000Z
 DTSTAMP:20270221T180000Z
 UID:nhl-2026020977@sports-calendar
 DESCRIPTION:NHL\nLenovo Center\nTV: TNT\, HBO MAX\nMatched: Rangers games 
- (secondary)\nid: nhl-2026020977
+ (secondary)
 LOCATION:Lenovo Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1254,8 +1249,8 @@ DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 DTSTAMP:20270221T000000Z
 UID:espn-401882681@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882681
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1266,7 +1261,7 @@ DTEND:20270223T043000Z
 DTSTAMP:20270223T020000Z
 UID:nhl-2026020989@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, SCRIPPS\nMatched: Avs games (second
- ary)\nid: nhl-2026020989
+ ary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1277,7 +1272,7 @@ DTEND:20270224T023000Z
 DTSTAMP:20270224T000000Z
 UID:nhl-2026020994@sports-calendar
 DESCRIPTION:NHL\nCapital One Arena\nTV: MNMT\, MSG\nMatched: Rangers games
-  (secondary)\nid: nhl-2026020994
+  (secondary)
 LOCATION:Capital One Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1287,8 +1282,7 @@ DTSTART:20270226T020000Z
 DTEND:20270226T043000Z
 DTSTAMP:20270226T020000Z
 UID:nhl-2026021011@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)\nid: 
- nhl-2026021011
+DESCRIPTION:NHL\nBall Arena\nTV: ALT\nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1299,7 +1293,7 @@ DTEND:20270227T023000Z
 DTSTAMP:20270227T000000Z
 UID:nhl-2026021014@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MNMT\, MSG\nMatched: Rangers g
- ames (secondary)\nid: nhl-2026021014
+ ames (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1310,7 +1304,7 @@ DTEND:20270228T023000Z
 DTSTAMP:20270228T000000Z
 UID:nhl-2026021026@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, KTVD\, SCRIPPS\nMatched: Avs games 
- (secondary)\nid: nhl-2026021026
+ (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1321,7 +1315,7 @@ DTEND:20270228T203000Z
 DTSTAMP:20270228T180000Z
 UID:nhl-2026021031@sports-calendar
 DESCRIPTION:NHL\nPPG Paints Arena\nTV: TNT\, HBO MAX\nMatched: Rangers gam
- es (secondary)\nid: nhl-2026021031
+ es (secondary)
 LOCATION:PPG Paints Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1331,8 +1325,8 @@ DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 DTSTAMP:20270228T000000Z
 UID:espn-401882676@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSan Mamés\, Bilbao\nTV: ESPN+\nMatched: Barce
- lona games (secondary)\nid: espn-401882676
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSan Mamés\, Bilbao\nTV: ESPN+\nMatc
+ hed: Barcelona games (secondary)
 LOCATION:San Mamés\, Bilbao
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1342,8 +1336,7 @@ DTSTART:20270228T233000Z
 DTEND:20270301T020000Z
 DTSTAMP:20270228T233000Z
 UID:nhl-2026021033@sports-calendar
-DESCRIPTION:NHL\nUnited Center\nTV: ESPN\nMatched: Avs games (secondary)\n
- id: nhl-2026021033
+DESCRIPTION:NHL\nUnited Center\nTV: ESPN\nMatched: Avs games (secondary)
 LOCATION:United Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1354,7 +1347,7 @@ DTEND:20270303T033000Z
 DTSTAMP:20270303T010000Z
 UID:nhl-2026021047@sports-calendar
 DESCRIPTION:NHL\nBridgestone Arena\nTV: ALT\, SCRIPPS\nMatched: Avs games 
- (secondary)\nid: nhl-2026021047
+ (secondary)
 LOCATION:Bridgestone Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1365,7 +1358,7 @@ DTEND:20270304T023000Z
 DTSTAMP:20270304T000000Z
 UID:nhl-2026021049@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: NESN\, MSG\nMatched: Rangers g
- ames (secondary)\nid: nhl-2026021049
+ ames (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1376,7 +1369,7 @@ DTEND:20270306T053000Z
 DTSTAMP:20270306T030000Z
 UID:nhl-2026021070@sports-calendar
 DESCRIPTION:NHL\nSAP Center at San Jose\nTV: ALT\, NBCSCA\nMatched: Avs ga
- mes (secondary)\nid: nhl-2026021070
+ mes (secondary)
 LOCATION:SAP Center at San Jose
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1387,7 +1380,7 @@ DTEND:20270306T223000Z
 DTSTAMP:20270306T200000Z
 UID:nhl-2026021072@sports-calendar
 DESCRIPTION:NHL\nKeyBank Center\nTV: ABC\nMatched: Rangers games (secondar
- y)\nid: nhl-2026021072
+ y)
 LOCATION:KeyBank Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1397,8 +1390,8 @@ DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 DTSTAMP:20270307T000000Z
 UID:espn-401882661@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882661
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1409,7 +1402,7 @@ DTEND:20270307T233000Z
 DTSTAMP:20270307T210000Z
 UID:nhl-2026021084@sports-calendar
 DESCRIPTION:NHL\nCrypto.com Arena\nTV: ABTV \, ALT\nMatched: Avs games (se
- condary)\nid: nhl-2026021084
+ condary)
 LOCATION:Crypto.com Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1420,7 +1413,7 @@ DTEND:20270308T023000Z
 DTSTAMP:20270308T000000Z
 UID:nhl-2026021086@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ESPN\nMatched: Rangers games (
- secondary)\nid: nhl-2026021086
+ secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1431,7 +1424,7 @@ DTEND:20270310T043000Z
 DTSTAMP:20270310T020000Z
 UID:nhl-2026021101@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, NBCSP\nMatched: Avs games (secondar
- y)\nid: nhl-2026021101
+ y)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1442,7 +1435,7 @@ DTEND:20270310T043000Z
 DTSTAMP:20270310T020000Z
 UID:nhl-2026021102@sports-calendar
 DESCRIPTION:NHL\nDelta Center\nTV: Mammoth+\, Utah16\, MSG\nMatched: Range
- rs games (secondary)\nid: nhl-2026021102
+ rs games (secondary)
 LOCATION:Delta Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1453,7 +1446,7 @@ DTEND:20270312T043000Z
 DTSTAMP:20270312T020000Z
 UID:nhl-2026021114@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: KUSA\, ALT\, MSG 2\, KTVD\nMatched: Avs g
- ames (secondary)\, Rangers games (secondary)\nid: nhl-2026021114
+ ames (secondary)\, Rangers games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1464,7 +1457,7 @@ DTEND:20270314T013000Z
 DTSTAMP:20270313T230000Z
 UID:nhl-2026021122@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: CHSN\, ALT\nMatched: Avs games (secondary
- )\nid: nhl-2026021122
+ )
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1475,7 +1468,7 @@ DTEND:20270314T053000Z
 DTSTAMP:20270314T030000Z
 UID:nhl-2026021132@sports-calendar
 DESCRIPTION:NHL\nT-Mobile Arena\nTV: MSG\, SCRIPPS\nMatched: Rangers games
-  (secondary)\nid: nhl-2026021132
+  (secondary)
 LOCATION:T-Mobile Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1485,8 +1478,8 @@ DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 DTSTAMP:20270314T000000Z
 UID:espn-401882652@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882652
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1496,8 +1489,7 @@ DTSTART:20270316T013000Z
 DTEND:20270316T040000Z
 DTSTAMP:20270316T013000Z
 UID:nhl-2026021143@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: ESPN\nMatched: Avs games (secondary)\nid:
-  nhl-2026021143
+DESCRIPTION:NHL\nBall Arena\nTV: ESPN\nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1508,7 +1500,7 @@ DTEND:20270317T013000Z
 DTSTAMP:20270316T230000Z
 UID:nhl-2026021148@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSGSN\nMatched: Rangers games 
- (secondary)\nid: nhl-2026021148
+ (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1519,7 +1511,7 @@ DTEND:20270318T030000Z
 DTSTAMP:20270318T003000Z
 UID:nhl-2026021156@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: TNT\, truTV\, HBO MAX\, ALT\nMatched: Avs
-  games (secondary)\nid: nhl-2026021156
+  games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1530,7 +1522,7 @@ DTEND:20270319T013000Z
 DTSTAMP:20270318T230000Z
 UID:nhl-2026021165@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSG\nMatched: Rangers games (s
- econdary)\nid: nhl-2026021165
+ econdary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1541,7 +1533,7 @@ DTEND:20270320T043000Z
 DTSTAMP:20270320T020000Z
 UID:nhl-2026021173@sports-calendar
 DESCRIPTION:NHL\nClimate Pledge Arena\nTV: Prime Video\, ALT\, KONG\nMatch
- ed: Avs games (secondary)\nid: nhl-2026021173
+ ed: Avs games (secondary)
 LOCATION:Climate Pledge Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1552,7 +1544,7 @@ DTEND:20270321T023000Z
 DTSTAMP:20270321T000000Z
 UID:nhl-2026021182@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ABC\nMatched: Rangers games (s
- econdary)\nid: nhl-2026021182
+ econdary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1562,8 +1554,8 @@ DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 DTSTAMP:20270321T000000Z
 UID:espn-401882641@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio de Vallecas\, Madrid\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882641
+DESCRIPTION:Time TBD\nSpanish LALIGA\nEstadio de Vallecas\, Madrid\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Estadio de Vallecas\, Madrid
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1574,7 +1566,7 @@ DTEND:20270321T233000Z
 DTSTAMP:20270321T210000Z
 UID:nhl-2026021188@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: CHSN\, ALT2\, KTVD\nMatched: Avs games (s
- econdary)\nid: nhl-2026021188
+ econdary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1585,7 +1577,7 @@ DTEND:20270322T023000Z
 DTSTAMP:20270322T000000Z
 UID:nhl-2026021189@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: TNT\, truTV\, HBO MAX\nMatched
- : Rangers games (secondary)\nid: nhl-2026021189
+ : Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1596,7 +1588,7 @@ DTEND:20270324T023000Z
 DTSTAMP:20270324T000000Z
 UID:nhl-2026021200@sports-calendar
 DESCRIPTION:NHL\nBridgestone Arena\nTV: MSG 2\, SCRIPPS\nMatched: Rangers 
- games (secondary)\nid: nhl-2026021200
+ games (secondary)
 LOCATION:Bridgestone Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1607,7 +1599,7 @@ DTEND:20270324T040000Z
 DTSTAMP:20270324T013000Z
 UID:nhl-2026021204@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ESPN+\, HULU\, Disney+\nMatched: Avs game
- s (secondary)\nid: nhl-2026021204
+ s (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1618,7 +1610,7 @@ DTEND:20270326T013000Z
 DTSTAMP:20270325T230000Z
 UID:nhl-2026021214@sports-calendar
 DESCRIPTION:NHL\nAmerant Bank Arena\nTV: MSG\, SCRIPPS\nMatched: Rangers g
- ames (secondary)\nid: nhl-2026021214
+ ames (secondary)
 LOCATION:Amerant Bank Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1629,7 +1621,7 @@ DTEND:20270326T023000Z
 DTSTAMP:20270326T000000Z
 UID:nhl-2026021219@sports-calendar
 DESCRIPTION:NHL\nCanada Life Centre\nTV: ALT\nMatched: Avs games (secondar
- y)\nid: nhl-2026021219
+ y)
 LOCATION:Canada Life Centre
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1639,8 +1631,7 @@ DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270328
 DTSTAMP:20270327T000000Z
 UID:mlb-853314@sports-calendar
-DESCRIPTION:MLB\nloanDepot park\nMatched: Mets games (secondary)\nid: mlb-
- 853314
+DESCRIPTION:Time TBD\nMLB\nloanDepot park\nMatched: Mets games (secondary)
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1651,7 +1642,7 @@ DTEND:20270328T013000Z
 DTSTAMP:20270327T230000Z
 UID:nhl-2026021233@sports-calendar
 DESCRIPTION:NHL\nBenchmark International Arena\nTV: The Spot\, MSG\nMatche
- d: Rangers games (secondary)\nid: nhl-2026021233
+ d: Rangers games (secondary)
 LOCATION:Benchmark International Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1662,7 +1653,7 @@ DTEND:20270328T013000Z
 DTSTAMP:20270327T230000Z
 UID:nhl-2026021236@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ALT\, KTVD\nMatched: Avs games (secondary
- )\nid: nhl-2026021236
+ )
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1672,8 +1663,7 @@ DTSTART;VALUE=DATE:20270328
 DTEND;VALUE=DATE:20270329
 DTSTAMP:20270328T000000Z
 UID:mlb-853313@sports-calendar
-DESCRIPTION:MLB\nloanDepot park\nMatched: Mets games (secondary)\nid: mlb-
- 853313
+DESCRIPTION:Time TBD\nMLB\nloanDepot park\nMatched: Mets games (secondary)
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1683,8 +1673,7 @@ DTSTART:20270329T224500Z
 DTEND:20270330T014500Z
 DTSTAMP:20270329T224500Z
 UID:mlb-852178@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852178
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1695,7 +1684,7 @@ DTEND:20270330T013000Z
 DTSTAMP:20270329T230000Z
 UID:nhl-2026021245@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: Wild+\, MSG\, MINNHL\nMatched:
-  Rangers games (secondary)\nid: nhl-2026021245
+  Rangers games (secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1706,7 +1695,7 @@ DTEND:20270330T043000Z
 DTSTAMP:20270330T020000Z
 UID:nhl-2026021247@sports-calendar
 DESCRIPTION:NHL\nSAP Center at San Jose\nTV: ALT\, NBCSCA\nMatched: Avs ga
- mes (secondary)\nid: nhl-2026021247
+ mes (secondary)
 LOCATION:SAP Center at San Jose
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1716,8 +1705,7 @@ DTSTART:20270330T224500Z
 DTEND:20270331T014500Z
 DTSTAMP:20270330T224500Z
 UID:mlb-852170@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852170
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1728,7 +1716,7 @@ DTEND:20270331T043000Z
 DTSTAMP:20270331T020000Z
 UID:nhl-2026021258@sports-calendar
 DESCRIPTION:NHL\nHonda Center\nTV: FOXLA+\, Prime Video\, ALT\nMatched: Av
- s games (secondary)\nid: nhl-2026021258
+ s games (secondary)
 LOCATION:Honda Center
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1738,8 +1726,7 @@ DTSTART:20270331T170500Z
 DTEND:20270331T200500Z
 DTSTAMP:20270331T170500Z
 UID:mlb-852167@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852167
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1750,7 +1737,7 @@ DTEND:20270402T013000Z
 DTSTAMP:20270401T230000Z
 UID:nhl-2026021263@sports-calendar
 DESCRIPTION:NHL\nCentre Bell\nTV: MSG 2\nMatched: Rangers games (secondary
- )\nid: nhl-2026021263
+ )
 LOCATION:Centre Bell
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1760,8 +1747,7 @@ DTSTART:20270402T191000Z
 DTEND:20270402T221000Z
 DTSTAMP:20270402T191000Z
 UID:mlb-853075@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 75
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1772,7 +1758,7 @@ DTEND:20270403T033000Z
 DTSTAMP:20270403T010000Z
 UID:nhl-2026021275@sports-calendar
 DESCRIPTION:NHL\nBall Arena\nTV: ABTV \, ALT\nMatched: Avs games (secondar
- y)\nid: nhl-2026021275
+ y)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1783,7 +1769,7 @@ DTEND:20270403T190000Z
 DTSTAMP:20270403T163000Z
 UID:nhl-2026021277@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ABC\nMatched: Rangers games (s
- econdary)\nid: nhl-2026021277
+ econdary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1793,8 +1779,7 @@ DTSTART:20270403T231000Z
 DTEND:20270404T021000Z
 DTSTAMP:20270403T231000Z
 UID:mlb-853077@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 77
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1804,8 +1789,7 @@ DTSTART:20270404T174000Z
 DTEND:20270404T204000Z
 DTSTAMP:20270404T174000Z
 UID:mlb-853073@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 73
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1815,8 +1799,8 @@ DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 DTSTAMP:20270404T000000Z
 UID:espn-401882632@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882632
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1827,7 +1811,7 @@ DTEND:20270404T203000Z
 DTSTAMP:20270404T180000Z
 UID:nhl-2026021290@sports-calendar
 DESCRIPTION:NHL\nGrand Casino Arena\nTV: TNT\, truTV\, HBO MAX\nMatched: A
- vs games (secondary)\nid: nhl-2026021290
+ vs games (secondary)
 LOCATION:Grand Casino Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1837,8 +1821,7 @@ DTSTART:20270405T231000Z
 DTEND:20270406T021000Z
 DTSTAMP:20270405T231000Z
 UID:mlb-853068@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 68
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1849,7 +1832,7 @@ DTEND:20270407T013000Z
 DTSTAMP:20270406T230000Z
 UID:nhl-2026021306@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: ESPN\nMatched: Rangers games (
- secondary)\nid: nhl-2026021306
+ secondary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1859,8 +1842,7 @@ DTSTART:20270406T231000Z
 DTEND:20270407T021000Z
 DTSTAMP:20270406T231000Z
 UID:mlb-853066@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 66
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1870,8 +1852,7 @@ DTSTART:20270407T020000Z
 DTEND:20270407T043000Z
 DTSTAMP:20270407T020000Z
 UID:nhl-2026021309@sports-calendar
-DESCRIPTION:NHL\nRogers Arena\nTV: ALT\nMatched: Avs games (secondary)\nid
- : nhl-2026021309
+DESCRIPTION:NHL\nRogers Arena\nTV: ALT\nMatched: Avs games (secondary)
 LOCATION:Rogers Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1881,8 +1862,7 @@ DTSTART;VALUE=DATE:20270407
 DTEND;VALUE=DATE:20270408
 DTSTAMP:20270407T000000Z
 UID:mlb-853067@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 67
+DESCRIPTION:Time TBD\nMLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1892,8 +1872,7 @@ DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
 DTSTAMP:20270408T000000Z
 UID:mlb-853062@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 62
+DESCRIPTION:Time TBD\nMLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1904,7 +1883,7 @@ DTEND:20270409T033000Z
 DTSTAMP:20270409T010000Z
 UID:nhl-2026021322@sports-calendar
 DESCRIPTION:NHL\nScotiabank Saddledome\nTV: KUSA\, ALT2\, KTVD\nMatched: A
- vs games (secondary)\nid: nhl-2026021322
+ vs games (secondary)
 LOCATION:Scotiabank Saddledome
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1914,8 +1893,7 @@ DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 DTSTAMP:20270409T000000Z
 UID:mlb-853714@sports-calendar
-DESCRIPTION:MLB\nComerica Park\nMatched: Mets games (secondary)\nid: mlb-8
- 53714
+DESCRIPTION:Time TBD\nMLB\nComerica Park\nMatched: Mets games (secondary)
 LOCATION:Comerica Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1925,8 +1903,7 @@ DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 DTSTAMP:20270410T000000Z
 UID:mlb-853711@sports-calendar
-DESCRIPTION:MLB\nComerica Park\nMatched: Mets games (secondary)\nid: mlb-8
- 53711
+DESCRIPTION:Time TBD\nMLB\nComerica Park\nMatched: Mets games (secondary)
 LOCATION:Comerica Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1936,8 +1913,7 @@ DTSTART:20270410T190000Z
 DTEND:20270410T213000Z
 DTSTAMP:20270410T190000Z
 UID:nhl-2026021330@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: ABC\nMatched: Avs games (secondary)\nid: 
- nhl-2026021330
+DESCRIPTION:NHL\nBall Arena\nTV: ABC\nMatched: Avs games (secondary)
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1948,7 +1924,7 @@ DTEND:20270411T013000Z
 DTSTAMP:20270410T230000Z
 UID:nhl-2026021339@sports-calendar
 DESCRIPTION:NHL\nMadison Square Garden\nTV: MSG\nMatched: Rangers games (s
- econdary)\nid: nhl-2026021339
+ econdary)
 LOCATION:Madison Square Garden
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1958,8 +1934,7 @@ DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 DTSTAMP:20270411T000000Z
 UID:mlb-853718@sports-calendar
-DESCRIPTION:MLB\nComerica Park\nMatched: Mets games (secondary)\nid: mlb-8
- 53718
+DESCRIPTION:Time TBD\nMLB\nComerica Park\nMatched: Mets games (secondary)
 LOCATION:Comerica Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1969,8 +1944,8 @@ DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 DTSTAMP:20270411T000000Z
 UID:espn-401882621@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEl Sardineros\, Santander\nTV: ESPN+\nMatched:
-  Barcelona games (secondary)\nid: espn-401882621
+DESCRIPTION:Time TBD\nSpanish LALIGA\nEl Sardineros\, Santander\nTV: ESPN+
+ \nMatched: Barcelona games (secondary)
 LOCATION:El Sardineros\, Santander
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1980,8 +1955,7 @@ DTSTART:20270413T231000Z
 DTEND:20270414T021000Z
 DTSTAMP:20270413T231000Z
 UID:mlb-853063@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 63
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1991,8 +1965,7 @@ DTSTART:20270414T231000Z
 DTEND:20270415T021000Z
 DTSTAMP:20270414T231000Z
 UID:mlb-853057@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 57
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2002,8 +1975,7 @@ DTSTART:20270415T171000Z
 DTEND:20270415T201000Z
 DTSTAMP:20270415T171000Z
 UID:mlb-853056@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 56
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2013,8 +1985,8 @@ DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 DTSTAMP:20270418T000000Z
 UID:espn-401882611@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882611
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2024,8 +1996,7 @@ DTSTART:20270420T014000Z
 DTEND:20270420T044000Z
 DTSTAMP:20270420T014000Z
 UID:mlb-854451@sports-calendar
-DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)\nid: 
- mlb-854451
+DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)
 LOCATION:Sutter Health Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2035,8 +2006,7 @@ DTSTART:20270421T014000Z
 DTEND:20270421T044000Z
 DTSTAMP:20270421T014000Z
 UID:mlb-854452@sports-calendar
-DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)\nid: 
- mlb-854452
+DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)
 LOCATION:Sutter Health Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2046,8 +2016,8 @@ DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 DTSTAMP:20270421T000000Z
 UID:espn-401882605@sports-calendar
-DESCRIPTION:Spanish LALIGA\nBalaidos\, Vigo\nTV: ESPN+\nMatched: Barcelona
-  games (secondary)\nid: espn-401882605
+DESCRIPTION:Time TBD\nSpanish LALIGA\nBalaidos\, Vigo\nTV: ESPN+\nMatched:
+  Barcelona games (secondary)
 LOCATION:Balaidos\, Vigo
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2057,8 +2027,7 @@ DTSTART:20270421T193500Z
 DTEND:20270421T223500Z
 DTSTAMP:20270421T193500Z
 UID:mlb-854441@sports-calendar
-DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)\nid: 
- mlb-854441
+DESCRIPTION:MLB\nSutter Health Park\nMatched: Mets games (secondary)
 LOCATION:Sutter Health Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2068,8 +2037,7 @@ DTSTART:20270423T231000Z
 DTEND:20270424T021000Z
 DTSTAMP:20270423T231000Z
 UID:mlb-853058@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 58
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2079,8 +2047,7 @@ DTSTART:20270424T201000Z
 DTEND:20270424T231000Z
 DTSTAMP:20270424T201000Z
 UID:mlb-853060@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 60
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2090,8 +2057,7 @@ DTSTART:20270425T174000Z
 DTEND:20270425T204000Z
 DTSTAMP:20270425T174000Z
 UID:mlb-853061@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 61
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2101,8 +2067,7 @@ DTSTART:20270426T231000Z
 DTEND:20270427T021000Z
 DTSTAMP:20270426T231000Z
 UID:mlb-853065@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 65
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2112,8 +2077,7 @@ DTSTART:20270427T231000Z
 DTEND:20270428T021000Z
 DTSTAMP:20270427T231000Z
 UID:mlb-853064@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 64
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2123,8 +2087,7 @@ DTSTART:20270428T171000Z
 DTEND:20270428T201000Z
 DTSTAMP:20270428T171000Z
 UID:mlb-853055@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 55
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2134,8 +2097,7 @@ DTSTART:20270429T231500Z
 DTEND:20270430T021500Z
 DTSTAMP:20270429T231500Z
 UID:mlb-854361@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 361
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2145,8 +2107,7 @@ DTSTART:20270430T231500Z
 DTEND:20270501T021500Z
 DTSTAMP:20270430T231500Z
 UID:mlb-854354@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 354
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2156,8 +2117,7 @@ DTSTART:20270501T231500Z
 DTEND:20270502T021500Z
 DTSTAMP:20270501T231500Z
 UID:mlb-854346@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 346
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2167,8 +2127,7 @@ DTSTART:20270502T173500Z
 DTEND:20270502T203500Z
 DTSTAMP:20270502T173500Z
 UID:mlb-854345@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 345
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2178,8 +2137,8 @@ DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
 DTSTAMP:20270502T000000Z
 UID:espn-401882591@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882591
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2189,8 +2148,7 @@ DTSTART:20270504T224000Z
 DTEND:20270505T014000Z
 DTSTAMP:20270504T224000Z
 UID:mlb-852898@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852898
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2200,8 +2158,7 @@ DTSTART:20270505T224000Z
 DTEND:20270506T014000Z
 DTSTAMP:20270505T224000Z
 UID:mlb-852895@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852895
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2211,8 +2168,7 @@ DTSTART:20270506T220500Z
 DTEND:20270507T010500Z
 DTSTAMP:20270506T220500Z
 UID:mlb-852900@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852900
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2222,8 +2178,7 @@ DTSTART:20270507T231000Z
 DTEND:20270508T021000Z
 DTSTAMP:20270507T231000Z
 UID:mlb-853054@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 54
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2233,8 +2188,7 @@ DTSTART:20270508T201000Z
 DTEND:20270508T231000Z
 DTSTAMP:20270508T201000Z
 UID:mlb-853059@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 59
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2244,8 +2198,7 @@ DTSTART:20270509T174000Z
 DTEND:20270509T204000Z
 DTSTAMP:20270509T174000Z
 UID:mlb-853043@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 43
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2255,8 +2208,7 @@ DTSTART:20270511T231000Z
 DTEND:20270512T021000Z
 DTSTAMP:20270511T231000Z
 UID:mlb-853045@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 45
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2266,8 +2218,7 @@ DTSTART:20270512T231000Z
 DTEND:20270513T021000Z
 DTSTAMP:20270512T231000Z
 UID:mlb-853040@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 40
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2277,8 +2228,7 @@ DTSTART:20270513T171000Z
 DTEND:20270513T201000Z
 DTSTAMP:20270513T171000Z
 UID:mlb-853041@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 41
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2288,8 +2238,7 @@ DTSTART:20270514T234000Z
 DTEND:20270515T024000Z
 DTSTAMP:20270514T234000Z
 UID:mlb-853215@sports-calendar
-DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)\ni
- d: mlb-853215
+DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)
 LOCATION:American Family Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2299,8 +2248,7 @@ DTSTART:20270515T231000Z
 DTEND:20270516T021000Z
 DTSTAMP:20270515T231000Z
 UID:mlb-853214@sports-calendar
-DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)\ni
- d: mlb-853214
+DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)
 LOCATION:American Family Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2310,8 +2258,8 @@ DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 DTSTAMP:20270516T000000Z
 UID:espn-401882568@sports-calendar
-DESCRIPTION:Spanish LALIGA\nReale Arena\, San Sebastian\nTV: ESPN+\nMatche
- d: Barcelona games (secondary)\nid: espn-401882568
+DESCRIPTION:Time TBD\nSpanish LALIGA\nReale Arena\, San Sebastian\nTV: ESP
+ N+\nMatched: Barcelona games (secondary)
 LOCATION:Reale Arena\, San Sebastian
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2321,8 +2269,7 @@ DTSTART:20270516T181000Z
 DTEND:20270516T211000Z
 DTSTAMP:20270516T181000Z
 UID:mlb-853212@sports-calendar
-DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)\ni
- d: mlb-853212
+DESCRIPTION:MLB\nAmerican Family Field\nMatched: Mets games (secondary)
 LOCATION:American Family Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2332,8 +2279,7 @@ DTSTART:20270518T014000Z
 DTEND:20270518T044000Z
 DTSTAMP:20270518T014000Z
 UID:mlb-852716@sports-calendar
-DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)\nid: mlb-8527
- 16
+DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)
 LOCATION:Petco Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2343,8 +2289,7 @@ DTSTART:20270519T014000Z
 DTEND:20270519T044000Z
 DTSTAMP:20270519T014000Z
 UID:mlb-852719@sports-calendar
-DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)\nid: mlb-8527
- 19
+DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)
 LOCATION:Petco Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2354,8 +2299,7 @@ DTSTART:20270519T201000Z
 DTEND:20270519T231000Z
 DTSTAMP:20270519T201000Z
 UID:mlb-852724@sports-calendar
-DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)\nid: mlb-8527
- 24
+DESCRIPTION:MLB\nPetco Park\nMatched: Mets games (secondary)
 LOCATION:Petco Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2365,8 +2309,7 @@ DTSTART:20270521T234000Z
 DTEND:20270522T024000Z
 DTSTAMP:20270521T234000Z
 UID:mlb-853137@sports-calendar
-DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)\nid: mlb-85
- 3137
+DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)
 LOCATION:Target Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2376,8 +2319,7 @@ DTSTART:20270522T181000Z
 DTEND:20270522T211000Z
 DTSTAMP:20270522T181000Z
 UID:mlb-853127@sports-calendar
-DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)\nid: mlb-85
- 3127
+DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)
 LOCATION:Target Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2387,8 +2329,8 @@ DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 DTSTAMP:20270523T000000Z
 UID:espn-401882562@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona games (secondary)\nid: espn-401882562
+DESCRIPTION:Time TBD\nSpanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ES
+ PN+\nMatched: Barcelona games (secondary)
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2398,8 +2340,7 @@ DTSTART:20270523T181000Z
 DTEND:20270523T211000Z
 DTSTAMP:20270523T181000Z
 UID:mlb-853138@sports-calendar
-DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)\nid: mlb-85
- 3138
+DESCRIPTION:MLB\nTarget Field\nMatched: Mets games (secondary)
 LOCATION:Target Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2409,8 +2350,7 @@ DTSTART:20270524T231000Z
 DTEND:20270525T021000Z
 DTSTAMP:20270524T231000Z
 UID:mlb-853042@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 42
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2420,8 +2360,7 @@ DTSTART:20270525T231000Z
 DTEND:20270526T021000Z
 DTSTAMP:20270525T231000Z
 UID:mlb-853044@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 44
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2431,8 +2370,7 @@ DTSTART:20270526T161000Z
 DTEND:20270526T191000Z
 DTSTAMP:20270526T161000Z
 UID:mlb-853050@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 50
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2442,8 +2380,8 @@ DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 DTSTAMP:20270530T000000Z
 UID:espn-401882552@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio Coliseum\, Getafe\nTV: ESPN+\nMatched:
-  Barcelona games (secondary)\nid: espn-401882552
+DESCRIPTION:Time TBD\nSpanish LALIGA\nEstadio Coliseum\, Getafe\nTV: ESPN+
+ \nMatched: Barcelona games (secondary)
 LOCATION:Estadio Coliseum\, Getafe
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2454,7 +2392,7 @@ DTEND:20270531T203500Z
 DTSTAMP:20270531T173500Z
 UID:mlb-854247@sports-calendar
 DESCRIPTION:MLB\nOriole Park at Camden Yards\nMatched: Mets games (seconda
- ry)\nid: mlb-854247
+ ry)
 LOCATION:Oriole Park at Camden Yards
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2465,7 +2403,7 @@ DTEND:20270602T013500Z
 DTSTAMP:20270601T223500Z
 UID:mlb-854258@sports-calendar
 DESCRIPTION:MLB\nOriole Park at Camden Yards\nMatched: Mets games (seconda
- ry)\nid: mlb-854258
+ ry)
 LOCATION:Oriole Park at Camden Yards
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2476,7 +2414,7 @@ DTEND:20270603T013500Z
 DTSTAMP:20270602T223500Z
 UID:mlb-854250@sports-calendar
 DESCRIPTION:MLB\nOriole Park at Camden Yards\nMatched: Mets games (seconda
- ry)\nid: mlb-854250
+ ry)
 LOCATION:Oriole Park at Camden Yards
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2486,8 +2424,7 @@ DTSTART:20270603T231000Z
 DTEND:20270604T021000Z
 DTSTAMP:20270603T231000Z
 UID:mlb-853048@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 48
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2497,8 +2434,7 @@ DTSTART:20270604T231000Z
 DTEND:20270605T021000Z
 DTSTAMP:20270604T231000Z
 UID:mlb-853046@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 46
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2508,8 +2444,7 @@ DTSTART:20270605T201000Z
 DTEND:20270605T231000Z
 DTSTAMP:20270605T201000Z
 UID:mlb-853047@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 47
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2519,8 +2454,7 @@ DTSTART:20270606T174000Z
 DTEND:20270606T204000Z
 DTSTAMP:20270606T174000Z
 UID:mlb-853049@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 49
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2530,8 +2464,7 @@ DTSTART:20270607T234000Z
 DTEND:20270608T024000Z
 DTSTAMP:20270607T234000Z
 UID:mlb-853523@sports-calendar
-DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)\nid: ml
- b-853523
+DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)
 LOCATION:Kauffman Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2541,8 +2474,7 @@ DTSTART:20270608T234000Z
 DTEND:20270609T024000Z
 DTSTAMP:20270608T234000Z
 UID:mlb-853530@sports-calendar
-DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)\nid: ml
- b-853530
+DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)
 LOCATION:Kauffman Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2552,8 +2484,7 @@ DTSTART:20270609T181000Z
 DTEND:20270609T211000Z
 DTSTAMP:20270609T181000Z
 UID:mlb-853531@sports-calendar
-DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)\nid: ml
- b-853531
+DESCRIPTION:MLB\nKauffman Stadium\nMatched: Mets games (secondary)
 LOCATION:Kauffman Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2563,8 +2494,7 @@ DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 DTSTAMP:20270611T000000Z
 UID:mlb-852622@sports-calendar
-DESCRIPTION:MLB\nOracle Park\nMatched: Mets games (secondary)\nid: mlb-852
- 622
+DESCRIPTION:Time TBD\nMLB\nOracle Park\nMatched: Mets games (secondary)
 LOCATION:Oracle Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2574,8 +2504,7 @@ DTSTART;VALUE=DATE:20270612
 DTEND;VALUE=DATE:20270613
 DTSTAMP:20270612T000000Z
 UID:mlb-852619@sports-calendar
-DESCRIPTION:MLB\nOracle Park\nMatched: Mets games (secondary)\nid: mlb-852
- 619
+DESCRIPTION:Time TBD\nMLB\nOracle Park\nMatched: Mets games (secondary)
 LOCATION:Oracle Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2585,8 +2514,7 @@ DTSTART;VALUE=DATE:20270613
 DTEND;VALUE=DATE:20270614
 DTSTAMP:20270613T000000Z
 UID:mlb-852630@sports-calendar
-DESCRIPTION:MLB\nOracle Park\nMatched: Mets games (secondary)\nid: mlb-852
- 630
+DESCRIPTION:Time TBD\nMLB\nOracle Park\nMatched: Mets games (secondary)
 LOCATION:Oracle Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2596,8 +2524,7 @@ DTSTART:20270615T231000Z
 DTEND:20270616T021000Z
 DTSTAMP:20270615T231000Z
 UID:mlb-853033@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 33
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2607,8 +2534,7 @@ DTSTART:20270616T231000Z
 DTEND:20270617T021000Z
 DTSTAMP:20270616T231000Z
 UID:mlb-853029@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 29
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2618,8 +2544,7 @@ DTSTART:20270617T171000Z
 DTEND:20270617T201000Z
 DTSTAMP:20270617T171000Z
 UID:mlb-853026@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 26
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2629,8 +2554,7 @@ DTSTART:20270618T231000Z
 DTEND:20270619T021000Z
 DTSTAMP:20270618T231000Z
 UID:mlb-853038@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 38
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2640,8 +2564,7 @@ DTSTART:20270619T201000Z
 DTEND:20270619T231000Z
 DTSTAMP:20270619T201000Z
 UID:mlb-853027@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 27
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2651,8 +2574,7 @@ DTSTART:20270620T174000Z
 DTEND:20270620T204000Z
 DTSTAMP:20270620T174000Z
 UID:mlb-853036@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 36
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2662,8 +2584,7 @@ DTSTART:20270621T231000Z
 DTEND:20270622T021000Z
 DTSTAMP:20270621T231000Z
 UID:mlb-853039@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 39
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2673,8 +2594,7 @@ DTSTART:20270622T231000Z
 DTEND:20270623T021000Z
 DTSTAMP:20270622T231000Z
 UID:mlb-853031@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 31
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2684,8 +2604,7 @@ DTSTART:20270623T171000Z
 DTEND:20270623T201000Z
 DTSTAMP:20270623T171000Z
 UID:mlb-853032@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 32
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2695,8 +2614,7 @@ DTSTART:20270626T001500Z
 DTEND:20270626T031500Z
 DTSTAMP:20270626T001500Z
 UID:mlb-852456@sports-calendar
-DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)\nid: mlb-8
- 52456
+DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)
 LOCATION:Busch Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2706,8 +2624,7 @@ DTSTART:20270626T201500Z
 DTEND:20270626T231500Z
 DTSTAMP:20270626T201500Z
 UID:mlb-852460@sports-calendar
-DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)\nid: mlb-8
- 52460
+DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)
 LOCATION:Busch Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2717,8 +2634,7 @@ DTSTART:20270627T181500Z
 DTEND:20270627T211500Z
 DTSTAMP:20270627T181500Z
 UID:mlb-852461@sports-calendar
-DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)\nid: mlb-8
- 52461
+DESCRIPTION:MLB\nBusch Stadium\nMatched: Mets games (secondary)
 LOCATION:Busch Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2728,8 +2644,7 @@ DTSTART;VALUE=DATE:20270628
 DTEND;VALUE=DATE:20270629
 DTSTAMP:20270628T000000Z
 UID:mlb-854486@sports-calendar
-DESCRIPTION:MLB\nChase Field\nMatched: Mets games (secondary)\nid: mlb-854
- 486
+DESCRIPTION:Time TBD\nMLB\nChase Field\nMatched: Mets games (secondary)
 LOCATION:Chase Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2739,8 +2654,7 @@ DTSTART;VALUE=DATE:20270629
 DTEND;VALUE=DATE:20270630
 DTSTAMP:20270629T000000Z
 UID:mlb-854494@sports-calendar
-DESCRIPTION:MLB\nChase Field\nMatched: Mets games (secondary)\nid: mlb-854
- 494
+DESCRIPTION:Time TBD\nMLB\nChase Field\nMatched: Mets games (secondary)
 LOCATION:Chase Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2750,8 +2664,7 @@ DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 DTSTAMP:20270630T000000Z
 UID:mlb-854495@sports-calendar
-DESCRIPTION:MLB\nChase Field\nMatched: Mets games (secondary)\nid: mlb-854
- 495
+DESCRIPTION:Time TBD\nMLB\nChase Field\nMatched: Mets games (secondary)
 LOCATION:Chase Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2761,8 +2674,8 @@ DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 DTSTAMP:20270701T000000Z
 UID:mlb-853342@sports-calendar
-DESCRIPTION:MLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets games (seco
- ndary)\nid: mlb-853342
+DESCRIPTION:Time TBD\nMLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets g
+ ames (secondary)
 LOCATION:UNIQLO Field at Dodger Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2772,8 +2685,8 @@ DTSTART;VALUE=DATE:20270702
 DTEND;VALUE=DATE:20270703
 DTSTAMP:20270702T000000Z
 UID:mlb-853344@sports-calendar
-DESCRIPTION:MLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets games (seco
- ndary)\nid: mlb-853344
+DESCRIPTION:Time TBD\nMLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets g
+ ames (secondary)
 LOCATION:UNIQLO Field at Dodger Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2783,8 +2696,8 @@ DTSTART;VALUE=DATE:20270703
 DTEND;VALUE=DATE:20270704
 DTSTAMP:20270703T000000Z
 UID:mlb-853345@sports-calendar
-DESCRIPTION:MLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets games (seco
- ndary)\nid: mlb-853345
+DESCRIPTION:Time TBD\nMLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets g
+ ames (secondary)
 LOCATION:UNIQLO Field at Dodger Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2794,8 +2707,8 @@ DTSTART;VALUE=DATE:20270704
 DTEND;VALUE=DATE:20270705
 DTSTAMP:20270704T000000Z
 UID:mlb-853353@sports-calendar
-DESCRIPTION:MLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets games (seco
- ndary)\nid: mlb-853353
+DESCRIPTION:Time TBD\nMLB\nUNIQLO Field at Dodger Stadium\nMatched: Mets g
+ ames (secondary)
 LOCATION:UNIQLO Field at Dodger Stadium
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2805,8 +2718,7 @@ DTSTART:20270706T231000Z
 DTEND:20270707T021000Z
 DTSTAMP:20270706T231000Z
 UID:mlb-853035@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 35
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2816,8 +2728,7 @@ DTSTART:20270707T231000Z
 DTEND:20270708T021000Z
 DTSTAMP:20270707T231000Z
 UID:mlb-853030@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 30
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2827,8 +2738,7 @@ DTSTART:20270708T231000Z
 DTEND:20270709T021000Z
 DTSTAMP:20270708T231000Z
 UID:mlb-853037@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 37
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2838,8 +2748,7 @@ DTSTART:20270709T231000Z
 DTEND:20270710T021000Z
 DTSTAMP:20270709T231000Z
 UID:mlb-853034@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 34
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2849,8 +2758,7 @@ DTSTART:20270710T231500Z
 DTEND:20270711T021500Z
 DTSTAMP:20270710T231500Z
 UID:mlb-853028@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 28
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2860,8 +2768,7 @@ DTSTART:20270711T174000Z
 DTEND:20270711T204000Z
 DTSTAMP:20270711T174000Z
 UID:mlb-853016@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 16
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2871,8 +2778,7 @@ DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270720
 DTSTAMP:20270719T000000Z
 UID:mlb-854165@sports-calendar
-DESCRIPTION:MLB\nFenway Park\nMatched: Mets games (secondary)\nid: mlb-854
- 165
+DESCRIPTION:Time TBD\nMLB\nFenway Park\nMatched: Mets games (secondary)
 LOCATION:Fenway Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2882,8 +2788,7 @@ DTSTART;VALUE=DATE:20270720
 DTEND;VALUE=DATE:20270721
 DTSTAMP:20270720T000000Z
 UID:mlb-854150@sports-calendar
-DESCRIPTION:MLB\nFenway Park\nMatched: Mets games (secondary)\nid: mlb-854
- 150
+DESCRIPTION:Time TBD\nMLB\nFenway Park\nMatched: Mets games (secondary)
 LOCATION:Fenway Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2893,8 +2798,7 @@ DTSTART;VALUE=DATE:20270721
 DTEND;VALUE=DATE:20270722
 DTSTAMP:20270721T000000Z
 UID:mlb-854155@sports-calendar
-DESCRIPTION:MLB\nFenway Park\nMatched: Mets games (secondary)\nid: mlb-854
- 155
+DESCRIPTION:Time TBD\nMLB\nFenway Park\nMatched: Mets games (secondary)
 LOCATION:Fenway Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2904,8 +2808,7 @@ DTSTART:20270722T231000Z
 DTEND:20270723T021000Z
 DTSTAMP:20270722T231000Z
 UID:mlb-853025@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 25
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2915,8 +2818,7 @@ DTSTART:20270723T231000Z
 DTEND:20270724T021000Z
 DTSTAMP:20270723T231000Z
 UID:mlb-853021@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 21
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2926,8 +2828,7 @@ DTSTART:20270724T201000Z
 DTEND:20270724T231000Z
 DTSTAMP:20270724T201000Z
 UID:mlb-853014@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 14
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2937,8 +2838,7 @@ DTSTART:20270725T174000Z
 DTEND:20270725T204000Z
 DTSTAMP:20270725T174000Z
 UID:mlb-853023@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 23
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2948,8 +2848,7 @@ DTSTART:20270726T231000Z
 DTEND:20270727T021000Z
 DTSTAMP:20270726T231000Z
 UID:mlb-853024@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 24
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2959,8 +2858,7 @@ DTSTART:20270727T231000Z
 DTEND:20270728T021000Z
 DTSTAMP:20270727T231000Z
 UID:mlb-853017@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 17
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2970,8 +2868,7 @@ DTSTART:20270728T171000Z
 DTEND:20270728T201000Z
 DTSTAMP:20270728T171000Z
 UID:mlb-853015@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 15
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2981,7 +2878,7 @@ DTSTART:20270730T224000Z
 DTEND:20270731T014000Z
 DTSTAMP:20270730T224000Z
 UID:mlb-852772@sports-calendar
-DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)\nid: mlb-852772
+DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)
 LOCATION:PNC Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2991,7 +2888,7 @@ DTSTART:20270731T224000Z
 DTEND:20270801T014000Z
 DTSTAMP:20270731T224000Z
 UID:mlb-852774@sports-calendar
-DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)\nid: mlb-852774
+DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)
 LOCATION:PNC Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3001,7 +2898,7 @@ DTSTART:20270801T163500Z
 DTEND:20270801T193500Z
 DTSTAMP:20270801T163500Z
 UID:mlb-852767@sports-calendar
-DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)\nid: mlb-852767
+DESCRIPTION:MLB\nPNC Park\nMatched: Mets games (secondary)
 LOCATION:PNC Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3012,7 +2909,6 @@ DTEND:20270803T014000Z
 DTSTAMP:20270802T224000Z
 UID:mlb-853910@sports-calendar
 DESCRIPTION:MLB\nGreat American Ball Park\nMatched: Mets games (secondary)
- \nid: mlb-853910
 LOCATION:Great American Ball Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3023,7 +2919,6 @@ DTEND:20270804T014000Z
 DTSTAMP:20270803T224000Z
 UID:mlb-853907@sports-calendar
 DESCRIPTION:MLB\nGreat American Ball Park\nMatched: Mets games (secondary)
- \nid: mlb-853907
 LOCATION:Great American Ball Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3034,7 +2929,6 @@ DTEND:20270805T014000Z
 DTSTAMP:20270804T224000Z
 UID:mlb-853913@sports-calendar
 DESCRIPTION:MLB\nGreat American Ball Park\nMatched: Mets games (secondary)
- \nid: mlb-853913
 LOCATION:Great American Ball Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3044,8 +2938,7 @@ DTSTART:20270806T231000Z
 DTEND:20270807T021000Z
 DTSTAMP:20270806T231000Z
 UID:mlb-853020@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 20
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3055,8 +2948,7 @@ DTSTART:20270807T201000Z
 DTEND:20270807T231000Z
 DTSTAMP:20270807T201000Z
 UID:mlb-853019@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 19
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3066,8 +2958,7 @@ DTSTART:20270808T174000Z
 DTEND:20270808T204000Z
 DTSTAMP:20270808T174000Z
 UID:mlb-853013@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 13
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3077,8 +2968,7 @@ DTSTART:20270809T231000Z
 DTEND:20270810T021000Z
 DTSTAMP:20270809T231000Z
 UID:mlb-853018@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 18
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3088,8 +2978,7 @@ DTSTART:20270810T231000Z
 DTEND:20270811T021000Z
 DTSTAMP:20270810T231000Z
 UID:mlb-853022@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 22
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3099,8 +2988,7 @@ DTSTART:20270811T171000Z
 DTEND:20270811T201000Z
 DTSTAMP:20270811T171000Z
 UID:mlb-853006@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 06
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3110,8 +2998,7 @@ DTSTART:20270813T231000Z
 DTEND:20270814T021000Z
 DTSTAMP:20270813T231000Z
 UID:mlb-853001@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 01
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3121,8 +3008,7 @@ DTSTART:20270814T231500Z
 DTEND:20270815T021500Z
 DTSTAMP:20270814T231500Z
 UID:mlb-853007@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 07
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3132,8 +3018,7 @@ DTSTART:20270815T174000Z
 DTEND:20270815T204000Z
 DTSTAMP:20270815T174000Z
 UID:mlb-853008@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 08
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3143,8 +3028,7 @@ DTSTART:20270818T001000Z
 DTEND:20270818T031000Z
 DTSTAMP:20270818T001000Z
 UID:mlb-853574@sports-calendar
-DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)\nid: mlb-853
- 574
+DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)
 LOCATION:Daikin Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3154,8 +3038,7 @@ DTSTART:20270819T001000Z
 DTEND:20270819T031000Z
 DTSTAMP:20270819T001000Z
 UID:mlb-853573@sports-calendar
-DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)\nid: mlb-853
- 573
+DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)
 LOCATION:Daikin Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3165,8 +3048,7 @@ DTSTART:20270819T201000Z
 DTEND:20270819T231000Z
 DTSTAMP:20270819T201000Z
 UID:mlb-853571@sports-calendar
-DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)\nid: mlb-853
- 571
+DESCRIPTION:MLB\nDaikin Park\nMatched: Mets games (secondary)
 LOCATION:Daikin Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3176,8 +3058,7 @@ DTSTART:20270820T231500Z
 DTEND:20270821T021500Z
 DTSTAMP:20270820T231500Z
 UID:mlb-854300@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 300
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3187,8 +3068,7 @@ DTSTART:20270821T231500Z
 DTEND:20270822T021500Z
 DTSTAMP:20270821T231500Z
 UID:mlb-854304@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 304
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3198,8 +3078,7 @@ DTSTART:20270822T173500Z
 DTEND:20270822T203500Z
 DTSTAMP:20270822T173500Z
 UID:mlb-854301@sports-calendar
-DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)\nid: mlb-854
- 301
+DESCRIPTION:MLB\nTruist Park\nMatched: Mets games (secondary)
 LOCATION:Truist Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3209,8 +3088,7 @@ DTSTART:20270824T231000Z
 DTEND:20270825T021000Z
 DTSTAMP:20270824T231000Z
 UID:mlb-853000@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 00
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3220,8 +3098,7 @@ DTSTART:20270825T231000Z
 DTEND:20270826T021000Z
 DTSTAMP:20270825T231000Z
 UID:mlb-853010@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 10
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3231,8 +3108,7 @@ DTSTART:20270826T231000Z
 DTEND:20270827T021000Z
 DTSTAMP:20270826T231000Z
 UID:mlb-853004@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 04
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3242,8 +3118,7 @@ DTSTART:20270827T231000Z
 DTEND:20270828T021000Z
 DTSTAMP:20270827T231000Z
 UID:mlb-852999@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 99
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3253,8 +3128,7 @@ DTSTART:20270828T201000Z
 DTEND:20270828T231000Z
 DTSTAMP:20270828T201000Z
 UID:mlb-853011@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 11
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3264,8 +3138,7 @@ DTSTART:20270829T174000Z
 DTEND:20270829T204000Z
 DTSTAMP:20270829T174000Z
 UID:mlb-853003@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 03
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3275,8 +3148,7 @@ DTSTART;VALUE=DATE:20270831
 DTEND;VALUE=DATE:20270901
 DTSTAMP:20270831T000000Z
 UID:mlb-853238@sports-calendar
-DESCRIPTION:MLB\nloanDepot park\nMatched: Mets games (secondary)\nid: mlb-
- 853238
+DESCRIPTION:Time TBD\nMLB\nloanDepot park\nMatched: Mets games (secondary)
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3286,8 +3158,7 @@ DTSTART;VALUE=DATE:20270901
 DTEND;VALUE=DATE:20270902
 DTSTAMP:20270901T000000Z
 UID:mlb-853248@sports-calendar
-DESCRIPTION:MLB\nloanDepot park\nMatched: Mets games (secondary)\nid: mlb-
- 853248
+DESCRIPTION:Time TBD\nMLB\nloanDepot park\nMatched: Mets games (secondary)
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3297,8 +3168,7 @@ DTSTART;VALUE=DATE:20270902
 DTEND;VALUE=DATE:20270903
 DTSTAMP:20270902T000000Z
 UID:mlb-853244@sports-calendar
-DESCRIPTION:MLB\nloanDepot park\nMatched: Mets games (secondary)\nid: mlb-
- 853244
+DESCRIPTION:Time TBD\nMLB\nloanDepot park\nMatched: Mets games (secondary)
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3308,8 +3178,7 @@ DTSTART:20270903T224000Z
 DTEND:20270904T014000Z
 DTSTAMP:20270903T224000Z
 UID:mlb-852831@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852831
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3319,8 +3188,7 @@ DTSTART:20270904T231500Z
 DTEND:20270905T021500Z
 DTSTAMP:20270904T231500Z
 UID:mlb-852832@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852832
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3330,8 +3198,7 @@ DTSTART:20270905T173500Z
 DTEND:20270905T203500Z
 DTSTAMP:20270905T173500Z
 UID:mlb-852839@sports-calendar
-DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)\nid: 
- mlb-852839
+DESCRIPTION:MLB\nCitizens Bank Park\nMatched: Mets games (secondary)
 LOCATION:Citizens Bank Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3341,8 +3208,7 @@ DTSTART:20270906T201000Z
 DTEND:20270906T231000Z
 DTSTAMP:20270906T201000Z
 UID:mlb-853012@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 12
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3352,8 +3218,7 @@ DTSTART:20270907T231000Z
 DTEND:20270908T021000Z
 DTSTAMP:20270907T231000Z
 UID:mlb-853005@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 05
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3363,8 +3228,7 @@ DTSTART:20270908T231000Z
 DTEND:20270909T021000Z
 DTSTAMP:20270908T231000Z
 UID:mlb-853002@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 02
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3374,8 +3238,7 @@ DTSTART:20270910T231000Z
 DTEND:20270911T021000Z
 DTSTAMP:20270910T231000Z
 UID:mlb-853009@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8530
- 09
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3385,8 +3248,7 @@ DTSTART:20270911T201000Z
 DTEND:20270911T231000Z
 DTSTAMP:20270911T201000Z
 UID:mlb-852995@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 95
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3396,8 +3258,7 @@ DTSTART:20270912T174000Z
 DTEND:20270912T204000Z
 DTSTAMP:20270912T174000Z
 UID:mlb-852994@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 94
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3407,8 +3268,7 @@ DTSTART:20270913T224500Z
 DTEND:20270914T014500Z
 DTSTAMP:20270913T224500Z
 UID:mlb-852109@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852109
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3418,8 +3278,7 @@ DTSTART:20270914T224500Z
 DTEND:20270915T014500Z
 DTSTAMP:20270914T224500Z
 UID:mlb-852108@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852108
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3429,8 +3288,7 @@ DTSTART:20270915T224500Z
 DTEND:20270916T014500Z
 DTSTAMP:20270915T224500Z
 UID:mlb-852105@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852105
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3440,8 +3298,7 @@ DTSTART:20270916T170500Z
 DTEND:20270916T200500Z
 DTSTAMP:20270916T170500Z
 UID:mlb-852106@sports-calendar
-DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)\nid: mlb-
- 852106
+DESCRIPTION:MLB\nNationals Park\nMatched: Mets games (secondary)
 LOCATION:Nationals Park
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3451,8 +3308,7 @@ DTSTART;VALUE=DATE:20270917
 DTEND;VALUE=DATE:20270918
 DTSTAMP:20270917T000000Z
 UID:mlb-854050@sports-calendar
-DESCRIPTION:MLB\nWrigley Field\nMatched: Mets games (secondary)\nid: mlb-8
- 54050
+DESCRIPTION:Time TBD\nMLB\nWrigley Field\nMatched: Mets games (secondary)
 LOCATION:Wrigley Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3462,8 +3318,7 @@ DTSTART;VALUE=DATE:20270918
 DTEND;VALUE=DATE:20270919
 DTSTAMP:20270918T000000Z
 UID:mlb-854055@sports-calendar
-DESCRIPTION:MLB\nWrigley Field\nMatched: Mets games (secondary)\nid: mlb-8
- 54055
+DESCRIPTION:Time TBD\nMLB\nWrigley Field\nMatched: Mets games (secondary)
 LOCATION:Wrigley Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3473,8 +3328,7 @@ DTSTART;VALUE=DATE:20270919
 DTEND;VALUE=DATE:20270920
 DTSTAMP:20270919T000000Z
 UID:mlb-854048@sports-calendar
-DESCRIPTION:MLB\nWrigley Field\nMatched: Mets games (secondary)\nid: mlb-8
- 54048
+DESCRIPTION:Time TBD\nMLB\nWrigley Field\nMatched: Mets games (secondary)
 LOCATION:Wrigley Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3484,8 +3338,7 @@ DTSTART:20270921T231000Z
 DTEND:20270922T021000Z
 DTSTAMP:20270921T231000Z
 UID:mlb-852992@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 92
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3495,8 +3348,7 @@ DTSTART:20270922T231000Z
 DTEND:20270923T021000Z
 DTSTAMP:20270922T231000Z
 UID:mlb-852997@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 97
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3506,8 +3358,7 @@ DTSTART:20270923T231000Z
 DTEND:20270924T021000Z
 DTSTAMP:20270923T231000Z
 UID:mlb-852985@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 85
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3517,8 +3368,7 @@ DTSTART:20270924T231000Z
 DTEND:20270925T021000Z
 DTSTAMP:20270924T231000Z
 UID:mlb-852986@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 86
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3528,8 +3378,7 @@ DTSTART:20270925T201000Z
 DTEND:20270925T231000Z
 DTSTAMP:20270925T201000Z
 UID:mlb-852993@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 93
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -3539,8 +3388,7 @@ DTSTART:20270926T191000Z
 DTEND:20270926T221000Z
 DTSTAMP:20270926T191000Z
 UID:mlb-852990@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)\nid: mlb-8529
- 90
+DESCRIPTION:MLB\nCiti Field\nMatched: Mets games (secondary)
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
 END:VEVENT
