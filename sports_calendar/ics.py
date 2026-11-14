@@ -59,7 +59,8 @@ def _what(game: Game) -> str:
 
 
 def description_for(game: Game) -> str:
-    lines = [_what(game)]
+    lines = [] if game.time_valid else ["Time TBD"]
+    lines.append(_what(game))
     place = place_for(game)
     if place:
         lines.append(place)
@@ -67,7 +68,6 @@ def description_for(game: Game) -> str:
         lines.append(f"TV: {game.broadcast}")
     if game.matched_rules:
         lines.append("Matched: " + ", ".join(game.matched_rules))
-    lines.append(f"id: {game.uid}")
     return "\n".join(lines)
 
 
@@ -99,8 +99,8 @@ def _simple_event(e: AllDayEvent | ManualEvent) -> Event:
     lines = [e.description] if e.description else []
     if e.matched_rules:
         lines.append("Matched: " + ", ".join(e.matched_rules))
-    lines.append(f"id: {e.uid}")
-    ev.add("description", "\n".join(lines))
+    if lines:
+        ev.add("description", "\n".join(lines))
     ev.add("dtstart", e.start)
     ev.add("dtend", e.end)
     if isinstance(e.start, datetime):

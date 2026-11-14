@@ -99,7 +99,7 @@ def test_build_calendar_timed_event():
     assert str(ev["LOCATION"]) == "Anfield"
     desc = str(ev["DESCRIPTION"])
     assert "Premier League" in desc and "TV: NBC" in desc and "Matched: Liverpool" in desc
-    assert desc.splitlines()[-1] == "id: espn-1"
+    assert desc.splitlines()[-1] == "Matched: Liverpool"  # no id line: it's in the UID
     assert "VALARM" not in data.decode()
 
 
@@ -115,6 +115,9 @@ def test_tbd_game_is_all_day():
     ev = Calendar.from_ical(ics.build_calendar([g], [], {})).walk("VEVENT")[0]
     assert ev["DTSTART"].dt == date(2026, 8, 29)
     assert ev["DTEND"].dt == date(2026, 8, 30)
+    assert str(ev["DESCRIPTION"]).splitlines()[:2] == ["Time TBD", "Premier League"]
+    timed = Calendar.from_ical(ics.build_calendar([game()], [], {})).walk("VEVENT")[0]
+    assert str(timed["DESCRIPTION"]).splitlines()[0] == "Premier League"
 
 
 def test_all_day_event():
@@ -126,10 +129,10 @@ def test_all_day_event():
     assert str(ev["UID"]) == "espn-golf-1@sports-calendar"
 
 
-def test_all_day_event_has_id_line():
+def test_all_day_event_without_notes_has_no_description():
     e = AllDayEvent(uid="espn-golf-1", title="The Masters", start=date(2026, 4, 9), end=date(2026, 4, 13))
     ev = Calendar.from_ical(ics.build_calendar([], [e], {})).walk("VEVENT")[0]
-    assert str(ev["DESCRIPTION"]) == "id: espn-golf-1"
+    assert "DESCRIPTION" not in ev
 
 
 def test_manual_timed_event():
@@ -139,7 +142,7 @@ def test_manual_timed_event():
     ev = Calendar.from_ical(ics.build_calendar([], [e], {})).walk("VEVENT")[0]
     assert str(ev["SUMMARY"]) == "Fury Usyk"
     assert ev["DTSTART"].dt == start and ev["DTEND"].dt == start + timedelta(hours=3)
-    assert str(ev["DESCRIPTION"]) == "Riyadh\nid: extra-fury-usyk-2026-12-19"
+    assert str(ev["DESCRIPTION"]) == "Riyadh"
 
 
 def test_output_is_deterministic_and_sorted():

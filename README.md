@@ -123,7 +123,7 @@ exclude:
     between: [2026-09-04, 2026-09-06]   # inclusive, in `timezone`
   - between: [2026-09-01, 2026-09-14]   # travelling: drop whole sports
     sports: [baseball, basketball]
-  - id: mlb-823649                      # last line of any event's notes
+  - id: mlb-823649                      # event's UID in docs/*.ics, minus "@sports-calendar"
   - rules: [Premier League big four]    # everything a rule produced
 
 extra:

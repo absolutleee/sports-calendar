@@ -155,7 +155,7 @@ def test_exclude_and_extra_from_config(fake_fetch, tmp_path):
                    and "Mets" in s for s, e in events.items())
     assert events["Ryder Cup"]["DTSTART"].dt == date(2027, 9, 24) and events["Ryder Cup"]["DTEND"].dt == date(2027, 9, 27)
     assert str(events["Fury Usyk"]["DTEND"].dt - events["Fury Usyk"]["DTSTART"].dt) == "3:00:00"
-    assert str(events["Fury Usyk"]["DESCRIPTION"]).endswith("id: extra-fury-usyk-2026-12-19")
+    assert str(events["Fury Usyk"]["UID"]) == "extra-fury-usyk-2026-12-19@sports-calendar"
 
 
 def _uids(path):

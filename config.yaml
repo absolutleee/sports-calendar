@@ -27,7 +27,7 @@ keep_past_days: 5               # hide events that ended more than this many day
 #     between: [2026-09-04, 2026-09-06]
 #   - between: [2026-09-01, 2026-09-14]         # a trip: drop whole sports
 #     sports: [baseball, basketball]
-#   - id: mlb-823649                            # copy from the last line of an event's notes
+#   - id: mlb-823649                            # the event's UID in docs/*.ics, minus "@sports-calendar"
 #   - rules: [Premier League big four]          # everything a rule produced
 exclude:
   # Weddings in October — skip these two DU Pioneers home series.
