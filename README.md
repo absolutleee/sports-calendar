@@ -16,10 +16,10 @@ Alerts are intentionally off; titles are built for scanning:
 
     Liverpool Newcastle              soccer: home team first
     Stars Avs                        US sports: away team first
-    Avs Stars · 1st Round G3         suffix only when it adds information
-    PSG Arsenal · UCL Final
-    Rapids Seattle                   MLS playoffs & USA games: teams only;
-                                     round in the notes ("MLS Playoffs · West Round One")
+    Avs Stars G3                     playoffs (any sport): teams + game in a series,
+    Rapids Seattle G2                round in the notes ("MLS Playoffs · West Round One")
+    PSG Arsenal · UCL Final          suffix only when it adds information
+    USA Haiti                        USA games (`plain_title`): teams only
     Pirates Mets · Opening Day
     Barcelona Real Madrid · time TBD kickoff not set yet → all-day until it is
     The Masters                      all-day, Thu–Sun

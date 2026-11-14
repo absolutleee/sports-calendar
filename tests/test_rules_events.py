@@ -72,6 +72,16 @@ def test_context_soccer():
                                 series_title="Championship")) == "NWSL Championship"
 
 
+def test_number_series_counts_mls_best_of_three_games():
+    g1 = mk("g1", LIV, NEW, date(2026, 11, 21), comp="usa.1", season_type="post", series_title="East Round One")
+    g2 = mk("g2", NEW, LIV, date(2026, 11, 28), comp="usa.1", season_type="post", series_title="East Round One")
+    g3 = mk("g3", LIV, NEW, date(2026, 12, 2), comp="usa.1", season_type="post", series_title="East Round One")
+    semi = mk("semi", LIV, ARS, date(2026, 12, 6), comp="usa.1", season_type="post", series_title="East Semifinal")
+    rules.annotate([g3, semi, g1, g2])
+    assert [g.series_game for g in (g1, g2, g3, semi)] == [1, 2, 3, None]
+    assert g2.context == "MLS East Round One G2"
+
+
 def test_context_us_sports():
     nhl = mk("a", COL, DAL, date(2027, 4, 20), sport="hockey", comp="nhl", comp_name="NHL", season_type="post",
              series_title="1st Round", series_game=3)

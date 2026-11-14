@@ -167,14 +167,12 @@ rules:
     source: espn_soccer
     team: 184
     competitions: [usa.1]           # MLS Cup Playoffs, wild card through MLS Cup
-    plain_title: true               # round goes in the notes, not the title
 
   - name: Inter Miami playoffs
     type: postseason
     source: espn_soccer
     team: 20232
     competitions: [usa.1]
-    plain_title: true
 
   - name: Denver Summit home v Gotham / KC / Spirit
     type: head_to_head

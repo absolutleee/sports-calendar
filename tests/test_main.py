@@ -68,10 +68,11 @@ def test_end_to_end(fake_fetch, tmp_path):
     assert "PSG Arsenal · UCL Final" in events
     assert any("Championship Play-off Final" in s for s in summaries)
     assert "Pirates Mets · Opening Day" in events
-    assert "Golden Knights Hurricanes · Stanley Cup Final G1" in events
-    assert "Knicks Spurs · NBA Finals G1" in events
+    assert "Golden Knights Hurricanes G1" in events
+    assert "Stanley Cup Final G1" in str(events["Golden Knights Hurricanes G1"]["DESCRIPTION"])
+    assert "Knicks Spurs G1" in events
     assert any(s.endswith("· Season Opener") and "Avs" in s for s in summaries)
-    assert any("Avs" in s and "1st Round G1" in s for s in summaries)
+    assert any("Avs" in s and s.endswith(" G1") for s in summaries)
     assert any(s.endswith(" Denver") for s in summaries)
 
     masters = events["The Masters"]

@@ -31,7 +31,13 @@ def title_for(game: Game, display_names: dict[str, dict[str, str]]) -> str:
     else:
         first, second = game.away, game.home
     title = f"{shorten(first, game.sport, display_names)} {shorten(second, game.sport, display_names)}"
-    context = None if game.plain_title else game.context
+    if game.season_type == "post":
+        # Playoffs: teams plus the game in a series ("Avs Stars G3"); the round is in the notes.
+        if game.series_game:
+            title += f" G{game.series_game}"
+        context = None
+    else:
+        context = None if game.plain_title else game.context
     parts = [p for p in (context, None if game.time_valid else "time TBD") if p]
     if parts:
         title += " · " + " · ".join(parts)

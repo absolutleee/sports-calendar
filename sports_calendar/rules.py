@@ -232,7 +232,23 @@ def context_for(game: Game) -> str | None:
     return game.context
 
 
+def number_series(games: list[Game]) -> None:
+    """ESPN doesn't number MLS / NWSL best-of-3 games, so count them: playoff
+    games between the same two teams in the same round and year, in date order.
+    A round with one game (a single knockout match) gets no number."""
+    series: dict[tuple, list[Game]] = {}
+    for g in games:
+        if g.season_type == "post" and g.series_title and g.series_game is None:
+            key = (g.competition, frozenset((g.home.id, g.away.id)), g.series_title, g.day.year)
+            series.setdefault(key, []).append(g)
+    for group in series.values():
+        if len(group) > 1:
+            for n, g in enumerate(sorted(group, key=Game.sort_key), 1):
+                g.series_game = n
+
+
 def annotate(games: list[Game]) -> None:
+    number_series(games)
     for g in games:
         g.context = context_for(g)
 

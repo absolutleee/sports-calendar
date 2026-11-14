@@ -31,8 +31,17 @@ def test_title_soccer_home_first_and_short_names():
 def test_title_us_sports_away_first():
     g = game(sport="hockey", competition="nhl", competition_name="NHL", home=COL, away=DAL)
     assert ics.title_for(g, NAMES) == "Stars Avs"
-    g.context = "1st Round G3"
-    assert ics.title_for(g, NAMES) == "Stars Avs · 1st Round G3"
+    g.context = "Season Opener"
+    assert ics.title_for(g, NAMES) == "Stars Avs · Season Opener"
+
+
+def test_playoff_title_is_teams_and_game_number_only():
+    g = game(sport="hockey", competition="nhl", competition_name="NHL", home=COL, away=DAL, season_type="post",
+             series_title="1st Round", series_game=3, context="1st Round G3")
+    assert ics.title_for(g, NAMES) == "Stars Avs G3"
+    assert ics.description_for(g).startswith("NHL · 1st Round G3\n")
+    g.series_game, g.context = None, "Stanley Cup Final"
+    assert ics.title_for(g, NAMES) == "Stars Avs"
 
 
 def test_display_names_are_scoped_per_sport():
@@ -60,11 +69,12 @@ def test_plain_title_keeps_context_in_description_only():
 def test_mls_playoff_notes_give_round_and_venue_with_city():
     miami, columbus = Team("20232", "Inter Miami CF", "Miami"), Team("183", "Columbus Crew", "Columbus")
     g = game(home=miami, away=columbus, competition="usa.1", competition_name="MLS", season_type="post",
-             series_title="East Round One", context="MLS East Round One", plain_title=True,
+             series_title="East Round One", context="MLS East Round One",
              venue="Nu Stadium", venue_city="Miami, Florida")
     assert ics.title_for(g, NAMES) == "Miami Columbus"
     assert ics.description_for(g).splitlines()[:2] == ["MLS Playoffs · East Round One", "Nu Stadium, Miami, Florida"]
     g.series_game = 2
+    assert ics.title_for(g, NAMES) == "Miami Columbus G2"
     assert ics.description_for(g).startswith("MLS Playoffs · East Round One · Game 2\n")
     assert ics.place_for(game()) == "Anfield"  # no city from the source: venue only
 
