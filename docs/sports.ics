@@ -41,13 +41,13 @@ LOCATION:TQL Stadium\, Cincinnati\, Ohio
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Miami Columbus
+SUMMARY:Miami Columbus G1
 DTSTART:20261121T230000Z
 DTEND:20261122T010000Z
 DTSTAMP:20261121T230000Z
 UID:espn-401933739@sports-calendar
-DESCRIPTION:MLS Playoffs · East Round One\nNu Stadium\, Miami\, Florida\n
- TV: Apple TV\nMatched: Inter Miami playoffs\nid: espn-401933739
+DESCRIPTION:MLS Playoffs · East Round One · Game 1\nNu Stadium\, Miami\,
+  Florida\nTV: Apple TV\nMatched: Inter Miami playoffs\nid: espn-401933739
 LOCATION:Nu Stadium\, Miami\, Florida
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -85,14 +85,14 @@ LOCATION:Jan Breydel Stadium\, Brugge
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Columbus Miami
+SUMMARY:Columbus Miami G2
 DTSTART:20261128T010000Z
 DTEND:20261128T030000Z
 DTSTAMP:20261128T010000Z
 UID:espn-401933727@sports-calendar
-DESCRIPTION:MLS Playoffs · East Round One\nScottsMiracle-Gro Field\, Colu
- mbus\, Ohio\nTV: FS1\, Apple TV\nMatched: Inter Miami playoffs\nid: espn-4
- 01933727
+DESCRIPTION:MLS Playoffs · East Round One · Game 2\nScottsMiracle-Gro Fi
+ eld\, Columbus\, Ohio\nTV: FS1\, Apple TV\nMatched: Inter Miami playoffs\n
+ id: espn-401933727
 LOCATION:ScottsMiracle-Gro Field\, Columbus\, Ohio
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -130,13 +130,13 @@ LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Miami Columbus · time TBD
+SUMMARY:Miami Columbus G3 · time TBD
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 DTSTAMP:20261202T000000Z
 UID:espn-401933720@sports-calendar
-DESCRIPTION:MLS Playoffs · East Round One\nNu Stadium\, Miami\, Florida\n
- TV: Apple TV\nMatched: Inter Miami playoffs\nid: espn-401933720
+DESCRIPTION:MLS Playoffs · East Round One · Game 3\nNu Stadium\, Miami\,
+  Florida\nTV: Apple TV\nMatched: Inter Miami playoffs\nid: espn-401933720
 LOCATION:Nu Stadium\, Miami\, Florida
 TRANSP:TRANSPARENT
 END:VEVENT
