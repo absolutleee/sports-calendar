@@ -12,10 +12,10 @@ DTEND:20261114T233000Z
 DTSTAMP:20261114T213000Z
 UID:espn-401929710@sports-calendar
 DESCRIPTION:Concacaf Nations League · Nations League 1st Leg\nNu Stadium
- \, Miami\, Florida\nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock\nMatche
- d: USMNT
+ \, Miami\, Florida\nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock
 LOCATION:Nu Stadium\, Miami\, Florida
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:USMNT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Lindenwood Denver
@@ -23,10 +23,10 @@ DTSTART:20261115T010000Z
 DTEND:20261115T033000Z
 DTSTAMP:20261115T010000Z
 UID:espn-401904871@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:USA Haiti
@@ -35,10 +35,10 @@ DTEND:20261118T020000Z
 DTSTAMP:20261118T000000Z
 UID:espn-401929766@sports-calendar
 DESCRIPTION:Concacaf Nations League · Nations League 2nd Leg\nTQL Stadium
- \, Cincinnati\, Ohio\nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock\nMatc
- hed: USMNT
+ \, Cincinnati\, Ohio\nTV: TBS\, truTV\, Universo\, HBO Max\, Peacock
 LOCATION:TQL Stadium\, Cincinnati\, Ohio
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:USMNT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Miami Columbus G1
@@ -47,9 +47,10 @@ DTEND:20261122T010000Z
 DTSTAMP:20261121T230000Z
 UID:espn-401933739@sports-calendar
 DESCRIPTION:MLS Playoffs · East Round One · Game 1\nNu Stadium\, Miami\,
-  Florida\nTV: Apple TV\nMatched: Inter Miami playoffs
+  Florida\nTV: Apple TV
 LOCATION:Nu Stadium\, Miami\, Florida
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Inter Miami playoffs
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Man Utd
@@ -57,10 +58,10 @@ DTSTART:20261122T163000Z
 DTEND:20261122T183000Z
 DTSTAMP:20261122T163000Z
 UID:espn-401878755@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sabah Barcelona · UCL
@@ -69,9 +70,10 @@ DTEND:20261125T194500Z
 DTSTAMP:20261125T174500Z
 UID:espn-401915378@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nBaku Olympic Stadium\, Baku\nTV:
-  Paramount+\nMatched: Barcelona Champions League
+  Paramount+
 LOCATION:Baku Olympic Stadium\, Baku
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona Champions League
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Club Brugge Liverpool · UCL
@@ -80,9 +82,10 @@ DTEND:20261125T220000Z
 DTSTAMP:20261125T200000Z
 UID:espn-401915292@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nJan Breydel Stadium\, Brugge\nTV
- : Paramount+\nMatched: Liverpool
+ : Paramount+
 LOCATION:Jan Breydel Stadium\, Brugge
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Columbus Miami G2
@@ -91,9 +94,10 @@ DTEND:20261128T030000Z
 DTSTAMP:20261128T010000Z
 UID:espn-401933727@sports-calendar
 DESCRIPTION:MLS Playoffs · East Round One · Game 2\nScottsMiracle-Gro Fi
- eld\, Columbus\, Ohio\nTV: FS1\, Apple TV\nMatched: Inter Miami playoffs
+ eld\, Columbus\, Ohio\nTV: FS1\, Apple TV
 LOCATION:ScottsMiracle-Gro Field\, Columbus\, Ohio
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Inter Miami playoffs
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Everton Liverpool
@@ -101,10 +105,10 @@ DTSTART:20261129T120000Z
 DTEND:20261129T140000Z
 DTSTAMP:20261129T120000Z
 UID:espn-401879229@sports-calendar
-DESCRIPTION:English Premier League\nHill Dickinson Stadium\, Liverpool\nMa
- tched: Liverpool
+DESCRIPTION:English Premier League\nHill Dickinson Stadium\, Liverpool
 LOCATION:Hill Dickinson Stadium\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arsenal City
@@ -112,10 +116,10 @@ DTSTART:20261129T163000Z
 DTEND:20261129T183000Z
 DTSTAMP:20261129T163000Z
 UID:espn-401878753@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\, London\nMatched: Pr
- emier League big four
+DESCRIPTION:English Premier League\nEmirates Stadium\, London
 LOCATION:Emirates Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Sunderland
@@ -123,10 +127,10 @@ DTSTART:20261202T193000Z
 DTEND:20261202T213000Z
 DTSTAMP:20261202T193000Z
 UID:espn-401879219@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Miami Columbus G3
@@ -135,9 +139,10 @@ DTEND;VALUE=DATE:20261203
 DTSTAMP:20261202T000000Z
 UID:espn-401933720@sports-calendar
 DESCRIPTION:Time TBD\nMLS Playoffs · East Round One · Game 3\nNu Stadium
- \, Miami\, Florida\nTV: Apple TV\nMatched: Inter Miami playoffs
+ \, Miami\, Florida\nTV: Apple TV
 LOCATION:Nu Stadium\, Miami\, Florida
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Inter Miami playoffs
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Barcelona Atlético
@@ -145,10 +150,10 @@ DTSTART:20261202T203000Z
 DTEND:20261202T223000Z
 DTSTAMP:20261202T203000Z
 UID:espn-401882700@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
- ed: Barcelona v Real Madrid / Atlético
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona v Real Madrid / Atlético
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:North Dakota Denver
@@ -156,10 +161,10 @@ DTSTART:20261205T020000Z
 DTEND:20261205T043000Z
 DTSTAMP:20261205T020000Z
 UID:espn-401904872@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Chelsea Liverpool
@@ -167,10 +172,10 @@ DTSTART:20261205T123000Z
 DTEND:20261205T143000Z
 DTSTAMP:20261205T123000Z
 UID:espn-401879213@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\, London\nMatched: Liv
- erpool
+DESCRIPTION:English Premier League\nStamford Bridge\, London
 LOCATION:Stamford Bridge\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:North Dakota Denver
@@ -178,10 +183,10 @@ DTSTART:20261206T010000Z
 DTEND:20261206T033000Z
 DTSTAMP:20261206T010000Z
 UID:espn-401904873@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Tottenham Arsenal
@@ -189,10 +194,10 @@ DTSTART:20261206T163000Z
 DTEND:20261206T183000Z
 DTSTAMP:20261206T163000Z
 UID:espn-401879209@sports-calendar
-DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London\nMa
- tched: Tottenham v Chelsea / Arsenal
+DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London
 LOCATION:Tottenham Hotspur Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Tottenham v Chelsea / Arsenal
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Barcelona City · UCL
@@ -201,9 +206,10 @@ DTEND:20261208T220000Z
 DTSTAMP:20261208T200000Z
 UID:espn-401915285@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nSpotify Camp Nou\, Barcelona\nTV
- : Paramount+\nMatched: Barcelona Champions League
+ : Paramount+
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona Champions League
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool FC Porto · UCL
@@ -212,9 +218,10 @@ DTEND:20261209T220000Z
 DTSTAMP:20261209T200000Z
 UID:espn-401915369@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nAnfield\, Liverpool\nTV: Paramou
- nt+\nMatched: Liverpool
+ nt+
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Leeds
@@ -222,10 +229,10 @@ DTSTART:20261212T150000Z
 DTEND:20261212T170000Z
 DTSTAMP:20261212T150000Z
 UID:espn-401878743@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:City Chelsea
@@ -233,10 +240,10 @@ DTSTART:20261212T173000Z
 DTEND:20261212T193000Z
 DTSTAMP:20261212T173000Z
 UID:espn-401878742@sports-calendar
-DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester\nMatched: 
- Premier League big four
+DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester
 LOCATION:Etihad Stadium\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:USA Jamaica
@@ -245,10 +252,10 @@ DTEND:20261213T223000Z
 DTSTAMP:20261213T203000Z
 UID:espn-401930977@sports-calendar
 DESCRIPTION:International Friendly · Friendly\nChase Stadium\, Fort Laude
- rdale\, Florida\nTV: TNT\, HBO Max\, Tele\, Universo\, Peacock\nMatched: U
- SMNT
+ rdale\, Florida\nTV: TNT\, HBO Max\, Tele\, Universo\, Peacock
 LOCATION:Chase Stadium\, Fort Lauderdale\, Florida
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:USMNT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Bournemouth · EFL Cup
@@ -256,10 +263,10 @@ DTSTART:20261216T200000Z
 DTEND:20261216T220000Z
 DTSTAMP:20261216T200000Z
 UID:espn-401932187@sports-calendar
-DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\, Liverpool\nMatched: 
- Liverpool
+DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Tottenham
@@ -267,10 +274,10 @@ DTSTART:20261219T173000Z
 DTEND:20261219T193000Z
 DTSTAMP:20261219T173000Z
 UID:espn-401879200@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arsenal Man Utd
@@ -278,10 +285,10 @@ DTSTART:20261220T163000Z
 DTEND:20261220T183000Z
 DTSTAMP:20261220T163000Z
 UID:espn-401879204@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\, London\nMatched: Pr
- emier League big four
+DESCRIPTION:English Premier League\nEmirates Stadium\, London
 LOCATION:Emirates Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Hull Liverpool
@@ -289,10 +296,10 @@ DTSTART:20261226T173000Z
 DTEND:20261226T193000Z
 DTSTAMP:20261226T173000Z
 UID:espn-401878733@sports-calendar
-DESCRIPTION:English Premier League\nThe MKM Stadium\, Hull\nMatched: Liver
- pool
+DESCRIPTION:English Premier League\nThe MKM Stadium\, Hull
 LOCATION:The MKM Stadium\, Hull
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Aston Villa Liverpool
@@ -300,10 +307,10 @@ DTSTART:20261230T201500Z
 DTEND:20261230T221500Z
 DTSTAMP:20261230T201500Z
 UID:espn-401879194@sports-calendar
-DESCRIPTION:English Premier League\nVilla Park\, Birmingham\nMatched: Live
- rpool
+DESCRIPTION:English Premier League\nVilla Park\, Birmingham
 LOCATION:Villa Park\, Birmingham
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Coventry
@@ -311,10 +318,10 @@ DTSTART:20270102T150000Z
 DTEND:20270102T170000Z
 DTSTAMP:20270102T150000Z
 UID:espn-401879181@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sunderland Liverpool
@@ -322,10 +329,10 @@ DTSTART:20270105T201500Z
 DTEND:20270105T221500Z
 DTSTAMP:20270105T201500Z
 UID:espn-401878727@sports-calendar
-DESCRIPTION:English Premier League\nStadium of Light\, Sunderland\nMatched
- : Liverpool
+DESCRIPTION:English Premier League\nStadium of Light\, Sunderland
 LOCATION:Stadium of Light\, Sunderland
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Inter Juventus
@@ -333,10 +340,10 @@ DTSTART:20270110T194500Z
 DTEND:20270110T214500Z
 DTSTAMP:20270110T194500Z
 UID:espn-401875035@sports-calendar
-DESCRIPTION:Italian Serie A\nSan Siro\, Milano\nTV: Paramount+\nMatched: J
- uventus v Inter
+DESCRIPTION:Italian Serie A\nSan Siro\, Milano\nTV: Paramount+
 LOCATION:San Siro\, Milano
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Juventus v Inter
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool C Palace
@@ -344,10 +351,10 @@ DTSTART:20270116T150000Z
 DTEND:20270116T170000Z
 DTSTAMP:20270116T150000Z
 UID:espn-401879166@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Colorado College Denver
@@ -355,10 +362,10 @@ DTSTART:20270117T010000Z
 DTEND:20270117T033000Z
 DTSTAMP:20270117T010000Z
 UID:espn-401904878@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Inter Liverpool · UCL
@@ -367,9 +374,10 @@ DTEND:20270119T220000Z
 DTSTAMP:20270119T200000Z
 UID:espn-401915360@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nSan Siro\, Milano\nTV: Paramount
- +\nMatched: Liverpool
+ +
 LOCATION:San Siro\, Milano
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sporting Barcelona · UCL
@@ -378,9 +386,10 @@ DTEND:20270120T220000Z
 DTSTAMP:20270120T200000Z
 UID:espn-401915356@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nEstádio José Alvalade\, Lisbon
- \nTV: Paramount+\nMatched: Barcelona Champions League
+ \nTV: Paramount+
 LOCATION:Estádio José Alvalade\, Lisbon
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona Champions League
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Avs Stars
@@ -388,10 +397,10 @@ DTSTART:20270123T010000Z
 DTEND:20270123T033000Z
 DTSTAMP:20270123T010000Z
 UID:nhl-2026020810@sports-calendar
-DESCRIPTION:NHL\nAmerican Airlines Center\nTV: Prime Video\, ALT\nMatched:
-  Avs v Stars
+DESCRIPTION:NHL\nAmerican Airlines Center\nTV: Prime Video\, ALT
 LOCATION:American Airlines Center
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Avs v Stars
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Man Utd Liverpool
@@ -399,10 +408,10 @@ DTSTART:20270123T150000Z
 DTEND:20270123T170000Z
 DTSTAMP:20270123T150000Z
 UID:espn-401878718@sports-calendar
-DESCRIPTION:English Premier League\nOld Trafford\, Manchester\nMatched: Li
- verpool
+DESCRIPTION:English Premier League\nOld Trafford\, Manchester
 LOCATION:Old Trafford\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stars Avs
@@ -410,9 +419,10 @@ DTSTART:20270124T220000Z
 DTEND:20270125T003000Z
 DTSTAMP:20270124T220000Z
 UID:nhl-2026020826@sports-calendar
-DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\, ALT\nMatched: Avs v Stars
+DESCRIPTION:NHL\nBall Arena\nTV: Prime Video\, ALT
 LOCATION:Ball Arena
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Avs v Stars
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Barcelona Como · UCL
@@ -421,9 +431,10 @@ DTEND:20270127T220000Z
 DTSTAMP:20270127T200000Z
 UID:espn-401915264@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nSpotify Camp Nou\, Barcelona\nTV
- : Paramount+\nMatched: Barcelona Champions League
+ : Paramount+
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona Champions League
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Lens · UCL
@@ -432,9 +443,10 @@ DTEND:20270127T220000Z
 DTSTAMP:20270127T200000Z
 UID:espn-401915353@sports-calendar
 DESCRIPTION:UEFA Champions League · UCL\nAnfield\, Liverpool\nTV: Paramou
- nt+\nMatched: Liverpool
+ nt+
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:City Arsenal
@@ -442,10 +454,10 @@ DTSTART:20270130T150000Z
 DTEND:20270130T170000Z
 DTSTAMP:20270130T150000Z
 UID:espn-401879154@sports-calendar
-DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester\nMatched: 
- Premier League big four
+DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester
 LOCATION:Etihad Stadium\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Everton
@@ -453,10 +465,10 @@ DTSTART:20270130T150000Z
 DTEND:20270130T170000Z
 DTSTAMP:20270130T150000Z
 UID:espn-401879155@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Nuggets Thunder
@@ -464,10 +476,10 @@ DTSTART:20270130T200000Z
 DTEND:20270130T223000Z
 DTSTAMP:20270130T200000Z
 UID:espn-401910452@sports-calendar
-DESCRIPTION:NBA\nPaycom Center\, Oklahoma City\nTV: ABC\nMatched: Nuggets 
- v Thunder
+DESCRIPTION:NBA\nPaycom Center\, Oklahoma City\nTV: ABC
 LOCATION:Paycom Center\, Oklahoma City
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Nuggets v Thunder
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Thunder Nuggets
@@ -475,10 +487,10 @@ DTSTART:20270203T020000Z
 DTEND:20270203T043000Z
 DTSTAMP:20270203T020000Z
 UID:espn-401910479@sports-calendar
-DESCRIPTION:NBA\nBall Arena\, Denver\nTV: KSBI\, Thunder App\nMatched: Nug
- gets v Thunder
+DESCRIPTION:NBA\nBall Arena\, Denver\nTV: KSBI\, Thunder App
 LOCATION:Ball Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Nuggets v Thunder
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arizona State Denver
@@ -486,10 +498,10 @@ DTSTART:20270206T020000Z
 DTEND:20270206T043000Z
 DTSTAMP:20270206T020000Z
 UID:espn-401904882@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arsenal Liverpool
@@ -497,10 +509,10 @@ DTSTART:20270206T150000Z
 DTEND:20270206T170000Z
 DTSTAMP:20270206T150000Z
 UID:espn-401878712@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\, London\nMatched: Li
- verpool
+DESCRIPTION:English Premier League\nEmirates Stadium\, London
 LOCATION:Emirates Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Man Utd Chelsea
@@ -508,10 +520,10 @@ DTSTART:20270206T150000Z
 DTEND:20270206T170000Z
 DTSTAMP:20270206T150000Z
 UID:espn-401879148@sports-calendar
-DESCRIPTION:English Premier League\nOld Trafford\, Manchester\nMatched: Pr
- emier League big four
+DESCRIPTION:English Premier League\nOld Trafford\, Manchester
 LOCATION:Old Trafford\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arizona State Denver
@@ -519,10 +531,10 @@ DTSTART:20270207T010000Z
 DTEND:20270207T033000Z
 DTSTAMP:20270207T010000Z
 UID:espn-401904883@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Coventry Liverpool
@@ -531,9 +543,10 @@ DTEND:20270210T220000Z
 DTSTAMP:20270210T200000Z
 UID:espn-401879145@sports-calendar
 DESCRIPTION:English Premier League\nCoventry Building Society Arena\, Cove
- ntry\nMatched: Liverpool
+ ntry
 LOCATION:Coventry Building Society Arena\, Coventry
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Inter Milan
@@ -541,10 +554,10 @@ DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 DTSTAMP:20270214T000000Z
 UID:espn-401875105@sports-calendar
-DESCRIPTION:Time TBD\nItalian Serie A\nSan Siro\, Milano\nTV: Paramount+\n
- Matched: Inter v Milan
+DESCRIPTION:Time TBD\nItalian Serie A\nSan Siro\, Milano\nTV: Paramount+
 LOCATION:San Siro\, Milano
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Inter v Milan
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:St. Cloud State Denver
@@ -552,10 +565,10 @@ DTSTART:20270220T020000Z
 DTEND:20270220T043000Z
 DTSTAMP:20270220T020000Z
 UID:espn-401904886@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Hull
@@ -563,10 +576,10 @@ DTSTART:20270220T150000Z
 DTEND:20270220T170000Z
 DTSTAMP:20270220T150000Z
 UID:espn-401878703@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:St. Cloud State Denver
@@ -574,10 +587,10 @@ DTSTART:20270221T010000Z
 DTEND:20270221T033000Z
 DTSTAMP:20270221T010000Z
 UID:espn-401904887@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Colorado College Denver
@@ -585,10 +598,10 @@ DTSTART:20270227T020000Z
 DTEND:20270227T043000Z
 DTSTAMP:20270227T020000Z
 UID:espn-401904888@sports-calendar
-DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver\nMatched: Denver Pioneers 
- home
+DESCRIPTION:NCAA Hockey\nMagness Arena\, Denver
 LOCATION:Magness Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Denver Pioneers home
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Man Utd Arsenal
@@ -596,10 +609,10 @@ DTSTART:20270227T150000Z
 DTEND:20270227T170000Z
 DTSTAMP:20270227T150000Z
 UID:espn-401878697@sports-calendar
-DESCRIPTION:English Premier League\nOld Trafford\, Manchester\nMatched: Pr
- emier League big four
+DESCRIPTION:English Premier League\nOld Trafford\, Manchester
 LOCATION:Old Trafford\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Tottenham Liverpool
@@ -607,10 +620,10 @@ DTSTART:20270227T150000Z
 DTEND:20270227T170000Z
 DTSTAMP:20270227T150000Z
 UID:espn-401879129@sports-calendar
-DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London\nMa
- tched: Liverpool
+DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London
 LOCATION:Tottenham Hotspur Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Aston Villa
@@ -618,10 +631,10 @@ DTSTART:20270303T200000Z
 DTEND:20270303T220000Z
 DTSTAMP:20270303T200000Z
 UID:espn-401879125@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dortmund Bayern
@@ -629,10 +642,10 @@ DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 DTSTAMP:20270306T000000Z
 UID:espn-401884601@sports-calendar
-DESCRIPTION:Time TBD\nGerman Bundesliga\nSignal Iduna Park\, Aue\nMatched:
-  Bayern v Dortmund
+DESCRIPTION:Time TBD\nGerman Bundesliga\nSignal Iduna Park\, Aue
 LOCATION:Signal Iduna Park\, Aue
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Bayern v Dortmund
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Ipswich
@@ -640,10 +653,10 @@ DTSTART:20270313T150000Z
 DTEND:20270313T170000Z
 DTSTAMP:20270313T150000Z
 UID:espn-401878690@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Chelsea Arsenal
@@ -651,10 +664,10 @@ DTSTART:20270313T150000Z
 DTEND:20270313T170000Z
 DTSTAMP:20270313T150000Z
 UID:espn-401878693@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\, London\nMatched: Pre
- mier League big four
+DESCRIPTION:English Premier League\nStamford Bridge\, London
 LOCATION:Stamford Bridge\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:City Man Utd
@@ -662,10 +675,10 @@ DTSTART:20270320T150000Z
 DTEND:20270320T170000Z
 DTSTAMP:20270320T150000Z
 UID:espn-401879108@sports-calendar
-DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester\nMatched: 
- Premier League big four
+DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester
 LOCATION:Etihad Stadium\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Fulham Liverpool
@@ -673,10 +686,10 @@ DTSTART:20270320T150000Z
 DTEND:20270320T170000Z
 DTSTAMP:20270320T150000Z
 UID:espn-401879111@sports-calendar
-DESCRIPTION:English Premier League\nCraven Cottage\, London\nMatched: Live
- rpool
+DESCRIPTION:English Premier League\nCraven Cottage\, London
 LOCATION:Craven Cottage\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Marlins · Opening Day
@@ -684,10 +697,10 @@ DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 DTSTAMP:20270325T000000Z
 UID:mlb-853317@sports-calendar
-DESCRIPTION:Time TBD\nMLB · Opening Day\nloanDepot park\nMatched: Mets Op
- ening Day
+DESCRIPTION:Time TBD\nMLB · Opening Day\nloanDepot park
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets Opening Day
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Newcastle
@@ -695,10 +708,10 @@ DTSTART:20270410T140000Z
 DTEND:20270410T160000Z
 DTSTAMP:20270410T140000Z
 UID:espn-401879101@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Thunder Nuggets
@@ -706,10 +719,10 @@ DTSTART:20270412T003000Z
 DTEND:20270412T030000Z
 DTSTAMP:20270412T003000Z
 UID:espn-401910948@sports-calendar
-DESCRIPTION:NBA\nBall Arena\, Denver\nTV: KSBI\, Thunder App\nMatched: Nug
- gets v Thunder
+DESCRIPTION:NBA\nBall Arena\, Denver\nTV: KSBI\, Thunder App
 LOCATION:Ball Arena\, Denver
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Nuggets v Thunder
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Rockies
@@ -717,9 +730,10 @@ DTSTART:20270417T004000Z
 DTEND:20270417T034000Z
 DTSTAMP:20270417T004000Z
 UID:mlb-853794@sports-calendar
-DESCRIPTION:MLB\nCoors Field\nMatched: Mets at Coors Field
+DESCRIPTION:MLB\nCoors Field
 LOCATION:Coors Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets at Coors Field
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Nottm Forest Liverpool
@@ -727,10 +741,10 @@ DTSTART:20270417T140000Z
 DTEND:20270417T160000Z
 DTSTAMP:20270417T140000Z
 UID:espn-401878681@sports-calendar
-DESCRIPTION:English Premier League\nThe City Ground\, Nottingham\nMatched:
-  Liverpool
+DESCRIPTION:English Premier League\nThe City Ground\, Nottingham
 LOCATION:The City Ground\, Nottingham
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Rockies
@@ -738,9 +752,10 @@ DTSTART:20270417T191000Z
 DTEND:20270417T221000Z
 DTSTAMP:20270417T191000Z
 UID:mlb-853792@sports-calendar
-DESCRIPTION:MLB\nCoors Field\nMatched: Mets at Coors Field
+DESCRIPTION:MLB\nCoors Field
 LOCATION:Coors Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets at Coors Field
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Rockies
@@ -748,9 +763,10 @@ DTSTART:20270418T191000Z
 DTEND:20270418T221000Z
 DTSTAMP:20270418T191000Z
 UID:mlb-853793@sports-calendar
-DESCRIPTION:MLB\nCoors Field\nMatched: Mets at Coors Field
+DESCRIPTION:MLB\nCoors Field
 LOCATION:Coors Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets at Coors Field
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Leeds Liverpool
@@ -758,10 +774,10 @@ DTSTART:20270424T140000Z
 DTEND:20270424T160000Z
 DTSTAMP:20270424T140000Z
 UID:espn-401879092@sports-calendar
-DESCRIPTION:English Premier League\nElland Road\, Leeds\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nElland Road\, Leeds
 LOCATION:Elland Road\, Leeds
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Chelsea City
@@ -769,10 +785,10 @@ DTSTART:20270424T140000Z
 DTEND:20270424T160000Z
 DTSTAMP:20270424T140000Z
 UID:espn-401879094@sports-calendar
-DESCRIPTION:English Premier League\nStamford Bridge\, London\nMatched: Pre
- mier League big four
+DESCRIPTION:English Premier League\nStamford Bridge\, London
 LOCATION:Stamford Bridge\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Premier League big four
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Chelsea
@@ -780,10 +796,10 @@ DTSTART:20270501T140000Z
 DTEND:20270501T160000Z
 DTSTAMP:20270501T140000Z
 UID:espn-401878674@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Arsenal Tottenham
@@ -791,10 +807,10 @@ DTSTART:20270501T140000Z
 DTEND:20270501T160000Z
 DTSTAMP:20270501T140000Z
 UID:espn-401878676@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\, London\nMatched: To
- ttenham v Chelsea / Arsenal
+DESCRIPTION:English Premier League\nEmirates Stadium\, London
 LOCATION:Emirates Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Tottenham v Chelsea / Arsenal
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Tottenham Chelsea
@@ -802,10 +818,10 @@ DTSTART:20270508T140000Z
 DTEND:20270508T160000Z
 DTSTAMP:20270508T140000Z
 UID:espn-401878666@sports-calendar
-DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London\nMa
- tched: Tottenham v Chelsea / Arsenal
+DESCRIPTION:English Premier League\nTottenham Hotspur Stadium\, London
 LOCATION:Tottenham Hotspur Stadium\, London
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Tottenham v Chelsea / Arsenal
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:City Liverpool
@@ -813,10 +829,10 @@ DTSTART:20270508T140000Z
 DTEND:20270508T160000Z
 DTSTAMP:20270508T140000Z
 UID:espn-401878668@sports-calendar
-DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester\nMatched: 
- Liverpool
+DESCRIPTION:English Premier League\nEtihad Stadium\, Manchester
 LOCATION:Etihad Stadium\, Manchester
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Real Madrid Barcelona
@@ -825,9 +841,10 @@ DTEND;VALUE=DATE:20270510
 DTSTAMP:20270509T000000Z
 UID:espn-401882579@sports-calendar
 DESCRIPTION:Time TBD\nSpanish LALIGA\nSantiago Bernabéu\, Madrid\nTV: ESP
- N+\nMatched: Barcelona v Real Madrid / Atlético
+ N+
 LOCATION:Santiago Bernabéu\, Madrid
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Barcelona v Real Madrid / Atlético
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Brentford
@@ -835,10 +852,10 @@ DTSTART:20270515T140000Z
 DTEND:20270515T160000Z
 DTSTAMP:20270515T140000Z
 UID:espn-401878663@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Juventus Inter
@@ -847,9 +864,10 @@ DTEND;VALUE=DATE:20270517
 DTSTAMP:20270516T000000Z
 UID:espn-401874849@sports-calendar
 DESCRIPTION:Time TBD\nItalian Serie A\nAllianz Stadium\, Torino\nTV: Param
- ount+\nMatched: Juventus v Inter
+ ount+
 LOCATION:Allianz Stadium\, Torino
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Juventus v Inter
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Brighton Liverpool
@@ -857,10 +875,10 @@ DTSTART:20270523T140000Z
 DTEND:20270523T160000Z
 DTSTAMP:20270523T140000Z
 UID:espn-401878662@sports-calendar
-DESCRIPTION:English Premier League\nAmerican Express Stadium\, Falmer\nMat
- ched: Liverpool
+DESCRIPTION:English Premier League\nAmerican Express Stadium\, Falmer
 LOCATION:American Express Stadium\, Falmer
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Yankees Mets
@@ -868,9 +886,10 @@ DTSTART:20270528T231000Z
 DTEND:20270529T021000Z
 DTSTAMP:20270528T231000Z
 UID:mlb-853051@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nCiti Field
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Yankees Mets
@@ -878,9 +897,10 @@ DTSTART:20270529T201000Z
 DTEND:20270529T231000Z
 DTSTAMP:20270529T201000Z
 UID:mlb-853053@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nCiti Field
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Bournemouth
@@ -888,10 +908,10 @@ DTSTART:20270530T150000Z
 DTEND:20270530T170000Z
 DTSTAMP:20270530T150000Z
 UID:espn-401879059@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool\nMatched: Liverpoo
- l
+DESCRIPTION:English Premier League\nAnfield\, Liverpool
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Liverpool
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Yankees Mets
@@ -899,9 +919,10 @@ DTSTART:20270530T174000Z
 DTEND:20270530T204000Z
 DTSTAMP:20270530T174000Z
 UID:mlb-853052@sports-calendar
-DESCRIPTION:MLB\nCiti Field\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nCiti Field
 LOCATION:Citi Field
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Yankees
@@ -909,9 +930,10 @@ DTSTART:20270716T230500Z
 DTEND:20270717T020500Z
 DTSTAMP:20270716T230500Z
 UID:mlb-852942@sports-calendar
-DESCRIPTION:MLB\nYankee Stadium\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nYankee Stadium
 LOCATION:Yankee Stadium
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Yankees
@@ -919,9 +941,10 @@ DTSTART:20270717T231500Z
 DTEND:20270718T021500Z
 DTSTAMP:20270717T231500Z
 UID:mlb-852931@sports-calendar
-DESCRIPTION:MLB\nYankee Stadium\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nYankee Stadium
 LOCATION:Yankee Stadium
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mets Yankees
@@ -929,9 +952,10 @@ DTSTART:20270718T173500Z
 DTEND:20270718T203500Z
 DTSTAMP:20270718T173500Z
 UID:mlb-852939@sports-calendar
-DESCRIPTION:MLB\nYankee Stadium\nMatched: Mets v Yankees
+DESCRIPTION:MLB\nYankee Stadium
 LOCATION:Yankee Stadium
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Mets v Yankees
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Australian Open Day 1
@@ -939,8 +963,9 @@ DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 DTSTAMP:20270118T000000Z
 UID:espn-tennis-154-2027-day1@sports-calendar
-DESCRIPTION:Australian Open · Jan 10–Jan 31\nMatched: Grand Slams
+DESCRIPTION:Australian Open · Jan 10–Jan 31
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Australian Open Men's Semifinals
@@ -948,8 +973,9 @@ DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 DTSTAMP:20270129T000000Z
 UID:espn-tennis-154-2027-sf-20270129@sports-calendar
-DESCRIPTION:Australian Open · Jan 10–Jan 31\nMatched: Grand Slams
+DESCRIPTION:Australian Open · Jan 10–Jan 31
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Australian Open Men's Final
@@ -957,8 +983,9 @@ DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 DTSTAMP:20270131T000000Z
 UID:espn-tennis-154-2027-final@sports-calendar
-DESCRIPTION:Australian Open · Jan 10–Jan 31\nMatched: Grand Slams
+DESCRIPTION:Australian Open · Jan 10–Jan 31
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Roland Garros Day 1
@@ -966,8 +993,9 @@ DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270525
 DTSTAMP:20270524T000000Z
 UID:espn-tennis-172-2027-day1@sports-calendar
-DESCRIPTION:Roland Garros · May 16–Jun 6\nMatched: Grand Slams
+DESCRIPTION:Roland Garros · May 16–Jun 6
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Roland Garros Men's Semifinals
@@ -975,8 +1003,9 @@ DTSTART;VALUE=DATE:20270604
 DTEND;VALUE=DATE:20270605
 DTSTAMP:20270604T000000Z
 UID:espn-tennis-172-2027-sf-20270604@sports-calendar
-DESCRIPTION:Roland Garros · May 16–Jun 6\nMatched: Grand Slams
+DESCRIPTION:Roland Garros · May 16–Jun 6
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Roland Garros Men's Final
@@ -984,8 +1013,9 @@ DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270607
 DTSTAMP:20270606T000000Z
 UID:espn-tennis-172-2027-final@sports-calendar
-DESCRIPTION:Roland Garros · May 16–Jun 6\nMatched: Grand Slams
+DESCRIPTION:Roland Garros · May 16–Jun 6
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Wimbledon Day 1
@@ -993,8 +1023,9 @@ DTSTART;VALUE=DATE:20270628
 DTEND;VALUE=DATE:20270629
 DTSTAMP:20270628T000000Z
 UID:espn-tennis-188-2027-day1@sports-calendar
-DESCRIPTION:Wimbledon · Jun 20–Jul 11\nMatched: Grand Slams
+DESCRIPTION:Wimbledon · Jun 20–Jul 11
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Wimbledon Men's Semifinals
@@ -1002,8 +1033,9 @@ DTSTART;VALUE=DATE:20270709
 DTEND;VALUE=DATE:20270710
 DTSTAMP:20270709T000000Z
 UID:espn-tennis-188-2027-sf-20270709@sports-calendar
-DESCRIPTION:Wimbledon · Jun 20–Jul 11\nMatched: Grand Slams
+DESCRIPTION:Wimbledon · Jun 20–Jul 11
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Wimbledon Men's Final
@@ -1011,8 +1043,9 @@ DTSTART;VALUE=DATE:20270711
 DTEND;VALUE=DATE:20270712
 DTSTAMP:20270711T000000Z
 UID:espn-tennis-188-2027-final@sports-calendar
-DESCRIPTION:Wimbledon · Jun 20–Jul 11\nMatched: Grand Slams
+DESCRIPTION:Wimbledon · Jun 20–Jul 11
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:US Open Day 1
@@ -1020,8 +1053,9 @@ DTSTART;VALUE=DATE:20270830
 DTEND;VALUE=DATE:20270831
 DTSTAMP:20270830T000000Z
 UID:espn-tennis-189-2027-day1@sports-calendar
-DESCRIPTION:US Open · Aug 22–Sep 12\nMatched: Grand Slams
+DESCRIPTION:US Open · Aug 22–Sep 12
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:US Open Men's Semifinals
@@ -1029,8 +1063,9 @@ DTSTART;VALUE=DATE:20270910
 DTEND;VALUE=DATE:20270911
 DTSTAMP:20270910T000000Z
 UID:espn-tennis-189-2027-sf-20270910@sports-calendar
-DESCRIPTION:US Open · Aug 22–Sep 12\nMatched: Grand Slams
+DESCRIPTION:US Open · Aug 22–Sep 12
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:US Open Men's Final
@@ -1038,7 +1073,8 @@ DTSTART;VALUE=DATE:20270912
 DTEND;VALUE=DATE:20270913
 DTSTAMP:20270912T000000Z
 UID:espn-tennis-189-2027-final@sports-calendar
-DESCRIPTION:US Open · Aug 22–Sep 12\nMatched: Grand Slams
+DESCRIPTION:US Open · Aug 22–Sep 12
 TRANSP:TRANSPARENT
+X-MATCHED-RULES:Grand Slams
 END:VEVENT
 END:VCALENDAR
