@@ -55,9 +55,9 @@ DTSTART:20261113T011500Z
 DTEND:20261113T031500Z
 DTSTAMP:20261113T011500Z
 UID:espn-401873052@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: Prime Video\nMatched: Giants games (
- secondary)\nid: espn-401873052
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: Prime Video\nMatch
+ ed: Giants games (secondary)\nid: espn-401873052
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -121,9 +121,9 @@ DTSTART:20261122T130000Z
 DTEND:20261122T150000Z
 DTSTAMP:20261122T130000Z
 UID:espn-401882804@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN Deportes\, ESPN+\nM
- atched: Barcelona games (secondary)\nid: espn-401882804
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN Deporte
+ s\, ESPN+\nMatched: Barcelona games (secondary)\nid: espn-401882804
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -143,9 +143,9 @@ DTSTART:20261122T212500Z
 DTEND:20261122T232500Z
 DTSTAMP:20261122T212500Z
 UID:espn-401873069@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: CBS\nMatched: Giants games (secondar
- y)\nid: espn-401873069
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Gian
+ ts games (secondary)\nid: espn-401873069
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -154,9 +154,9 @@ DTSTART:20261122T212500Z
 DTEND:20261122T232500Z
 DTSTAMP:20261122T212500Z
 UID:espn-401873075@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\nTV: CBS\nMatched: Broncos gam
- es (secondary)\nid: espn-401873075
-LOCATION:Empower Field at Mile High
+DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: CBS\nMatched: Br
+ oncos games (secondary)\nid: espn-401873075
+LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -187,9 +187,9 @@ DTSTART:20261127T200000Z
 DTEND:20261127T220000Z
 DTSTAMP:20261127T200000Z
 UID:espn-401873083@sports-calendar
-DESCRIPTION:NFL\nAcrisure Stadium\nTV: Prime Video\nMatched: Broncos games
-  (secondary)\nid: espn-401873083
-LOCATION:Acrisure Stadium
+DESCRIPTION:NFL\nAcrisure Stadium\, Pittsburgh\nTV: Prime Video\nMatched: 
+ Broncos games (secondary)\nid: espn-401873083
+LOCATION:Acrisure Stadium\, Pittsburgh
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -242,9 +242,9 @@ DTSTART:20261129T151500Z
 DTEND:20261129T171500Z
 DTSTAMP:20261129T151500Z
 UID:espn-401882794@sports-calendar
-DESCRIPTION:Spanish LALIGA\nRiazor\nTV: ESPN+\nMatched: Barcelona games (s
- econdary)\nid: espn-401882794
-LOCATION:Riazor
+DESCRIPTION:Spanish LALIGA\nRiazor\, La Coruña\nTV: ESPN+\nMatched: Barce
+ lona games (secondary)\nid: espn-401882794
+LOCATION:Riazor\, La Coruña
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -253,9 +253,9 @@ DTSTART:20261129T180000Z
 DTEND:20261129T200000Z
 DTSTAMP:20261129T180000Z
 UID:espn-401873088@sports-calendar
-DESCRIPTION:NFL\nLucas Oil Stadium\nTV: Fox\nMatched: Giants games (second
- ary)\nid: espn-401873088
-LOCATION:Lucas Oil Stadium
+DESCRIPTION:NFL\nLucas Oil Stadium\, Indianapolis\nTV: Fox\nMatched: Giant
+ s games (secondary)\nid: espn-401873088
+LOCATION:Lucas Oil Stadium\, Indianapolis
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -319,9 +319,9 @@ DTSTART:20261206T180000Z
 DTEND:20261206T200000Z
 DTSTAMP:20261206T180000Z
 UID:espn-401873095@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: Fox\nMatched: Giants games (secondar
- y)\nid: espn-401873095
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: Fox\nMatched: Gian
+ ts games (secondary)\nid: espn-401873095
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -330,9 +330,9 @@ DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 DTSTAMP:20261206T000000Z
 UID:espn-401882783@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882783
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882783
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -341,9 +341,9 @@ DTSTART:20261206T210500Z
 DTEND:20261206T230500Z
 DTSTAMP:20261206T210500Z
 UID:espn-401873103@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\nTV: Fox\nMatched: Broncos gam
- es (secondary)\nid: espn-401873103
-LOCATION:Empower Field at Mile High
+DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: Fox\nMatched: Br
+ oncos games (secondary)\nid: espn-401873103
+LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -418,9 +418,9 @@ DTSTART:20261213T180000Z
 DTEND:20261213T200000Z
 DTSTAMP:20261213T180000Z
 UID:espn-401873112@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: CBS\nMatched: Broncos games (seconda
- ry)\nid: espn-401873112
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Bron
+ cos games (secondary)\nid: espn-401873112
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -429,9 +429,9 @@ DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 DTSTAMP:20261213T000000Z
 UID:espn-401882770@sports-calendar
-DESCRIPTION:Spanish LALIGA\nLa Rosaleda\nTV: ESPN+\nMatched: Barcelona gam
- es (secondary)\nid: espn-401882770
-LOCATION:La Rosaleda
+DESCRIPTION:Spanish LALIGA\nLa Rosaleda\, Malaga\nTV: ESPN+\nMatched: Barc
+ elona games (secondary)\nid: espn-401882770
+LOCATION:La Rosaleda\, Malaga
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -440,9 +440,9 @@ DTSTART:20261213T212500Z
 DTEND:20261213T232500Z
 DTSTAMP:20261213T212500Z
 UID:espn-401873121@sports-calendar
-DESCRIPTION:NFL\nLumen Field\nTV: Fox\nMatched: Giants games (secondary)\n
- id: espn-401873121
-LOCATION:Lumen Field
+DESCRIPTION:NFL\nLumen Field\, Seattle\nTV: Fox\nMatched: Giants games (se
+ condary)\nid: espn-401873121
+LOCATION:Lumen Field\, Seattle
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -528,9 +528,9 @@ DTSTART:20261220T180000Z
 DTEND:20261220T200000Z
 DTSTAMP:20261220T180000Z
 UID:espn-401873130@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nTV: CBS\nMatched: Giants games (secondar
- y)\nid: espn-401873130
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nTV: CBS\nMatched: Gian
+ ts games (secondary)\nid: espn-401873130
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -539,9 +539,9 @@ DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 DTSTAMP:20261220T000000Z
 UID:espn-401882762@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882762
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882762
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -550,9 +550,9 @@ DTSTART:20261220T212500Z
 DTEND:20261220T232500Z
 DTSTAMP:20261220T212500Z
 UID:espn-401873137@sports-calendar
-DESCRIPTION:NFL\nAllegiant Stadium\nTV: CBS\nMatched: Broncos games (secon
- dary)\nid: espn-401873137
-LOCATION:Allegiant Stadium
+DESCRIPTION:NFL\nAllegiant Stadium\, Las Vegas\nTV: CBS\nMatched: Broncos 
+ games (secondary)\nid: espn-401873137
+LOCATION:Allegiant Stadium\, Las Vegas
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -594,9 +594,9 @@ DTSTART:20261225T213000Z
 DTEND:20261225T233000Z
 DTSTAMP:20261225T213000Z
 UID:espn-401873142@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\nTV: Netflix\nMatched: Broncos
-  games (secondary)\nid: espn-401873142
-LOCATION:Empower Field at Mile High
+DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nTV: Netflix\nMatched
+ : Broncos games (secondary)\nid: espn-401873142
+LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -627,9 +627,9 @@ DTSTART:20261229T011500Z
 DTEND:20261229T031500Z
 DTSTAMP:20261229T011500Z
 UID:espn-401873155@sports-calendar
-DESCRIPTION:NFL\nFord Field\nTV: ESPN\nMatched: Giants games (secondary)\n
- id: espn-401873155
-LOCATION:Ford Field
+DESCRIPTION:NFL\nFord Field\, Detroit\nTV: ESPN\nMatched: Giants games (se
+ condary)\nid: espn-401873155
+LOCATION:Ford Field\, Detroit
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -693,9 +693,9 @@ DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 DTSTAMP:20270103T000000Z
 UID:espn-401873157@sports-calendar
-DESCRIPTION:NFL\nGillette Stadium\nMatched: Broncos games (secondary)\nid:
-  espn-401873157
-LOCATION:Gillette Stadium
+DESCRIPTION:NFL\nGillette Stadium\, Foxborough\nMatched: Broncos games (se
+ condary)\nid: espn-401873157
+LOCATION:Gillette Stadium\, Foxborough
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -704,9 +704,9 @@ DTSTART:20270103T180000Z
 DTEND:20270103T200000Z
 DTSTAMP:20270103T180000Z
 UID:espn-401873165@sports-calendar
-DESCRIPTION:NFL\nAT&T Stadium\nTV: Fox\nMatched: Giants games (secondary)
- \nid: espn-401873165
-LOCATION:AT&T Stadium
+DESCRIPTION:NFL\nAT&T Stadium\, Arlington\nTV: Fox\nMatched: Giants games 
+ (secondary)\nid: espn-401873165
+LOCATION:AT&T Stadium\, Arlington
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -715,9 +715,9 @@ DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 DTSTAMP:20270103T000000Z
 UID:espn-401882754@sports-calendar
-DESCRIPTION:Spanish LALIGA\nRCDE Stadium\nTV: ESPN+\nMatched: Barcelona ga
- mes (secondary)\nid: espn-401882754
-LOCATION:RCDE Stadium
+DESCRIPTION:Spanish LALIGA\nRCDE Stadium\, Barcelona\nTV: ESPN+\nMatched: 
+ Barcelona games (secondary)\nid: espn-401882754
+LOCATION:RCDE Stadium\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -803,9 +803,9 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401873179@sports-calendar
-DESCRIPTION:NFL\nEmpower Field at Mile High\nMatched: Broncos games (secon
- dary)\nid: espn-401873179
-LOCATION:Empower Field at Mile High
+DESCRIPTION:NFL\nEmpower Field at Mile High\, Denver\nMatched: Broncos gam
+ es (secondary)\nid: espn-401873179
+LOCATION:Empower Field at Mile High\, Denver
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -814,9 +814,9 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401873182@sports-calendar
-DESCRIPTION:NFL\nMetLife Stadium\nMatched: Giants games (secondary)\nid: e
- spn-401873182
-LOCATION:MetLife Stadium
+DESCRIPTION:NFL\nMetLife Stadium\, East Rutherford\nMatched: Giants games 
+ (secondary)\nid: espn-401873182
+LOCATION:MetLife Stadium\, East Rutherford
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -825,9 +825,9 @@ DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 DTSTAMP:20270110T000000Z
 UID:espn-401882740@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEl Sadar\nTV: ESPN+\nMatched: Barcelona games 
- (secondary)\nid: espn-401882740
-LOCATION:El Sadar
+DESCRIPTION:Spanish LALIGA\nEl Sadar\, Pamplona\nTV: ESPN+\nMatched: Barce
+ lona games (secondary)\nid: espn-401882740
+LOCATION:El Sadar\, Pamplona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -913,9 +913,9 @@ DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 DTSTAMP:20270117T000000Z
 UID:espn-401882733@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882733
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882733
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -990,9 +990,9 @@ DTSTART;VALUE=DATE:20270124
 DTEND;VALUE=DATE:20270125
 DTSTAMP:20270124T000000Z
 UID:espn-401882726@sports-calendar
-DESCRIPTION:Spanish LALIGA\nMendizorrotza\nTV: ESPN+\nMatched: Barcelona g
- ames (secondary)\nid: espn-401882726
-LOCATION:Mendizorrotza
+DESCRIPTION:Spanish LALIGA\nMendizorrotza\, Vitoria-Gasteiz\nTV: ESPN+\nMa
+ tched: Barcelona games (secondary)\nid: espn-401882726
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1078,9 +1078,9 @@ DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 DTSTAMP:20270131T000000Z
 UID:espn-401882713@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882713
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882713
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1089,9 +1089,9 @@ DTSTART:20270202T190000Z
 DTEND:20270202T210000Z
 DTSTAMP:20270202T190000Z
 UID:espn-401892163@sports-calendar
-DESCRIPTION:Spanish Supercopa · Supercopa\nŞükrü Saracoğlu Stadium\nM
- atched: Barcelona games (secondary)\nid: espn-401892163
-LOCATION:Şükrü Saracoğlu Stadium
+DESCRIPTION:Spanish Supercopa · Supercopa\nŞükrü Saracoğlu Stadium\, 
+ Istanbul\nMatched: Barcelona games (secondary)\nid: espn-401892163
+LOCATION:Şükrü Saracoğlu Stadium\, Istanbul
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1166,9 +1166,9 @@ DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 DTSTAMP:20270214T000000Z
 UID:espn-401882687@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio de la Cerámica\nTV: ESPN+\nMatched: B
- arcelona games (secondary)\nid: espn-401882687
-LOCATION:Estadio de la Cerámica
+DESCRIPTION:Spanish LALIGA\nEstadio de la Cerámica\, Villarreal\nTV: ESPN
+ +\nMatched: Barcelona games (secondary)\nid: espn-401882687
+LOCATION:Estadio de la Cerámica\, Villarreal
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1254,9 +1254,9 @@ DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 DTSTAMP:20270221T000000Z
 UID:espn-401882681@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882681
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882681
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1331,9 +1331,9 @@ DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 DTSTAMP:20270228T000000Z
 UID:espn-401882676@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSan Mamés\nTV: ESPN+\nMatched: Barcelona game
- s (secondary)\nid: espn-401882676
-LOCATION:San Mamés
+DESCRIPTION:Spanish LALIGA\nSan Mamés\, Bilbao\nTV: ESPN+\nMatched: Barce
+ lona games (secondary)\nid: espn-401882676
+LOCATION:San Mamés\, Bilbao
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1397,9 +1397,9 @@ DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270308
 DTSTAMP:20270307T000000Z
 UID:espn-401882661@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882661
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882661
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1485,9 +1485,9 @@ DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 DTSTAMP:20270314T000000Z
 UID:espn-401882652@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882652
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882652
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1562,9 +1562,9 @@ DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 DTSTAMP:20270321T000000Z
 UID:espn-401882641@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio de Vallecas\nTV: ESPN+\nMatched: Barce
- lona games (secondary)\nid: espn-401882641
-LOCATION:Estadio de Vallecas
+DESCRIPTION:Spanish LALIGA\nEstadio de Vallecas\, Madrid\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882641
+LOCATION:Estadio de Vallecas\, Madrid
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1815,9 +1815,9 @@ DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 DTSTAMP:20270404T000000Z
 UID:espn-401882632@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882632
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882632
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -1969,9 +1969,9 @@ DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 DTSTAMP:20270411T000000Z
 UID:espn-401882621@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEl Sardineros\nTV: ESPN+\nMatched: Barcelona g
- ames (secondary)\nid: espn-401882621
-LOCATION:El Sardineros
+DESCRIPTION:Spanish LALIGA\nEl Sardineros\, Santander\nTV: ESPN+\nMatched:
+  Barcelona games (secondary)\nid: espn-401882621
+LOCATION:El Sardineros\, Santander
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2013,9 +2013,9 @@ DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 DTSTAMP:20270418T000000Z
 UID:espn-401882611@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882611
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882611
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2046,9 +2046,9 @@ DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 DTSTAMP:20270421T000000Z
 UID:espn-401882605@sports-calendar
-DESCRIPTION:Spanish LALIGA\nBalaidos\nTV: ESPN+\nMatched: Barcelona games 
- (secondary)\nid: espn-401882605
-LOCATION:Balaidos
+DESCRIPTION:Spanish LALIGA\nBalaidos\, Vigo\nTV: ESPN+\nMatched: Barcelona
+  games (secondary)\nid: espn-401882605
+LOCATION:Balaidos\, Vigo
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2178,9 +2178,9 @@ DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503
 DTSTAMP:20270502T000000Z
 UID:espn-401882591@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882591
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882591
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2310,9 +2310,9 @@ DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270517
 DTSTAMP:20270516T000000Z
 UID:espn-401882568@sports-calendar
-DESCRIPTION:Spanish LALIGA\nReale Arena\nTV: ESPN+\nMatched: Barcelona gam
- es (secondary)\nid: espn-401882568
-LOCATION:Reale Arena
+DESCRIPTION:Spanish LALIGA\nReale Arena\, San Sebastian\nTV: ESPN+\nMatche
+ d: Barcelona games (secondary)\nid: espn-401882568
+LOCATION:Reale Arena\, San Sebastian
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2387,9 +2387,9 @@ DTSTART;VALUE=DATE:20270523
 DTEND;VALUE=DATE:20270524
 DTSTAMP:20270523T000000Z
 UID:espn-401882562@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882562
-LOCATION:Spotify Camp Nou
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+\nMatch
+ ed: Barcelona games (secondary)\nid: espn-401882562
+LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2442,9 +2442,9 @@ DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 DTSTAMP:20270530T000000Z
 UID:espn-401882552@sports-calendar
-DESCRIPTION:Spanish LALIGA\nEstadio Coliseum\nTV: ESPN+\nMatched: Barcelon
- a games (secondary)\nid: espn-401882552
-LOCATION:Estadio Coliseum
+DESCRIPTION:Spanish LALIGA\nEstadio Coliseum\, Getafe\nTV: ESPN+\nMatched:
+  Barcelona games (secondary)\nid: espn-401882552
+LOCATION:Estadio Coliseum\, Getafe
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
