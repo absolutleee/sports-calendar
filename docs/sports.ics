@@ -150,7 +150,8 @@ DTSTART:20261202T203000Z
 DTEND:20261202T223000Z
 DTSTAMP:20261202T203000Z
 UID:espn-401882700@sports-calendar
-DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN+
+DESCRIPTION:Spanish LALIGA\nSpotify Camp Nou\, Barcelona\nTV: ESPN2\, ESPN
+ +
 LOCATION:Spotify Camp Nou\, Barcelona
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Barcelona v Real Madrid / Atlético
