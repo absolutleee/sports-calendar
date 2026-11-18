@@ -58,7 +58,8 @@ DTSTART:20261122T163000Z
 DTEND:20261122T183000Z
 DTSTAMP:20261122T163000Z
 UID:espn-401878755@sports-calendar
-DESCRIPTION:English Premier League\nAnfield\, Liverpool
+DESCRIPTION:English Premier League\nAnfield\, Liverpool\nTV: USA Net\, Tel
+ e
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Liverpool
@@ -702,6 +703,18 @@ DESCRIPTION:Time TBD\nMLB · Opening Day\nloanDepot park
 LOCATION:loanDepot park
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Mets Opening Day
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:USA Mexico
+DTSTART:20270326T021500Z
+DTEND:20270326T041500Z
+DTSTAMP:20270326T021500Z
+UID:espn-401935564@sports-calendar
+DESCRIPTION:Concacaf Nations League · Nations League\nSoFi Stadium\, Ingl
+ ewood\, California
+LOCATION:SoFi Stadium\, Inglewood\, California
+TRANSP:TRANSPARENT
+X-MATCHED-RULES:USMNT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Liverpool Newcastle
