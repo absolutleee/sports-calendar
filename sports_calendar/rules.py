@@ -297,10 +297,23 @@ def _drop_when_under_500(rule: dict, games: list[Game], catalog) -> list[Game]:
     return kept
 
 
+def _only_ids(rule: dict, games: list[Game]) -> list[Game]:
+    """`ids: [nhl-2026020387, ...]` keeps only those games (UIDs as in docs/*.ics,
+    minus "@sports-calendar"). An id the rule's source doesn't return is logged,
+    not fatal: the game may have rolled off the schedule feed."""
+    wanted = _ids(rule["ids"])
+    missing = wanted - {g.uid for g in games}
+    if missing:
+        log.warning("rule %r: ids not found in its games: %s", rule.get("name"), ", ".join(sorted(missing)))
+    return [g for g in games if g.uid in wanted]
+
+
 def evaluate(rule: dict, catalog) -> list:
     kind = rule.get("type")
     if kind in GAME_RULES:
         matched = GAME_RULES[kind](rule, catalog)
+        if rule.get("ids"):
+            matched = _only_ids(rule, matched)
         if rule.get("skip_preseason"):
             matched = [g for g in matched if g.season_type != "pre"]
         if rule.get("cities") or rule.get("states"):

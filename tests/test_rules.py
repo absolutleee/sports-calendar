@@ -316,6 +316,15 @@ def test_skip_preseason_is_opt_in():
     assert {g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))} == {"reg"}
 
 
+def test_ids_keeps_only_listed_games(caplog):
+    games = [mk(f"nhl-{n}", DAL, COL, date(2026, 11, n), sport="hockey", comp="nhl", comp_name="NHL")
+             for n in (25, 27, 28, 29)]
+    rule = {"name": "Avs this week", "type": "team_all", "source": "nhl", "team": "COL",
+            "ids": ["nhl-25", "nhl-28", "nhl-99"]}
+    assert [g.uid for g in rules.evaluate(rule, FakeCatalog({"COL": games}))] == ["nhl-25", "nhl-28"]
+    assert "nhl-99" in caplog.text
+
+
 def test_eliminated_hides_games_even_within_500_limit():
     cat = FakeCatalog({"121": _mets_seasons()}, eliminated_years={2026}, under_500={2026: 3})
     rule = {"name": "Mets", "type": "team_all", "source": "mlb", "team": 121,

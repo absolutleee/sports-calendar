@@ -77,6 +77,10 @@ Other per-rule options:
   a season while it is 5 or more games under .500 (losses − wins ≥ 5). The
   record is re-checked on every daily build, so the games come back once the
   team is within 5 again. Unknown records (e.g. before the season) keep the games.
+- `ids: [nhl-2026020387, ...]` keeps only those games (each event's UID in
+  `docs/*.ics`, minus "@sports-calendar"). Use it on a main-calendar rule to
+  promote a few secondary games for a week; they leave the secondary
+  automatically.
 - `skip_preseason: true` drops preseason games (the NHL schedule includes them).
 - `cities: [Denver, Commerce City]` and/or `states: [Colorado]` (`espn` /
   `espn_soccer` only) keep only games whose venue is in one of those cities or

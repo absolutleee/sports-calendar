@@ -265,6 +265,14 @@ rules:
     source: nhl
     team: NYR
 
+  # Promoted from the secondary calendar for the week of Nov 23 (Wed v Sabres,
+  # Fri v Blackhawks, Sat v Flames). Safe to delete once they've passed.
+  - name: Rangers week of Nov 23
+    type: team_all
+    source: nhl
+    team: NYR
+    ids: [nhl-2026020387, nhl-2026020411, nhl-2026020419]
+
   - name: Stanley Cup Final
     type: finals
     source: nhl
