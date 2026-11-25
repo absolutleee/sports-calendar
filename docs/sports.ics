@@ -92,7 +92,8 @@ DTSTART:20261129T120000Z
 DTEND:20261129T140000Z
 DTSTAMP:20261129T120000Z
 UID:espn-401879229@sports-calendar
-DESCRIPTION:English Premier League\nHill Dickinson Stadium\, Liverpool
+DESCRIPTION:English Premier League\nHill Dickinson Stadium\, Liverpool\nTV
+ : USA Net\, Universo
 LOCATION:Hill Dickinson Stadium\, Liverpool
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Liverpool
@@ -103,7 +104,8 @@ DTSTART:20261129T163000Z
 DTEND:20261129T183000Z
 DTSTAMP:20261129T163000Z
 UID:espn-401878753@sports-calendar
-DESCRIPTION:English Premier League\nEmirates Stadium\, London
+DESCRIPTION:English Premier League\nEmirates Stadium\, London\nTV: USA Net
+ \, Tele
 LOCATION:Emirates Stadium\, London
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Premier League big four
@@ -251,7 +253,8 @@ DTSTART:20261216T200000Z
 DTEND:20261216T220000Z
 DTSTAMP:20261216T200000Z
 UID:espn-401932187@sports-calendar
-DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\, Liverpool
+DESCRIPTION:English Carabao Cup · EFL Cup\nAnfield\, Liverpool\nTV: Param
+ ount+
 LOCATION:Anfield\, Liverpool
 TRANSP:TRANSPARENT
 X-MATCHED-RULES:Liverpool
